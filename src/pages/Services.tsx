@@ -61,7 +61,7 @@ export default function Services() {
               <div className="btn btn--secondary">
                 Fees
                 <svg className="icon">
-                  <use xlinkHref="./images/integratesprite.svg#fees"></use>
+                  <use xlinkHref="./integratesprite.svg#fees"></use>
                 </svg>
               </div>
             </a>
@@ -69,7 +69,7 @@ export default function Services() {
               <div className="btn btn--primary">
                 Contact
                 <svg className="icon">
-                  <use xlinkHref="./images/integratesprite.svg#contact"></use>
+                  <use xlinkHref="./integratesprite.svg#contact"></use>
                 </svg>
               </div>
             </a>

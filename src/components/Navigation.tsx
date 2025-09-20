@@ -50,7 +50,7 @@ export default function Navbar() {
         aria-controls="mobile-menu"
       >
         <svg className="icon nav__toggler">
-          <use xlinkHref="./images/integratesprite.svg#menu" />
+          <use xlinkHref="/integratesprite.svg#menu" />
         </svg>
       </button>
 
@@ -60,7 +60,7 @@ export default function Navbar() {
             <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
               <svg className="icon icon--secondary">
                 <use
-                  xlinkHref={`./images/integratesprite.svg#${label.toLowerCase()}`}
+                  xlinkHref={`./integratesprite.svg#${label.toLowerCase()}`}
                 />
               </svg>
               {label}

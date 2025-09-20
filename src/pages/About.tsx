@@ -45,7 +45,7 @@ export default function About() {
               <div className="btn btn--secondary">
                 Training
                 <svg className="icon training-icon">
-                  <use xlinkHref="/images/integratesprite.svg#training"></use>
+                  <use xlinkHref="/integratesprite.svg#training"></use>
                 </svg>
               </div>
             </a>
@@ -53,7 +53,7 @@ export default function About() {
               <div className="btn btn--primary">
                 Contact
                 <svg className="icon">
-                  <use xlinkHref="/images/integratesprite.svg#contact"></use>
+                  <use xlinkHref="/integratesprite.svg#contact"></use>
                 </svg>
               </div>
             </a>

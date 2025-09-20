@@ -26,7 +26,7 @@ export default function Block({
               <div className="btn btn--secondary">
                 {buttonLabel}
                 <svg className="icon">
-                  <use xlinkHref="./images/integratesprite.svg#right-arrow"></use>
+                  <use xlinkHref="./integratesprite.svg#right-arrow"></use>
                 </svg>
               </div>
             </a>
