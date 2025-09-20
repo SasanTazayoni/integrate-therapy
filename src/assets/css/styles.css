@@ -666,7 +666,7 @@ a:hover {
   position: fixed;
   width: 100%;
   z-index: 1;
-  box-shadow: 1rem 0 3rem #dcdcdc, -1rem 0 3rem #dcdcdc;
+  box-shadow: 0 0 2rem #dcdcdc, 0 0 2rem #dcdcdc;
 }
 
 .nav__btn {
