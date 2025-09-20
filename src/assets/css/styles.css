@@ -626,6 +626,8 @@ a:hover {
 
 .collapsible__icon {
   padding: 0;
+  border: 0;
+  background-color: #fff;
 }
 
 .collapsible__content {
@@ -649,7 +651,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
   .collapsible__icon {
-    padding: 2rem;
+    padding: 1rem;
   }
 }
 
@@ -734,13 +736,13 @@ a:hover {
 }
 
 .nav__toggler {
-  border-radius: 7.5px;
+  border-radius: 5px;
   cursor: pointer;
   fill: var(--color-secondary);
-  height: 60px;
+  height: 40px;
   opacity: 0.6;
   transition: box-shadow 0.3s, opacity 0.3s;
-  width: 60px;
+  width: 40px;
 }
 
 .collapsible--expanded .nav__toggler {
@@ -776,8 +778,9 @@ a:hover {
   }
 
   .nav__toggler {
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
   }
 }
 
