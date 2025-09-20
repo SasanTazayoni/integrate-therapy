@@ -1,0 +1,6 @@
+export const testimonialsData = [
+  "My relationships with people have always been hit or miss. I either get along very well with people or badly with little in between. Simon has helped me to get in touch with my anger. I felt well supported, understood and listened to. He was great at keeping me on track when I lost direction. Overall therapy has been challenging but nonetheless very helpful.",
+  "I was having a tough time in my life where I had lost my partner and was spiralling into a depression. I had a lot of difficulty coping and had no one to talk to. Simon enabled me to move forward and get my life back together. Thank you.",
+  "The thought of telling someone very personal information about myself was very daunting but I knew that I had to push myself to take initiative if I wanted a better life. Simon is non-judgemental, trustworthy and human and with the therapy that I received, I was able to address all of my problems individually. I have been through a life-changing process with him.",
+  "I was always confident and never imagined that I would need therapy. After the death of my father I felt overwhelmed and extremely vulnerable. With Simon’s help, I was able to find myself again and have restored my self-confidence. I highly recommend him.",
+];
