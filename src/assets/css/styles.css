@@ -625,7 +625,7 @@ a:hover {
 }
 
 .collapsible__icon {
-  padding: 2rem;
+  padding: 0;
 }
 
 .collapsible__content {
@@ -644,6 +644,12 @@ a:hover {
 @media screen and (min-width: 768px) {
   .collapsible--expanded .collapsible__content {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapsible__icon {
+    padding: 2rem;
   }
 }
 
@@ -820,15 +826,6 @@ a:hover {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: none;
   }
-
-  /* .nav > .nav__toggler,
-  .nav > .nav__list {
-    order: 2;
-  }
-
-  .nav > .nav__list-widescreen {
-    order: 3;
-  } */
 
   .nav__brand {
     flex-direction: row;
