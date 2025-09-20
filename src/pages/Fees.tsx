@@ -35,7 +35,7 @@ export default function Fees() {
             <div className="btn btn--secondary">
               FAQ
               <svg className="icon">
-                <use xlinkHref="./integratesprite.svg#faq"></use>
+                <use xlinkHref="/integratesprite.svg#faq"></use>
               </svg>
             </div>
           </a>
@@ -43,7 +43,7 @@ export default function Fees() {
             <div className="btn btn--primary">
               Contact
               <svg className="icon">
-                <use xlinkHref="./integratesprite.svg#contact"></use>
+                <use xlinkHref="/integratesprite.svg#contact"></use>
               </svg>
             </div>
           </a>

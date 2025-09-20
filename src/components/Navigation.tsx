@@ -60,7 +60,7 @@ export default function Navbar() {
             <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
               <svg className="icon icon--secondary">
                 <use
-                  xlinkHref={`./integratesprite.svg#${label.toLowerCase()}`}
+                  xlinkHref={`/integratesprite.svg#${label.toLowerCase()}`}
                 />
               </svg>
               {label}

@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="btn btn--secondary hero__btn">
               About Me
               <svg className="icon">
-                <use xlinkHref="./integratesprite.svg#about"></use>
+                <use xlinkHref="/integratesprite.svg#about"></use>
               </svg>
             </div>
           </a>
@@ -18,7 +18,7 @@ export default function Hero() {
             <div className="btn btn--primary hero__btn">
               Contact Me
               <svg className="icon">
-                <use xlinkHref="./integratesprite.svg#contact"></use>
+                <use xlinkHref="/integratesprite.svg#contact"></use>
               </svg>
             </div>
           </a>
