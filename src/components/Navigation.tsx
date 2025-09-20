@@ -30,18 +30,13 @@ export default function Navbar() {
       <ul className="list nav__list-widescreen">
         {NAV_LINKS.map((label) => (
           <li key={label}>
-            <Link to={`/${label.toLowerCase()}`}>
+            <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
               <div
                 className={`btn btn--${
                   label === "Contact" ? "primary" : "secondary"
                 } nav__btn`}
               >
                 {label}
-                <svg className="icon">
-                  <use
-                    xlinkHref={`./images/integratesprite.svg#${label.toLowerCase()}`}
-                  />
-                </svg>
               </div>
             </Link>
           </li>
@@ -62,7 +57,7 @@ export default function Navbar() {
       <ul id="mobile-menu" className="list nav__list collapsible__content">
         {NAV_LINKS.map((label) => (
           <li key={label} className="nav__item">
-            <Link to={`/${label.toLowerCase()}`}>
+            <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
               <svg className="icon icon--secondary">
                 <use
                   xlinkHref={`./images/integratesprite.svg#${label.toLowerCase()}`}
