@@ -1412,25 +1412,25 @@ a:hover {
 
 @media screen and (max-width: 767px) {
   .services__image {
-    background-image: url(../images/servicessmall.jpg);
+    background-image: url(/images/servicessmall.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .services__image {
-    background-image: url(../images/servicesmedium.jpg);
+    background-image: url(/images/servicesmedium.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .services__image {
-    background-image: url(../images/serviceslarge.jpg);
+    background-image: url(/images/serviceslarge.jpg);
   }
 }
 
 @media screen and (min-width: 1800px) {
   .services__image {
-    background-image: url(../images/servicesxlarge.jpg);
+    background-image: url(/images/servicesxlarge.jpg);
   }
 }
 
