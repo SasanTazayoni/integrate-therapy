@@ -844,13 +844,8 @@ a:hover {
 
 /* Hero */
 
-/* body.webp .hero__container {
-  background-image: url(../images/herobg.webp);
-} */
-
 .hero__container {
   align-items: center;
-  /* background-image: url(../images/herobg.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -948,12 +943,7 @@ a:hover {
 
 /* Background Images */
 
-/* body.webp .background__image {
-  background-image: url(../images/child.webp);
-} */
-
 .background__image {
-  /* background: url(../images/child.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
@@ -963,19 +953,13 @@ a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .nowebp .background__image {
-    background-image: url(../images/childsmall.jpg);
-  }
-  .webp .background__image {
+  .background__image {
     background-image: url(../images/childsmall.webp);
   }
 }
 
 @media screen and (min-width: 721px) {
-  .nowebp .background__image {
-    background-image: url(../images/childmedium.jpg);
-  }
-  .webp .background__image {
+  .background__image {
     background-image: url(../images/childmedium.webp);
   }
 }
@@ -987,19 +971,13 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .nowebp .background__image {
-    background-image: url(../images/childlarge.jpg);
-  }
-  .webp .background__image {
+  .background__image {
     background-image: url(../images/childlarge.webp);
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .nowebp .background__image {
-    background-image: url(../images/childxlarge.jpg);
-  }
-  .webp .background__image {
+  .background__image {
     background-image: url(../images/childxlarge.webp);
   }
 }
@@ -1364,46 +1342,31 @@ a:hover {
 }
 
 @media screen and (max-width: 799px) {
-  .nowebp .training__image {
-    background-image: url(../images/trainingsmall.jpg);
-  }
-  .webp .training__image {
+  .training__image {
     background-image: url(../images/trainingsmall.webp);
   }
 }
 
 @media screen and (min-width: 800px) {
-  .nowebp .training__image {
-    background-image: url(../images/trainingmedium.jpg);
-  }
-  .webp .training__image {
+  .training__image {
     background-image: url(../images/trainingmedium.webp);
   }
 }
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
-  .nowebp .training__image {
-    background-image: url(../images/traininglarge.jpg);
-  }
-  .webp .training__image {
+  .training__image {
     background-image: url(../images/traininglarge.webp);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .nowebp .training__image {
-    background-image: url(../images/traininglarge.jpg);
-  }
-  .webp .training__image {
+  .training__image {
     background-image: url(../images/traininglarge.webp);
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .nowebp .training__image {
-    background-image: url(../images/trainingxlarge.jpg);
-  }
-  .webp .training__image {
+  .training__image {
     background-image: url(../images/trainingxlarge.webp);
   }
 }
@@ -1496,19 +1459,13 @@ a:hover {
 }
 
 @media screen and (max-width: 720px) {
-  .nowebp .fees__image {
-    background-image: url(../images/fees__imagesmall.jpg);
-  }
-  .webp .fees__image {
+  .fees__image {
     background-image: url(../images/fees__imagesmall.webp);
   }
 }
 
 @media screen and (min-width: 721px) {
-  .nowebp .fees__image {
-    background-image: url(../images/fees__imagemedium.jpg);
-  }
-  .webp .fees__image {
+  .fees__image {
     background-image: url(../images/fees__imagemedium.webp);
   }
 }
@@ -1524,19 +1481,13 @@ a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-  .nowebp .fees__image {
-    background-image: url(../images/fees__imagelarge.jpg);
-  }
-  .webp .fees__image {
+  .fees__image {
     background-image: url(../images/fees__imagelarge.webp);
   }
 }
 
 @media screen and (min-width: 1800px) {
-  .nowebp .fees__image {
-    background-image: url(../images/fees__imagexlarge.jpg);
-  }
-  .webp .fees__image {
+  .fees__image {
     background-image: url(../images/fees__imagexlarge.webp);
   }
 }
