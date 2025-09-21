@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NAV_LINKS = ["Home", "About", "Training", "Services", "Fees", "Contact"];
 
@@ -17,25 +17,27 @@ export default function Navbar() {
       }`}
     >
       <div className="nav__brand__group">
-        <Link className="nav__brand" to="/">
+        <NavLink className="nav__brand" to="/">
           <img
             className="nav__logo"
             src="/images/logo.png"
             alt="Integrate Therapy Logo"
           />
           <h3 className="nav__logo__title">Integrate Therapy</h3>
-        </Link>
+        </NavLink>
       </div>
 
       <ul className="list nav__list-widescreen">
         {NAV_LINKS.map((label) => (
           <li key={label}>
-            <Link
+            <NavLink
               to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
-              className="nav__link"
+              className={({ isActive }) =>
+                `nav__link${isActive ? " active" : ""}`
+              }
             >
               {label}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -54,14 +56,17 @@ export default function Navbar() {
       <ul id="mobile-menu" className="list nav__list collapsible__content">
         {NAV_LINKS.map((label) => (
           <li key={label} className="nav__item">
-            <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
+            <NavLink
+              to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               <svg className="icon icon--secondary">
                 <use
                   xlinkHref={`/integratesprite.svg#${label.toLowerCase()}`}
                 />
               </svg>
               {label}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
