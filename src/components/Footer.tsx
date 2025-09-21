@@ -21,7 +21,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="footer__logo-block">
-        <img className="footer__logo" src="./images/logo_inverse.png" alt="" />
+        <img className="footer__logo" src="/images/logo.png" alt="" />
       </div>
       <div className="footer__credits-block">
         <p>

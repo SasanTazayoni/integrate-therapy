@@ -20,7 +20,7 @@ export default function Navbar() {
         <Link className="nav__brand" to="/">
           <img
             className="nav__logo"
-            src="./images/logo_inverse.png"
+            src="/images/logo.png"
             alt="Integrate Therapy Logo"
           />
           <h3 className="nav__logo__title">Integrate Therapy</h3>
