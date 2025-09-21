@@ -43,7 +43,7 @@ export default function Services() {
 
       <section className="block block--grey block--top">
         <div className="container">
-          <h2 className="services__title">Services provided</h2>
+          <h2 className="services__title">How I Can Help</h2>
 
           <ul className="services__list">
             {services.map((service, i) => (
