@@ -1423,31 +1423,31 @@ a:hover {
 
 @media screen and (max-width: 799px) {
   .training__image {
-    background-image: url(../images/trainingsmall.webp);
+    background-image: url(/images/trainingsmall.webp);
   }
 }
 
 @media screen and (min-width: 800px) {
   .training__image {
-    background-image: url(../images/trainingmedium.webp);
+    background-image: url(/images/trainingmedium.webp);
   }
 }
 
 @media screen and (min-width: 1024px) and (max-height: 600px) {
   .training__image {
-    background-image: url(../images/traininglarge.webp);
+    background-image: url(/images/traininglarge.webp);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .training__image {
-    background-image: url(../images/traininglarge.webp);
+    background-image: url(/images/traininglarge.webp);
   }
 }
 
 @media screen and (min-width: 1800px) {
   .training__image {
-    background-image: url(../images/trainingxlarge.webp);
+    background-image: url(/images/trainingxlarge.webp);
   }
 }
 
