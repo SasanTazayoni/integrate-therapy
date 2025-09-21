@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 const services = [
   "Anxiety and Panic Disorders",
@@ -54,20 +55,10 @@ export default function Services() {
 
           <div className="grid grid--1x2 container__buttons">
             <Link to="/fees">
-              <div className="btn btn--secondary">
-                Fees
-                <svg className="icon">
-                  <use xlinkHref="/integratesprite.svg#fees"></use>
-                </svg>
-              </div>
+              <Button variant="danger">Fees</Button>
             </Link>
             <Link to="/contact">
-              <div className="btn btn--primary">
-                Contact
-                <svg className="icon">
-                  <use xlinkHref="/integratesprite.svg#contact"></use>
-                </svg>
-              </div>
+              <Button variant="primary">Contact</Button>
             </Link>
           </div>
         </div>
