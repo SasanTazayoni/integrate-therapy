@@ -430,77 +430,72 @@ a:hover {
 
 /* Buttons */
 
-.btn {
-  align-items: center;
-  border-radius: 5px;
-  border: 0;
-  box-shadow: 0rem 0rem 10px #acacac;
-  cursor: pointer;
+.button {
+  position: relative;
+  overflow: hidden;
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
-  justify-content: center;
-  margin: 1rem;
-  padding: 2rem;
-  text-align: center;
   text-transform: uppercase;
-  white-space: nowrap;
-  width: 180px;
-}
-
-.btn--primary {
+  padding: 1rem 2rem;
+  width: 140px;
+  height: 60px;
+  color: var(--color-headings);
   background: var(--color-primary);
+  transition: all 0.4s ease-in-out;
+  margin: 0 1rem;
 }
 
-.btn--primary:hover {
+.button:hover {
   background: var(--color-primary-hover);
 }
 
-.btn--secondary {
+/* Secondary button */
+.button--secondary {
   background: var(--color-secondary);
   color: #000;
 }
 
-.btn--secondary:hover {
+.button--secondary:hover {
   background: var(--color-secondary-hover);
 }
 
-.btn--tertiary {
+/* Tertiary button */
+.button--tertiary {
   background: var(--color-tertiary);
-}
-
-.btn--tertiary:hover {
-  background: var(--color-tertiary-hover);
-}
-
-.btn--primary {
-  color: var(--color-headings);
-}
-
-.btn--tertiary {
   color: #fff;
 }
 
-.btn--tertiary .icon {
-  fill: #fff;
+.button--tertiary:hover {
+  background: var(--color-tertiary-hover);
 }
 
-.btn--primary,
-.btn--secondary,
-.btn--tertiary {
-  transition: background 0.5s ease-in-out, box-shadow 0.5s ease-in-out,
-    transform 0.5s ease-in-out;
+/* Ripple effect */
+.button span {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.5); /* Ripple color */
+  animation: ripple 0.6s linear;
 }
 
-.btn--primary:hover,
-.btn--secondary:hover,
-.btn--tertiary:hover {
-  box-shadow: 0rem 0rem 15px grey;
-  transform: scale(1.15);
-}
-
-.btn .icon {
-  padding-left: 1rem;
+@keyframes ripple {
+  from {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
 }
 
 /* Inputs */
@@ -664,7 +659,6 @@ a:hover {
   color: var(--color-headings);
   display: flex;
   justify-content: center;
-  margin: 1.5rem;
   padding-top: 2rem;
 }
 
