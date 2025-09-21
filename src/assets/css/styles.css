@@ -634,13 +634,6 @@ a:hover {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1295px) {
-  .block--top,
-  .block--top-castrated {
-    padding-top: 20rem;
-  }
-}
-
 /* Containers */
 
 .container {
@@ -689,7 +682,7 @@ a:hover {
   }
 
   .block--top {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 }
 
@@ -908,16 +901,7 @@ a:hover {
   }
 
   .nav__brand {
-    flex-direction: column;
     justify-content: center;
-  }
-
-  .nav__logo {
-    align-self: center;
-  }
-
-  .nav__logo__title {
-    padding-top: 1rem;
   }
 
   .nav__toggler,
@@ -958,6 +942,10 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav {
+    font-size: 1.6rem;
+  }
+
   .nav__list-widescreen {
     gap: 1rem;
     margin-right: 1rem;
