@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
 
@@ -50,6 +51,25 @@ export default function Services() {
               </li>
             ))}
           </ul>
+
+          <div className="grid grid--1x2 container__buttons">
+            <Link to="/fees">
+              <div className="btn btn--secondary">
+                Fees
+                <svg className="icon">
+                  <use xlinkHref="/integratesprite.svg#fees"></use>
+                </svg>
+              </div>
+            </Link>
+            <Link to="/contact">
+              <div className="btn btn--primary">
+                Contact
+                <svg className="icon">
+                  <use xlinkHref="/integratesprite.svg#contact"></use>
+                </svg>
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
