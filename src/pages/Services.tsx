@@ -1,30 +1,37 @@
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
 
-const servicesList1 = [
-  "Lorem.",
-  "Lorem, ipsum.",
-  "Lorem.",
-  "Lorem, ipsum dolor.",
-  "Lorem, ipsum.",
-  "Lorem.",
-  "Lorem.",
-  "Lorem ipsum dolor sit.",
-  "Lorem.",
-  "Lorem, ipsum.",
-];
-
-const servicesList2 = [
-  "Lorem ipsum dolor sit.",
-  "Lorem, ipsum dolor.",
-  "Lorem, ipsum.",
-  "Lorem.",
-  "Lorem, ipsum dolor.",
-  "Lorem, ipsum dolor.",
-  "Lorem.",
-  "Lorem.",
-  "Lorem.",
-  "Lorem ipsum dolor sit amet.",
+const services = [
+  "Anxiety and Panic Disorders",
+  "Depression and Low Mood",
+  "Stress and Burnout",
+  "Grief, Loss, and Bereavement",
+  "Self-Esteem and Confidence",
+  "Relationship Challenges",
+  "Family and Parenting Support",
+  "Trauma and Post-Traumatic Stress",
+  "Life Transitions (moving, career change, retirement)",
+  "Coping with Chronic Illness or Pain",
+  "Childhood Emotional Neglect",
+  "Adjustment to University or New Environments",
+  "Emotional Regulation and Coping Skills",
+  "Identity and Self-Exploration",
+  "Attachment Difficulties",
+  "Anger Management",
+  "Body Image Concerns",
+  "Workplace Pressures and Career Stress",
+  "Sleep Difficulties and Insomnia",
+  "Phobias and Fears",
+  "Cultural Adjustment and Relocation Stress",
+  "Social Anxiety and Loneliness",
+  "Personal Growth and Self-Development",
+  "Perfectionism and Procrastination",
+  "Sexuality, Gender, and Identity Support",
+  "Family of Origin Issues",
+  "Managing Uncertainty and Change",
+  "Boundaries and Assertiveness",
+  "Mindfulness and Stress Reduction",
+  "Support for Carers and Helping Professionals",
 ];
 
 export default function Services() {
@@ -35,45 +42,14 @@ export default function Services() {
       <section className="block block--grey block--top">
         <div className="container">
           <h2 className="services__title">Services provided</h2>
-          <div className="grid grid--1x2-castrated">
-            <div>
-              <ul className="services__list">
-                {servicesList1.map((service, i) => (
-                  <li key={i} className="list__item">
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <ul className="services__list">
-                {servicesList2.map((service, i) => (
-                  <li key={i} className="list__item">
-                    {service}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
 
-          <div className="grid grid--1x2 container--buttons">
-            <a href="/fees">
-              <div className="btn btn--secondary">
-                Fees
-                <svg className="icon">
-                  <use xlinkHref="/integratesprite.svg#fees"></use>
-                </svg>
-              </div>
-            </a>
-            <a href="/contact">
-              <div className="btn btn--primary">
-                Contact
-                <svg className="icon">
-                  <use xlinkHref="/integratesprite.svg#contact"></use>
-                </svg>
-              </div>
-            </a>
-          </div>
+          <ul className="services__list">
+            {services.map((service, i) => (
+              <li key={i} className={`list__item delay-${i}`}>
+                {service}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
