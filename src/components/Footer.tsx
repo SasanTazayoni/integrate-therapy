@@ -25,7 +25,7 @@ export default function Footer() {
       </div>
       <div className="footer__credits-block">
         <p>
-          &copy; Integrate Therapy Ltd 2021. Website designed & created by{" "}
+          &copy; Integrate Therapy 2025. Website designed & created by{" "}
           <a href="https://github.com/SasanTazayoni" target="_blank">
             Sasan Tazayoni
           </a>{" "}
