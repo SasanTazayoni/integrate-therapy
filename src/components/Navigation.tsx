@@ -30,14 +30,11 @@ export default function Navbar() {
       <ul className="list nav__list-widescreen">
         {NAV_LINKS.map((label) => (
           <li key={label}>
-            <Link to={label === "Home" ? "/" : `/${label.toLowerCase()}`}>
-              <div
-                className={`btn btn--${
-                  label === "Contact" ? "primary" : "secondary"
-                } nav__btn`}
-              >
-                {label}
-              </div>
+            <Link
+              to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+              className="nav__link"
+            >
+              {label}
             </Link>
           </li>
         ))}

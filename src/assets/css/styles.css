@@ -775,7 +775,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -921,9 +921,12 @@ a:hover {
   }
 
   .nav__list-widescreen {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 7.5rem);
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    margin-right: 6rem;
   }
 }
 
