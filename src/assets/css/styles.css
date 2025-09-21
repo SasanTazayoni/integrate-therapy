@@ -423,21 +423,11 @@ a:hover {
   color: #fff;
   background: var(--color-primary);
   transition: all 0.6s ease-in-out;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .button:hover {
   background: var(--color-secondary);
-}
-
-/* Red button */
-.button--red {
-  background: #ff8f8f;
-  color: #fff;
-}
-
-.button--red:hover {
-  background-color: #c50000;
 }
 
 /* Ripple effect */
@@ -631,6 +621,10 @@ a:hover {
 
   .block--top {
     padding-top: 8rem;
+  }
+
+  .container__buttons {
+    flex-direction: column;
   }
 }
 
