@@ -31,14 +31,13 @@
 }
 
 :root {
-  --color-primary: #00f0f7;
-  --color-primary-hover: #00f7f7;
-  --color-secondary: #39b6ff;
-  --color-secondary-hover: #7ccfff;
-  --color-tertiary: #325aff;
-  --color-tertiary-hover: #0f0094;
-  --color-headings: #000000;
-  --color-body: #3c0042;
+  --color-primary: #39b6ff;
+  --color-secondary: #325aff;
+  --color-link: #0f0094;
+  --color-border: #7ccfff;
+  --color-block--white: #fff;
+  --color-block--grey: #f4f4f4;
+  --color-selected-bg: #e1eafc;
 }
 
 *,
@@ -54,7 +53,7 @@ html {
 }
 
 body {
-  color: var(--color-body);
+  color: #000;
   font-display: optional;
   font-family: "oxygen", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
@@ -69,7 +68,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-  border: 2px solid lightgrey;
+  border: 2px solid var(--color-border);
   border-radius: 5px;
   padding: 0.5rem 0.7rem;
 }
@@ -110,7 +109,7 @@ h3 {
 h2,
 h3 {
   margin-top: 0;
-  color: var(--color-headings);
+  color: #000;
 }
 
 h1 {
@@ -184,49 +183,26 @@ a,
 a:visited,
 a:active,
 a:link {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: var(--color-tertiary-hover);
+  color: var(--color-link);
 }
 
 /* Icons */
 
 .icon {
-  fill: var(--color-headings);
+  fill: #000;
   height: 30px;
   width: 30px;
 }
 
-.icon--primary {
-  fill: var(--color-primary);
-}
-
-.icon--secondary {
-  fill: var(--color-secondary);
-  transition: fill 0.3s;
-}
-
-.icon--tertiary {
-  fill: var(--color-tertiary);
-}
-
-.icon--white {
-  fill: #fff;
-  transition: fill 0.3s;
-}
-
-.icon--black {
-  fill: black;
-  transition: fill 0.3s;
-}
-
 .icon--left {
   cursor: pointer;
-  fill: var(--color-tertiary);
+  fill: var(--color-secondary);
   height: 40px;
   opacity: 0.6;
   transform: rotate(90deg);
@@ -236,7 +212,7 @@ a:hover {
 
 .icon--right {
   cursor: pointer;
-  fill: var(--color-tertiary);
+  fill: var(--color-secondary);
   height: 40px;
   opacity: 0.6;
   transform: rotate(-90deg);
@@ -246,7 +222,7 @@ a:hover {
 
 .icon--left:hover,
 .icon--right:hover {
-  fill: var(--color-tertiary-hover);
+  fill: var(--color-link);
 }
 
 .icon--left:hover {
@@ -304,7 +280,7 @@ a:hover {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
+  color: #000;
 }
 
 .list__item {
@@ -313,7 +289,7 @@ a:hover {
 }
 
 .list__item::before {
-  color: var(--color-body);
+  color: var(--color-primary);
   content: "✔";
   padding-right: 1rem;
   display: inline-block;
@@ -436,43 +412,32 @@ a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: none;
+  border: 2px solid var(--color-border);
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 1rem 2rem;
-  width: 140px;
-  height: 60px;
-  color: var(--color-headings);
+  width: 120px;
+  height: 50px;
+  color: #fff;
   background: var(--color-primary);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
   margin: 0 1rem;
 }
 
 .button:hover {
-  background: var(--color-primary-hover);
-}
-
-/* Secondary button */
-.button--secondary {
   background: var(--color-secondary);
-  color: #000;
 }
 
-.button--secondary:hover {
-  background: var(--color-secondary-hover);
-}
-
-/* Tertiary button */
-.button--tertiary {
-  background: var(--color-tertiary);
+/* Red button */
+.button--red {
+  background: #ff8f8f;
   color: #fff;
 }
 
-.button--tertiary:hover {
-  background: var(--color-tertiary-hover);
+.button--red:hover {
+  background-color: #c50000;
 }
 
 /* Ripple effect */
@@ -481,7 +446,7 @@ a:hover {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  background: rgba(255, 255, 255, 0.5); /* Ripple color */
+  background: rgba(0, 0, 0, 0.5);
   animation: ripple 0.6s linear;
 }
 
@@ -519,7 +484,7 @@ a:hover {
 .quote {
   font-size: 3rem;
   font-style: italic;
-  color: var(--color-headings);
+  color: #000;
   line-height: 1.3;
 }
 
@@ -585,23 +550,12 @@ a:hover {
   text-align: left;
 }
 
-.block--secondary {
-  background: var(--color-secondary);
-  color: var(--color-headings);
-}
-
 .block--grey {
   background: rgb(244, 244, 244);
 }
 
 .block--white {
   background: #fff;
-}
-
-.block--secondary h1,
-.block--secondary h2,
-.block--secondary h3 {
-  color: var(--color-headings);
 }
 
 .block__anchor {
@@ -656,7 +610,7 @@ a:hover {
 
 .container__buttons {
   align-items: center;
-  color: var(--color-headings);
+  color: #000;
   display: flex;
   justify-content: center;
   padding-top: 2rem;
@@ -799,7 +753,7 @@ a:hover {
 
 .nav__logo__title {
   align-self: center;
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -821,12 +775,12 @@ a:hover {
 }
 
 .nav__item > a {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   transition: all 0.3s;
 }
 
 .nav__item .icon {
-  fill: var(--color-tertiary);
+  fill: var(--color-secondary);
   height: 2.3rem;
   width: 2.3rem;
   margin-right: 1rem;
@@ -834,16 +788,14 @@ a:hover {
   vertical-align: middle;
 }
 
-.nav__item > a:hover,
-.nav__item > a:hover .icon {
-  color: var(--color-tertiary-hover);
-  fill: var(--color-tertiary-hover);
+.nav__item > a:hover {
+  color: var(--color-link);
 }
 
 .nav__toggler {
   border-radius: 5px;
   cursor: pointer;
-  fill: var(--color-secondary);
+  fill: var(--color-primary);
   height: 40px;
   opacity: 0.6;
   transition: box-shadow 0.3s, opacity 0.3s;
@@ -852,7 +804,7 @@ a:hover {
 
 .collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 3px 0.5px var(--color-secondary);
+  box-shadow: 0 0 3px 0.5px var(--color-primary);
 }
 
 .nav__list {
@@ -909,7 +861,7 @@ a:hover {
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
     transition: all 0.3s;
     margin-right: 6rem;
   }
@@ -921,7 +873,7 @@ a:hover {
   .nav__list-widescreen .nav__link.active {
     border: 2px solid rgba(125, 174, 248, 0.5);
     border-radius: 5px;
-    color: var(--color-tertiary-hover);
+    color: var(--color-link);
   }
 
   .nav__list-widescreen .nav__link:not(.active):hover {
@@ -990,7 +942,7 @@ a:hover {
 
 .hero__nameplate {
   align-items: center;
-  color: var(--color-headings);
+  color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1190,7 +1142,7 @@ a:hover {
 }
 
 .testimonial-bullet.active {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   box-shadow: 0 0 1px 1px inset white;
   animation: pop 0.2s linear;
 }
@@ -1313,13 +1265,13 @@ a:hover {
 }
 
 .footer__item > a {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
   font-weight: 550;
   transition: all 0.3s;
 }
 
 .footer__item > a:hover {
-  color: var(--color-tertiary-hover);
+  color: var(--color-link);
 }
 
 .footer__logo-block {
@@ -1508,7 +1460,7 @@ a:hover {
 .services__list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
+  color: #000;
   columns: 2;
   column-gap: 3rem;
   text-align: left;
