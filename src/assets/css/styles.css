@@ -1320,8 +1320,8 @@ a:hover {
 .footer__logo {
   display: none;
   border-radius: 100%;
-  height: 150px;
-  width: 150px;
+  height: 70px;
+  width: 70px;
 }
 
 .footer__credits-block {
