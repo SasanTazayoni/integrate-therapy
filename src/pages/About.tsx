@@ -29,31 +29,17 @@ export default function About() {
                 that help you thrive.
               </p>
               <p>
+                In our work together, I want to help you feel more connected to
+                yourself and the life you want to create. Therapy is a space to
+                slow down, reflect, and explore what might be holding you back,
+                while also uncovering new ways of moving forward. Together, we
+                will find what works best for you so that the process feels
+                supportive, empowering, and relevant to your unique journey.
+              </p>
+              <p>
                 Whether you are dealing with anxiety, relationship difficulties,
                 or simply looking for personal growth, I am here to support you
                 every step of the way.
-              </p>
-              <p>
-                Your first session is mainly an opportunity for me to get to
-                know you and for you to share your story. You are the expert on
-                your own life, and this is your space to be heard.
-              </p>
-              <p>
-                The initial assessment is 90 minutes, and if you choose to
-                continue, each session will be 50 minutes thereafter, taking
-                place weekly. This first session is a chance for you to ask
-                questions, discuss your goals, and begin exploring ways to bring
-                more balance and contentment into your life. It also provides an
-                opportunity for me to determine whether I am the right therapist
-                to support you and your needs.
-              </p>
-              <p>
-                After our initial session, you will be sent a set of
-                questionnaires to complete. These help me identify the areas
-                where you are struggling most and give me a clearer picture of
-                your needs. This process allows me to tailor the sessions to
-                focus on what matters most to you, so we can work together in
-                the most effective way possible.
               </p>
             </div>
             <div className="about__image-container">
