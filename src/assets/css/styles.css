@@ -103,7 +103,6 @@ h2,
 h3 {
   font-family: "spectral", Arial, Helvetica, sans-serif;
   line-height: 1.1;
-  margin-bottom: 2rem;
 }
 
 h2,
@@ -119,10 +118,12 @@ h1 {
 
 h2 {
   font-size: 4rem;
+  margin-bottom: 6rem;
 }
 
 h3 {
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 p {
@@ -136,12 +137,23 @@ p {
 
   h2 {
     font-size: 3.6rem;
+    margin-bottom: 4rem;
   }
 }
 
 @media screen and (max-width: 428px) {
+  body {
+    font-size: 1.4rem;
+  }
+
   h2 {
     font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -517,7 +529,7 @@ a:hover {
 /* Blocks */
 
 .block {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .block__header {
@@ -534,6 +546,11 @@ a:hover {
   padding-top: 12rem;
   text-align: center;
   padding-bottom: 1rem;
+}
+
+.block--top-castrated p,
+.block--top p {
+  text-align: left;
 }
 
 .block--regular {
@@ -560,10 +577,6 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .block-beaneath-title {
-    padding-top: 3rem;
-  }
-
   .block--regular {
     text-align: center;
   }
@@ -1403,8 +1416,6 @@ a:hover {
     height: 70vh;
   }
 }
-
-/* Training page */
 
 .training__image {
   background-repeat: no-repeat;
