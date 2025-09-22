@@ -1,5 +1,5 @@
 export default function Footer() {
-  const footerLinks = ["Home", "About", "Services", "Fees", "FAQ", "Contact"];
+  const footerLinks = ["Home", "About", "Services", "FAQ", "Contact"];
 
   return (
     <footer className="block--white footer__block">
