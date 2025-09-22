@@ -1,17 +1,16 @@
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navigation";
+import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 export default function About() {
   return (
     <>
       <Navbar />
 
-      <section className="block block--white block--top-castrated">
-        <h2>About me</h2>
-      </section>
-
-      <article className="block block--white block-beaneath-title">
+      <article className="block block--grey block--top-castrated">
         <div className="container">
+          <h2>About Me</h2>
           <div className="grid grid--1x2-alt">
             <div>
               <p>
@@ -39,31 +38,40 @@ export default function About() {
               />
             </div>
           </div>
-
-          <div className="grid grid--1x2 container--buttons">
-            <a href="/training">
-              <div className="btn btn--secondary">
-                Training
-                <svg className="icon training-icon">
-                  <use xlinkHref="/integratesprite.svg#training"></use>
-                </svg>
-              </div>
-            </a>
-            <a href="/contact">
-              <div className="btn btn--primary">
-                Contact
-                <svg className="icon">
-                  <use xlinkHref="/integratesprite.svg#contact"></use>
-                </svg>
-              </div>
-            </a>
-          </div>
         </div>
       </article>
 
+      <section className="block block--white">
+        <div className="container">
+          <h3 className="block__header">My Training</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            deleniti vitae adipisci deserunt quibusdam nihil error excepturi
+            natus a dolorem.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+            delectus numquam cupiditate nam esse! Repellat, amet harum placeat
+            eius quae accusantium beatae dolore dolorum ad laudantium iure
+            itaque doloribus provident!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+            ipsam? Tempore aut magni doloremque laboriosam eligendi pariatur
+            esse voluptatibus numquam? Enim nulla doloribus alias omnis odit
+            repellendus eum architecto animi reiciendis! At fugiat dolores ea
+            quibusdam eius minus blanditiis amet! Inventore, voluptatibus omnis
+            sequi id soluta incidunt harum repudiandae facilis!
+          </p>
+        </div>
+      </section>
+
       <article className="block block--grey">
         <div className="container">
-          <h3 className="block__header">More about me</h3>
+          <h3 className="block__header">More About Me</h3>
           <div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
@@ -83,8 +91,19 @@ export default function About() {
               facere quaerat porro.
             </p>
           </div>
+
+          <div className="grid grid--1x2 container__buttons">
+            <Link to="/services">
+              <Button>Services</Button>
+            </Link>
+            <Link to="/contact">
+              <Button>Contact</Button>
+            </Link>
+          </div>
         </div>
       </article>
+
+      <section className="training__image"></section>
 
       <Footer />
     </>
