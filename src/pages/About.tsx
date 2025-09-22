@@ -44,14 +44,14 @@ export default function About() {
                 place weekly. This first session is a chance for you to ask
                 questions, discuss your goals, and begin exploring ways to bring
                 more balance and contentment into your life. It also provides an
-                opportunity for us to determine whether I am the right therapist
+                opportunity for me to determine whether I am the right therapist
                 to support you and your needs.
               </p>
               <p>
                 After our initial session, you will be sent a set of
-                questionnaires to complete. These help us identify the areas
-                where you are struggling most and give us a clearer picture of
-                your needs. This process allows us to tailor the sessions to
+                questionnaires to complete. These help me identify the areas
+                where you are struggling most and give me a clearer picture of
+                your needs. This process allows me to tailor the sessions to
                 focus on what matters most to you, so we can work together in
                 the most effective way possible.
               </p>
@@ -100,21 +100,25 @@ export default function About() {
           <h3 className="block__header">More About Me</h3>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
-              fugiat ipsum dolores laboriosam pariatur possimus atque quos
-              asperiores soluta quasi iusto veniam iure voluptatum fuga omnis
-              facere distinctio labore.
+              Outside of my work as a therapist, I value keeping a healthy
+              balance in life. I enjoy weightlifting, tennis, and football,
+              which help me stay active and focused. I am also passionate about
+              reading and writing - particularly reflecting on personal
+              experiences and sharing what I have learned along the way.
             </p>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-              tempore culpa quasi. Labore hic ab architecto quae sapiente ullam
-              officiis.
+              These activities are not just hobbies for me; they remind me of
+              the importance of curiosity, resilience, and connection -
+              qualities I also bring into my therapeutic work. I believe it is
+              important for clients to know that while I am a therapist, I am
+              also a person, with my own interests and experiences, navigating
+              life just like everyone else.
             </p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-              neque earum, id architecto veritatis molestiae minus dolores sequi
-              ex rerum eos praesentium ratione qui recusandae ea, dolorem vero
-              facere quaerat porro.
+              I strive for continual self-improvement, whether that is through
+              learning, physical activity, or personal reflection. I believe
+              this commitment to growth not only benefits me but also enhances
+              the way I support others in their own journeys.
             </p>
           </div>
 
