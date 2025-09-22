@@ -54,8 +54,8 @@ export default function Services() {
           </ul>
 
           <div className="grid grid--1x2 container__buttons">
-            <Link to="/fees">
-              <Button>Fees</Button>
+            <Link to="/FAQ">
+              <Button>FAQ</Button>
             </Link>
             <Link to="/contact">
               <Button>Contact</Button>
