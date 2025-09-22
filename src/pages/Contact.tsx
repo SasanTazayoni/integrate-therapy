@@ -1,7 +1,17 @@
+import { useRef } from "react";
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
 export default function Contact() {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const clearForm = () => {
+    if (formRef.current) {
+      formRef.current.reset();
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -9,7 +19,7 @@ export default function Contact() {
       <section className="block block--grey block--top-castrated">
         <h2>Contact me</h2>
         <div className="container">
-          <div className="container--white">
+          <div className="container--white contact-card__container">
             <div className="grid grid--1x2-alt">
               <div className="contact__card">
                 <p>
@@ -17,8 +27,7 @@ export default function Contact() {
                   <a href="/faq" className="contact__strong">
                     FAQ
                   </a>
-                  .
-                  <br />
+                  .<br />
                   Please contact me with the details below:
                 </p>
                 <p>
@@ -72,8 +81,9 @@ export default function Contact() {
 
       <section className="block block--white contact__form-block">
         <div className="container">
-          <div className="container--grey">
+          <div className="container--grey contact-form__container">
             <form
+              ref={formRef}
               className="contact__form"
               action="https://formspree.io/f/xgergodj"
               method="POST"
@@ -129,13 +139,12 @@ export default function Contact() {
                   maxLength={300}
                 ></textarea>
               </div>
-              <div className="contact__btn-container">
-                <button
-                  className="btn btn--secondary contact__submit-btn"
-                  type="submit"
-                >
-                  Submit
-                </button>
+
+              <div className="container__buttons">
+                <Button type="submit">Submit</Button>
+                <Button type="button" onClick={clearForm}>
+                  Clear
+                </Button>
               </div>
             </form>
           </div>
@@ -146,14 +155,16 @@ export default function Contact() {
         <div className="container">
           <h3 className="block__header">Where to find us</h3>
           <iframe
-            className="contact-map__container"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.285644406752!2d-0.22501694831186675!3d51.48962547953231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760fb9f9740375%3A0x3da2c9c882211840!2s77%20Fulham%20Palace%20Rd%2C%20London%20W6%208JA!5e0!3m2!1sen!2suk!4v1637158751612!5m2!1sen!2suk"
             width="100%"
             height={600}
-            style={{ border: 0 }}
+            style={{
+              border: "3px solid var(--color-border)",
+              borderRadius: "10px",
+            }}
             allowFullScreen
             loading="lazy"
-          ></iframe>
+          />
         </div>
       </section>
 
