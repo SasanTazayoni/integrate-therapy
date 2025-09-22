@@ -93,7 +93,18 @@ export default function About() {
             sequi id soluta incidunt harum repudiandae facilis!
           </p>
         </div>
+
+        <div className="grid grid--1x2 container__buttons">
+          <Link to="/services">
+            <Button>Services</Button>
+          </Link>
+          <Link to="/contact">
+            <Button>Contact</Button>
+          </Link>
+        </div>
       </section>
+
+      <section className="training__image"></section>
 
       <article className="block block--grey">
         <div className="container">
@@ -149,19 +160,8 @@ export default function About() {
               alt="Writing"
             />
           </div>
-
-          <div className="grid grid--1x2 container__buttons">
-            <Link to="/services">
-              <Button>Services</Button>
-            </Link>
-            <Link to="/contact">
-              <Button>Contact</Button>
-            </Link>
-          </div>
         </div>
       </article>
-
-      <section className="training__image"></section>
 
       <Footer />
     </>
