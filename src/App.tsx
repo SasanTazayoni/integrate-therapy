@@ -1,7 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Fees from "./pages/Fees";
 import FAQ from "./pages/FAQ";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -14,10 +13,9 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
-      { path: "fees", element: <Fees /> },
-      { path: "faq", element: <FAQ /> },
       { path: "about", element: <About /> },
       { path: "services", element: <Services /> },
+      { path: "faq", element: <FAQ /> },
       { path: "contact", element: <Contact /> },
       { path: "*", element: <NotFound /> },
     ],
