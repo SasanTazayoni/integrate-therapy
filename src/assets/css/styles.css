@@ -451,6 +451,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 324px) {
+  .button {
+    margin: 0.5rem;
+  }
+}
+
 /* Inputs */
 
 .input {
@@ -509,6 +515,18 @@ a:hover {
 @media screen and (min-width: 1024px) {
   .block .grid--1x2-alt {
     grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .block .grid--1x2-alt {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block .grid--1x2-alt {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -572,6 +590,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .block--top-castrated {
+    padding-top: 8rem;
+  }
+}
+
 /* Containers */
 
 .container {
@@ -603,6 +627,12 @@ a:hover {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+}
+
+.about__image-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 360px) {
@@ -1369,17 +1399,12 @@ a:hover {
 /* About page */
 
 .about__image {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 100%;
-}
-
-@media screen and (min-width: 1024px) {
-  .about__image {
-    height: 100%;
-    padding-left: 4rem;
-  }
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 4rem;
 }
 
 .training__image {
@@ -1418,6 +1443,12 @@ a:hover {
 @media screen and (min-width: 1800px) {
   .training__image {
     background-image: url(/images/trainingxlarge.webp);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__image {
+    margin: 0;
   }
 }
 

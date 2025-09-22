@@ -30,7 +30,7 @@ export default function About() {
                 quaerat deleniti officia perferendis quam.
               </p>
             </div>
-            <div>
+            <div className="about__image-container">
               <img
                 className="about__image"
                 src="/images/aboutpic.jpg"
