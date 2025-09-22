@@ -504,7 +504,7 @@ a:hover {
 
 @media screen and (min-width: 768px) {
   .block .grid--1x2 {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid--1x2-castrated {
@@ -1561,15 +1561,6 @@ a:hover {
   margin-top: 0;
 }
 
-.fees__image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: initial;
-  background-position: center;
-  height: 40vh;
-  width: 100%;
-}
-
 @media screen and (max-width: 360px) {
   .fees__card {
     font-size: 1.5rem;
@@ -1577,37 +1568,9 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 720px) {
-  .fees__image {
-    background-image: url(../images/fees__imagesmall.webp);
-  }
-}
-
-@media screen and (min-width: 721px) {
-  .fees__image {
-    background-image: url(../images/fees__imagemedium.webp);
-  }
-}
-
 @media screen and (min-width: 768px) {
   .fees__card {
     font-size: 1.8rem;
-  }
-
-  .fees__image {
-    background-attachment: fixed;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .fees__image {
-    background-image: url(../images/fees__imagelarge.webp);
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .fees__image {
-    background-image: url(../images/fees__imagexlarge.webp);
   }
 }
 
@@ -1687,6 +1650,7 @@ a:hover {
   flex-direction: column;
   padding: 2rem;
   text-align: left;
+  margin: 2rem 0;
 }
 
 .contact__strong {
@@ -1705,8 +1669,17 @@ a:hover {
   width: 100%;
 }
 
+.contact__fees-card {
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+}
+
+.contact__fees-card p {
+  text-align: center;
+}
+
 .contact__cancellation-card {
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding: 2rem 4rem;
 }
 
@@ -1717,6 +1690,7 @@ a:hover {
 .contact__form-block {
   padding-bottom: 1rem;
   padding-top: 1rem;
+  margin: 2rem 0;
 }
 
 .contact__form {
