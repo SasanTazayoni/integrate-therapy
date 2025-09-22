@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import { NavLink } from "react-router-dom";
 
-const NAV_LINKS = ["Home", "About", "Services", "Fees", "FAQ", "Contact"];
+const NAV_LINKS = ["Home", "About", "Services", "FAQ", "Contact"];
 
 export default function Navbar() {
   const [navExpanded, setNavExpanded] = useState(false);
