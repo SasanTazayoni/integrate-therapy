@@ -1,16 +1,15 @@
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 export default function FAQ() {
   return (
     <>
       <Navbar />
 
-      <section className="block block--white block--top-castrated">
+      <section className="block block--grey block--top-castrated">
         <h2>Frequently Asked Questions</h2>
-      </section>
-
-      <section className="block block--white block-beaneath-title">
         <div className="container--large">
           <div className="container--grey">
             <p className="faq">
@@ -26,8 +25,6 @@ export default function FAQ() {
             </p>
           </div>
         </div>
-
-        <div className="divider"></div>
 
         <div className="container--large">
           <div className="container--grey">
@@ -46,8 +43,6 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="divider"></div>
-
         <div className="container--large">
           <div className="container--grey">
             <p className="faq">
@@ -63,8 +58,6 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="divider"></div>
-
         <div className="container--large">
           <div className="container--grey">
             <p className="faq">
@@ -78,8 +71,6 @@ export default function FAQ() {
             </p>
           </div>
         </div>
-
-        <div className="divider"></div>
 
         <div className="container--large">
           <div className="container--grey">
@@ -98,8 +89,6 @@ export default function FAQ() {
             </p>
           </div>
         </div>
-
-        <div className="divider"></div>
 
         <div className="container--large">
           <div className="container--grey">
@@ -120,8 +109,6 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="divider"></div>
-
         <div className="container--large">
           <div className="container--grey">
             <p className="faq">
@@ -136,7 +123,14 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="divider"></div>
+        <div className="grid grid--1x2 container__buttons">
+          <Link to="/">
+            <Button>Home</Button>
+          </Link>
+          <Link to="/contact">
+            <Button>Contact</Button>
+          </Link>
+        </div>
       </section>
 
       <Footer />
