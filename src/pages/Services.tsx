@@ -55,10 +55,10 @@ export default function Services() {
 
           <div className="grid grid--1x2 container__buttons">
             <Link to="/fees">
-              <Button variant="danger">Fees</Button>
+              <Button>Fees</Button>
             </Link>
             <Link to="/contact">
-              <Button variant="primary">Contact</Button>
+              <Button>Contact</Button>
             </Link>
           </div>
         </div>
