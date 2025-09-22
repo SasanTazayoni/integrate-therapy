@@ -14,20 +14,46 @@ export default function About() {
           <div className="grid grid--1x2-alt">
             <div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                esse quod reiciendis numquam non voluptas illo ipsam alias vero
-                odio.
+                I am Simon Burgess, an integrative therapist. I have been
+                working as a psychotherapist for over ten years, helping people
+                navigate life's challenges and find greater balance. As an
+                integrative therapist, I combine different approaches so that
+                each session is tailored to your needs - you are at the center
+                of every conversation.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                ducimus ex cumque quidem aliquid eius voluptatum qui dignissimos
-                nihil!
+                I believe that everyone has the capacity to grow, heal, and
+                create meaningful change in their life. My role is to provide a
+                safe, supportive, and non-judgmental space where we can explore
+                your concerns, work through challenges, and discover strategies
+                that help you thrive.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Explicabo reiciendis velit optio recusandae suscipit distinctio
-                facilis tempora fugit nemo modi eos dolor ut obcaecati quod
-                quaerat deleniti officia perferendis quam.
+                Whether you are dealing with anxiety, relationship difficulties,
+                or simply looking for personal growth, I am here to support you
+                every step of the way.
+              </p>
+              <p>
+                Your first session is mainly an opportunity for me to get to
+                know you and for you to share your story. You are the expert on
+                your own life, and this is your space to be heard.
+              </p>
+              <p>
+                The initial assessment is 90 minutes, and if you choose to
+                continue, each session will be 50 minutes thereafter, taking
+                place weekly. This first session is a chance for you to ask
+                questions, discuss your goals, and begin exploring ways to bring
+                more balance and contentment into your life. It also provides an
+                opportunity for us to determine whether I am the right therapist
+                to support you and your needs.
+              </p>
+              <p>
+                After our initial session, you will be sent a set of
+                questionnaires to complete. These help us identify the areas
+                where you are struggling most and give us a clearer picture of
+                your needs. This process allows us to tailor the sessions to
+                focus on what matters most to you, so we can work together in
+                the most effective way possible.
               </p>
             </div>
             <div className="about__image-container">
