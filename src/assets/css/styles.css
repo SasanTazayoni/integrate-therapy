@@ -631,6 +631,13 @@ a:hover {
   overflow: hidden;
 }
 
+.hobbies__container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+
 @media screen and (max-width: 360px) {
   .container--large {
     padding: 2rem 0;
@@ -688,6 +695,18 @@ a:hover {
 
   .container--grey {
     border-left: 4px solid lightgrey;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hobbies__container {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .hobbies__container {
+    display: none;
   }
 }
 
@@ -1411,6 +1430,23 @@ a:hover {
   width: 100%;
 }
 
+.hobby__image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hobby__image:nth-child(odd) {
+  transform: translateY(-10px);
+}
+
+.hobby__image:nth-child(even) {
+  transform: translateY(30px);
+}
+
 @media screen and (max-width: 799px) {
   .training__image {
     background-image: url(/images/trainingsmall.webp);
@@ -1445,6 +1481,20 @@ a:hover {
   .about__image {
     max-width: 400px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hobby__image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .hobby__image {
+    width: 60px;
+    height: 60px;
   }
 }
 

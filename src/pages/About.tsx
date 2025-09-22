@@ -122,6 +122,34 @@ export default function About() {
             </p>
           </div>
 
+          <div className="hobbies__container">
+            <img
+              src="/images/weightlifting.jpg"
+              className="hobby__image"
+              alt="Weightlifting"
+            />
+            <img
+              src="/images/tennis.jpg"
+              className="hobby__image"
+              alt="Tennis racket"
+            />
+            <img
+              src="/images/football.jpg"
+              className="hobby__image"
+              alt="Football"
+            />
+            <img
+              src="/images/reading.jpg"
+              className="hobby__image"
+              alt="Reading a book"
+            />
+            <img
+              src="/images/writing.jpg"
+              className="hobby__image"
+              alt="Writing"
+            />
+          </div>
+
           <div className="grid grid--1x2 container__buttons">
             <Link to="/services">
               <Button>Services</Button>
