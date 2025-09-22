@@ -638,10 +638,6 @@ a:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .container--large {
-    padding: 2rem 0;
-  }
-
   .container--white {
     border-left: 2px solid var(--color-border);
   }
@@ -1617,26 +1613,68 @@ a:hover {
 
 .faq {
   margin: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 2rem;
 }
 
 .faq__qa {
   font-weight: 600;
-  font-size: 120%;
 }
 
 .faq__buttons {
   padding-top: 4rem;
 }
 
-@media screen and (min-width: 361px) and (max-width: 767px) {
+.faq .icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 3rem;
+  margin-top: 0.2rem;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 1024px) {
   .faq {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+  }
+
+  .faq .icon {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq {
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .faq {
     margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .faq .icon {
+    display: none;
+  }
+
+  span.faq__qa {
+    min-width: 65px;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .faq {
+    font-size: 1.2rem;
+  }
+
+  span.faq__qa {
+    min-width: 60px;
   }
 }
 
