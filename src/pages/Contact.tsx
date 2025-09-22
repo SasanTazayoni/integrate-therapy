@@ -51,8 +51,15 @@ export default function Contact() {
             </div>
           </div>
 
+          <div className="container--white contact__fees-card">
+            <h3 className="block__header">Fees</h3>
+            <p>
+              <strong>Individuals:</strong> £85 per session (50 minutes)
+            </p>
+          </div>
+
           <div className="container--white contact__cancellation-card">
-            <h3 className="block__header">Cancellation policy:</h3>
+            <h3 className="block__header">Cancellation policy</h3>
             <p>
               Once a session is booked, two working days (48 hours) notice is
               required for cancellations. Otherwise, the full cost of the
