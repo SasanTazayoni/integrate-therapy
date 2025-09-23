@@ -1,6 +1,5 @@
 import Navbar from "../components/Navigation";
 import Hero from "../components/Hero";
-import Block from "../components/Block";
 import Testimonials from "../components/Testimonials";
 import { testimonialsData } from "../data/testimonials";
 import Footer from "../components/Footer";
@@ -10,19 +9,40 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
-      <Block
-        title="Welcome to Integrate Therapy"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ratione quod repellat doloribus repudiandae..."
-        buttonLabel="Learn More"
-        buttonHref="/about"
-        backgroundClass="block--grey"
-      />
-      <Block
-        title="How I can help you"
-        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ratione quod repellat doloribus repudiandae..."
-        buttonLabel="Learn More"
-        buttonHref="/services"
-      />
+
+      <section className="block block--grey">
+        <div className="container">
+          <div className="card grid grid--1x2-alt overflow-hidden">
+            <div className="block__text card__text">
+              <header className="block__header">
+                <h2>Welcome to Integrate Therapy</h2>
+              </header>
+              <p>
+                Therapy provides a safe, non-judgmental space where you can
+                explore your challenges, reflect on your experiences, and gain a
+                deeper understanding of yourself. Drawing on experience
+                supporting clients from diverse backgrounds, each session is
+                tailored to your unique needs, pace, and goals, ensuring the
+                support you receive is meaningful and relevant.
+              </p>
+              <p className="card__text-paragraph">
+                However impossible it may feel right now, I know from experience
+                that there is a real chance for meaningful change and growth.
+                Together, we can uncover strategies to help you navigate life's
+                challenges and move toward a more balanced and fulfilling life.
+              </p>
+            </div>
+
+            <div className="card__image">
+              <img
+                src="/images/sunset.jpg"
+                alt="Sunset"
+                className="card__img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="background__image"></section>
 
