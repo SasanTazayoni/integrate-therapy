@@ -158,29 +158,6 @@ export default function FAQ() {
         <div className="container--large">
           <div className="container--grey">
             <p className="faq">
-              <span className="faq__qa">Question:</span> How can therapy help
-              me?
-            </p>
-          </div>
-          <div className="container--white">
-            <p className="faq">
-              <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
-              </svg>
-              <span className="faq__qa">Answer:</span> Therapy provides a safe,
-              non-judgmental space to explore challenges and gain understanding.
-              With extensive experience working with clients from diverse
-              backgrounds, each person is thoroughly assessed to determine how I
-              can best support them. Meaningful progress, however, relies on
-              active participation—insights and change come through personal
-              engagement.
-            </p>
-          </div>
-        </div>
-
-        <div className="container--large">
-          <div className="container--grey">
-            <p className="faq">
               <span className="faq__qa">Question:</span> Can sessions be
               scheduled at any time, or are there set appointments?
             </p>
