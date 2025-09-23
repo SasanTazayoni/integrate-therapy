@@ -230,10 +230,6 @@ a:hover {
   transform: scale(1.6);
 }
 
-.training-icon {
-  transform: scale(1.2);
-}
-
 .icon-container {
   align-items: center;
   border-radius: 100%;
@@ -516,7 +512,6 @@ a:hover {
 @media screen and (max-width: 1024px) {
   .block .grid--1x2-alt {
     grid-template-columns: 1fr;
-    gap: 2rem;
   }
 }
 
@@ -730,6 +725,38 @@ a:hover {
 @media screen and (max-width: 768px) {
   .collapsible__icon {
     padding: 1rem;
+  }
+}
+
+/* Home Page */
+
+.card {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.card__text {
+  padding: 2rem;
+}
+
+.card__image {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 1rem;
+}
+
+.card__image .card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .card__image {
+    margin: 1rem auto;
   }
 }
 
