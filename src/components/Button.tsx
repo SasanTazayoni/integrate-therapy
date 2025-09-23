@@ -1,15 +1,9 @@
 import { useEffect, useRef } from "react";
 import { initializeRippleEffect } from "../utils/ripple";
 
-type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: "primary" | "danger";
-};
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export default function Button({
-  variant = "primary",
-  children,
-  ...props
-}: ButtonProps) {
+export default function Button({ children, ...props }: ButtonProps) {
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
@@ -18,11 +12,7 @@ export default function Button({
     }
   }, []);
 
-  const baseClasses = `
-    button
-    button--${variant}
-    flex justify-center items-center px-4 py-2 rounded
-  `;
+  const baseClasses = "button";
 
   return (
     <button ref={buttonRef} className={baseClasses} {...props}>
