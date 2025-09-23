@@ -132,15 +132,29 @@ p {
     font-size: 1.6rem;
   }
 
+  h1 {
+    font-size: 6rem;
+  }
+
   h2 {
     font-size: 3.6rem;
     margin-bottom: 4rem;
   }
 }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 @media screen and (max-width: 428px) {
   body {
     font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
   }
 
   h2 {
