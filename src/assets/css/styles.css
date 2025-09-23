@@ -1080,31 +1080,19 @@ a:hover {
 
 @media screen and (max-width: 720px) {
   .background__image {
-    background-image: url(../images/childsmall.webp);
+    background-image: url(/images/childsmall.webp);
   }
 }
 
 @media screen and (min-width: 721px) {
   .background__image {
-    background-image: url(../images/childmedium.webp);
+    background-image: url(/images/childlarge.webp);
   }
 }
 
 @media screen and (min-width: 768px) {
   .background__image {
     background-attachment: fixed;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .background__image {
-    background-image: url(../images/childlarge.webp);
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .background__image {
-    background-image: url(../images/childxlarge.webp);
   }
 }
 
