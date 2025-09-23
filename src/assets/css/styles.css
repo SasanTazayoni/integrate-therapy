@@ -1540,30 +1540,6 @@ a:hover {
   }
 }
 
-/* Fees page */
-
-.fees__card {
-  padding: 2rem;
-  text-align: center;
-}
-
-.fees__card-header {
-  margin-top: 0;
-}
-
-@media screen and (max-width: 360px) {
-  .fees__card {
-    font-size: 1.5rem;
-    padding: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .fees__card {
-    font-size: 1.8rem;
-  }
-}
-
 /* FAQ page */
 
 .faq {
