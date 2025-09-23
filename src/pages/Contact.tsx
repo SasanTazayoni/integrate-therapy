@@ -20,7 +20,7 @@ export default function Contact() {
         <h2>Contact me</h2>
         <div className="container">
           <div className="container--white contact-card__container">
-            <div className="grid grid--1x2-alt">
+            <div className="grid grid--1x2">
               <div className="contact__card">
                 <p>Please contact me with the details below:</p>
                 <p>
