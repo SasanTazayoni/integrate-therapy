@@ -22,14 +22,7 @@ export default function Contact() {
           <div className="container--white contact-card__container">
             <div className="grid grid--1x2-alt">
               <div className="contact__card">
-                <p>
-                  Your questions may have been answered in the{" "}
-                  <a href="/faq" className="contact__strong">
-                    FAQ
-                  </a>
-                  .<br />
-                  Please contact me with the details below:
-                </p>
+                <p>Please contact me with the details below:</p>
                 <p>
                   <span className="contact__strong">Email:</span>{" "}
                   <a
@@ -89,57 +82,53 @@ export default function Contact() {
               method="POST"
             >
               <h3 className="block__header">Enquiries form</h3>
-              <div className="contact__form-group">
-                <label htmlFor="fullname">Full name</label>
-                <input
-                  id="fullname"
-                  type="text"
-                  placeholder="Full name"
-                  name="name"
-                  required
-                  minLength={1}
-                  maxLength={50}
-                />
+              <div className="contact__form-row">
+                <div className="contact__form-group">
+                  <label htmlFor="fullname">Full name:</label>
+                  <input
+                    id="fullname"
+                    type="text"
+                    name="name"
+                    required
+                    minLength={1}
+                    maxLength={30}
+                  />
+                </div>
+                <div className="contact__form-group">
+                  <label htmlFor="contactnumber">Contact number:</label>
+                  <input
+                    id="contactnumber"
+                    type="tel"
+                    name="contact"
+                    minLength={7}
+                    maxLength={20}
+                  />
+                </div>
+                <div className="contact__form-group">
+                  <label htmlFor="email">Email:</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="email"
+                    required
+                    minLength={5}
+                    maxLength={30}
+                  />
+                </div>
               </div>
               <div className="contact__form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Email"
-                  name="email"
-                  required
-                  minLength={5}
-                  maxLength={30}
-                />
-              </div>
-              <div className="contact__form-group">
-                <label htmlFor="contactnumber">Contact number</label>
-                <input
-                  id="contactnumber"
-                  type="tel"
-                  placeholder="Contact number"
-                  name="contact"
-                  required
-                  minLength={7}
-                  maxLength={20}
-                />
-              </div>
-              <div className="contact__form-group">
-                <label htmlFor="enquiry">Your enquiry</label>
+                <label htmlFor="enquiry">Your enquiry:</label>
                 <textarea
                   className="contact__form--textarea"
                   id="enquiry"
                   cols={100}
                   rows={5}
-                  placeholder="Your enquiry"
                   name="enquiry"
                   required
                   minLength={10}
                   maxLength={300}
                 ></textarea>
               </div>
-
               <div className="container__buttons">
                 <Button type="submit">Submit</Button>
                 <Button type="button" onClick={clearForm}>
