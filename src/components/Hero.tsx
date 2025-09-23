@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
+
 export default function Hero() {
   return (
     <section className="hero__container">
@@ -5,23 +8,14 @@ export default function Hero() {
         <h1 className="hero__heading">Simon Burgess</h1>
         <p className="hero__tagline">(MBACP)</p>
         <p className="hero__tagline">Psychotherapist based in London, UK</p>
-        <div>
-          <a href="/about">
-            <div className="btn btn--secondary hero__btn">
-              About Me
-              <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#about"></use>
-              </svg>
-            </div>
-          </a>
-          <a href="/contact">
-            <div className="btn btn--primary hero__btn">
-              Contact Me
-              <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#contact"></use>
-              </svg>
-            </div>
-          </a>
+
+        <div className="grid grid--1x2 container__buttons">
+          <Link to="/about">
+            <Button>About</Button>
+          </Link>
+          <Link to="/contact">
+            <Button>Contact</Button>
+          </Link>
         </div>
       </header>
     </section>
