@@ -446,9 +446,12 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 324px) {
+@media screen and (max-width: 428px) {
   .button {
     margin: 0.5rem;
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }
 
