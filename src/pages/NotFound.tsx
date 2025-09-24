@@ -7,22 +7,19 @@ export default function NotFound() {
     <>
       <Navbar />
       <main className="notfound-page">
-        <section className="block block--grey block--center">
+        <section className="block">
           <div className="container">
-            <h1>404</h1>
-            <h2>Oops! Page not found</h2>
-            <p>
-              It seems the page you are looking for doesn’t exist. Maybe go back
-              to the <Link to="/">Home page</Link>?
-            </p>
-            <img
-              src="/images/404_illustration.svg"
-              alt="Illustration of lost path"
-              className="notfound__image"
-            />
-            <Link to="/" className="btn btn--primary">
-              Go Home
-            </Link>
+            <div className="card card--narrow">
+              <div className="block__text card__text text-center">
+                <header className="block__header">
+                  <h3>This page does not exist</h3>
+                </header>
+                <p>
+                  It seems the page you are looking for does not exist. Maybe go
+                  back to the <Link to="/">Home page</Link>?
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
