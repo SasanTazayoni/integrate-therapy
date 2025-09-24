@@ -1,34 +1,4 @@
-@font-face {
-  font-family: "oxygen";
-  src: url("fonts/oxygen/oxygen-bold-webfont.woff2") format("woff2"),
-    url("fonts/oxygen/oxygen-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "oxygen";
-  src: url("fonts/oxygen/oxygen-regular-webfont.woff2") format("woff2"),
-    url("fonts/oxygen/oxygen-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "spectral";
-  src: url("fonts/spectral/spectral-bold-webfont.woff2") format("woff2"),
-    url("fonts/spectral/spectral-bold-webfont.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "spectral";
-  src: url("fonts/spectral/spectral-regular-webfont.woff2") format("woff2"),
-    url("fonts/spectral/spectral-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --color-primary: #08a4ff;
@@ -50,12 +20,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   color: #000;
   font-display: optional;
-  font-family: "oxygen", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
 }
@@ -102,7 +73,7 @@ input::-webkit-inner-spin-button {
 h1,
 h2,
 h3 {
-  font-family: "spectral", Arial, Helvetica, sans-serif;
+  font-family: "Lora", Arial, Helvetica, sans-serif;
   line-height: 1.1;
   color: #000;
   margin-top: 0;
