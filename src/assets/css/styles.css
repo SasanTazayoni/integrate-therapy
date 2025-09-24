@@ -178,24 +178,23 @@ a:hover {
   width: 30px;
 }
 
-.icon--left {
-  cursor: pointer;
-  fill: var(--color-secondary);
-  height: 40px;
-  opacity: 0.6;
-  transform: rotate(90deg);
-  transition: all 0.3s;
-  width: 40px;
-}
-
+.icon--left,
 .icon--right {
   cursor: pointer;
   fill: var(--color-secondary);
   height: 40px;
   opacity: 0.6;
-  transform: rotate(-90deg);
   transition: all 0.3s;
   width: 40px;
+  border: none;
+}
+
+.icon--left {
+  transform: rotate(90deg);
+}
+
+.icon--right {
+  transform: rotate(-90deg);
 }
 
 .icon--left:hover,
@@ -402,6 +401,11 @@ a:hover {
 
 .button:hover {
   background: var(--color-secondary);
+}
+
+.testimonials__button {
+  border: none;
+  background: transparent;
 }
 
 /* Ripple effect */
