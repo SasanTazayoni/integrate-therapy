@@ -1191,6 +1191,10 @@ a:hover {
     width: 15px;
   }
 
+  .testimonials__button {
+    margin: 0;
+  }
+
   .testimonial-bullet {
     height: 10px;
     margin: 0 1rem;
