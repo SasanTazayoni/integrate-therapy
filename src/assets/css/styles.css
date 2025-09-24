@@ -742,7 +742,7 @@ a:hover {
   }
 }
 
-/* Home Page */
+/* Cards */
 
 .card {
   overflow: hidden;
@@ -769,11 +769,23 @@ a:hover {
   border-radius: 1rem;
 }
 
+.card--narrow {
+  max-width: 420px;
+  margin: 0 auto;
+  border: 3px solid var(--color-border);
+}
+
+.card--narrow p {
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .card__image {
     margin: 1rem auto;
   }
 }
+
+/* Home Page */
 
 /* Navigations Bars */
 
@@ -1788,5 +1800,35 @@ a:hover {
 
   .contact__card-image {
     height: 100%;
+  }
+}
+
+/* Notfound page */
+
+.notfound-page {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url("/images/notfoundlarge.webp") center/cover no-repeat;
+}
+
+.notfound-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 0;
+}
+
+.notfound-page .container {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .notfound-page {
+    background: url("/images/notfoundsmall.webp") center/cover no-repeat;
   }
 }
