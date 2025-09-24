@@ -49,7 +49,7 @@ export default function Navbar() {
         aria-controls="mobile-menu"
       >
         <svg className="icon nav__toggler">
-          <use xlinkHref="/integratesprite.svg#menu" />
+          <use href="/integratesprite.svg#menu" />
         </svg>
       </button>
 
@@ -61,9 +61,7 @@ export default function Navbar() {
               className={({ isActive }) => (isActive ? "active" : "")}
             >
               <svg className="icon icon--secondary">
-                <use
-                  xlinkHref={`/integratesprite.svg#${label.toLowerCase()}`}
-                />
+                <use href={`/integratesprite.svg#${label.toLowerCase()}`} />
               </svg>
               {label}
             </NavLink>

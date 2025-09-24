@@ -19,7 +19,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> £85 per session.
             </p>
@@ -36,7 +36,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Concessionary rates are
               available only for clients experiencing genuine financial
@@ -57,7 +57,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Contact me directly to
               briefly discuss why you called and then we can arrange your first
@@ -80,7 +80,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> You can reach me by email
               or phone - both are listed on the{" "}
@@ -102,7 +102,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> The questionnaires are
               completed to identify the areas of greatest difficulty and clarify
@@ -122,7 +122,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> There is no definitive
               answer regarding the number of sessions required. Psychotherapy is
@@ -143,7 +143,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Feeling uncertain is
               natural, but taking the step to invest in oneself is one of the
@@ -165,7 +165,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Sessions are scheduled
               for a set time each week, typically one 50-minute session. If a
@@ -185,7 +185,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Cancellations must be
               made at least 48 hours in advance. If notice is shorter than this,
@@ -204,7 +204,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> The first session is a
               90-minute assessment designed to understand your story and goals.
@@ -227,7 +227,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> All sessions are
               completely confidential. Information shared is kept private and
@@ -247,7 +247,7 @@ export default function FAQ() {
           <div className="container--white">
             <p className="faq">
               <svg className="icon">
-                <use xlinkHref="/integratesprite.svg#right-arrow" />
+                <use href="/integratesprite.svg#right-arrow" />
               </svg>
               <span className="faq__qa">Answer:</span> Online sessions are
               available, though in-person meetings are preferred whenever
