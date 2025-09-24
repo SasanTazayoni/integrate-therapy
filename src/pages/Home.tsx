@@ -34,7 +34,11 @@ export default function Home() {
             </div>
 
             <div className="card__image">
-              <img src="images/sunset.jpg" alt="Sunset" className="card__img" />
+              <img
+                src={`${import.meta.env.BASE_URL}images/sunset.jpg`}
+                alt="Sunset"
+                className="card__img"
+              />
             </div>
           </div>
         </div>
