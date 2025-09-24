@@ -45,7 +45,7 @@ export default function About() {
             <div className="about__image-container">
               <img
                 className="about__image"
-                src="/images/aboutpic.jpg"
+                src="images/aboutpic.jpg"
                 alt="A picture of Simon Burgess"
               />
             </div>
@@ -121,27 +121,27 @@ export default function About() {
 
           <div className="hobbies__container">
             <img
-              src="/images/weightlifting.jpg"
+              src="images/weightlifting.jpg"
               className="hobby__image"
               alt="Weightlifting"
             />
             <img
-              src="/images/tennis.jpg"
+              src="images/tennis.jpg"
               className="hobby__image"
               alt="Tennis racket"
             />
             <img
-              src="/images/football.jpg"
+              src="images/football.jpg"
               className="hobby__image"
               alt="Football"
             />
             <img
-              src="/images/reading.jpg"
+              src="images/reading.jpg"
               className="hobby__image"
               alt="Reading a book"
             />
             <img
-              src="/images/writing.jpg"
+              src="images/writing.jpg"
               className="hobby__image"
               alt="Writing"
             />
