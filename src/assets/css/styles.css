@@ -1631,9 +1631,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  text-align: left;
   margin: 2rem 0;
   justify-content: center;
+  align-items: center;
+}
+
+.contact__card-text {
+  text-align: left;
+  max-width: 100%;
 }
 
 .contact__strong {

@@ -22,26 +22,31 @@ export default function Contact() {
           <div className="container--white contact-card__container">
             <div className="grid grid--1x2">
               <div className="contact__card">
-                <p>Please contact me with the details below:</p>
-                <p>
-                  <span className="contact__strong">Email:</span>{" "}
-                  <a
-                    href="mailto:info@integratetherapy.co.uk"
-                    className="contact__strong"
-                  >
-                    info@integratetherapy.co.uk
-                  </a>
-                </p>
-                <p>
-                  <span className="contact__strong">Mobile:</span> +44 784 604
-                  3703
-                </p>
-                <p>
-                  <span className="contact__strong contact__office-hours--heading">
-                    Office hours:
-                  </span>{" "}
-                  Monday - Friday: 8AM - 7PM
-                </p>
+                <div className="contact__card-text">
+                  <p>Please contact me with the details below:</p>
+                  <p>
+                    <span className="contact__strong">Email:</span>{" "}
+                    <a
+                      href="mailto:info@integratetherapy.co.uk"
+                      className="contact__strong"
+                    >
+                      info@integratetherapy.co.uk
+                    </a>
+                  </p>
+                  <p>
+                    <span className="contact__strong">Mobile:</span> +44 784 604
+                    3703
+                  </p>
+                  <p>
+                    <span className="contact__strong contact__office-hours--heading">
+                      Office hours:
+                    </span>{" "}
+                    <ul>
+                      <li>Tuesday - Wednesday: 9AM - 9PM</li>
+                      <li>Friday: 9AM - 12PM</li>
+                    </ul>
+                  </p>
+                </div>
               </div>
               <div>
                 <img
@@ -63,10 +68,11 @@ export default function Contact() {
           <div className="container--white contact__cancellation-card">
             <h3 className="block__header">Cancellation policy</h3>
             <p>
-              Once a session is booked, two working days (48 hours) notice is
-              required for cancellations. Otherwise, the full cost of the
-              session will be incurred. If you need to cancel or change an
-              appointment, please contact me with the details provided above.
+              Once a session is booked,{" "}
+              <strong>two working days (48 hours)</strong> notice is required
+              for cancellations. Otherwise, the full cost of the session will be
+              incurred. If you need to cancel or change an appointment, please
+              contact me with the details provided above.
             </p>
           </div>
         </div>
