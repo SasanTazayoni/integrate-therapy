@@ -1,17 +1,9 @@
-import { useRef } from "react";
 import Navbar from "../components/Navigation";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
+import ContactCard from "../components/ContactCard";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
-  const formRef = useRef<HTMLFormElement>(null);
-
-  const clearForm = () => {
-    if (formRef.current) {
-      formRef.current.reset();
-    }
-  };
-
   return (
     <>
       <Navbar />
@@ -19,44 +11,7 @@ export default function Contact() {
       <section className="block block--grey block--top-castrated">
         <h2>Contact me</h2>
         <div className="container">
-          <div className="container--white contact-card__container">
-            <div className="grid grid--1x2">
-              <div className="contact__card">
-                <div className="contact__card-text">
-                  <p>Please contact me with the details below:</p>
-                  <p>
-                    <span className="contact__strong">Email:</span>{" "}
-                    <a
-                      href="mailto:info@integratetherapy.co.uk"
-                      className="contact__strong"
-                    >
-                      info@integratetherapy.co.uk
-                    </a>
-                  </p>
-                  <p>
-                    <span className="contact__strong">Mobile:</span> +44 784 604
-                    3703
-                  </p>
-                  <p>
-                    <span className="contact__strong contact__office-hours--heading">
-                      Office hours:
-                    </span>{" "}
-                    <ul>
-                      <li>Tuesday - Wednesday: 9AM - 9PM</li>
-                      <li>Friday: 9AM - 12PM</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <img
-                  className="contact__card-image"
-                  src="./images/contactpic.jpeg"
-                  alt="Picture of Simon Burgess"
-                />
-              </div>
-            </div>
-          </div>
+          <ContactCard />
 
           <div className="container--white contact__fees-card">
             <h3 className="block__header">Fees</h3>
@@ -80,69 +35,7 @@ export default function Contact() {
 
       <section className="block block--white contact__form-block">
         <div className="container">
-          <div className="container--grey contact-form__container">
-            <form
-              ref={formRef}
-              className="contact__form"
-              action="https://formspree.io/f/xgergodj"
-              method="POST"
-            >
-              <h3 className="block__header">Enquiries form</h3>
-              <div className="contact__form-row">
-                <div className="contact__form-group">
-                  <label htmlFor="fullname">Full name:</label>
-                  <input
-                    id="fullname"
-                    type="text"
-                    name="name"
-                    required
-                    minLength={1}
-                    maxLength={30}
-                  />
-                </div>
-                <div className="contact__form-group">
-                  <label htmlFor="contactnumber">Contact number:</label>
-                  <input
-                    id="contactnumber"
-                    type="tel"
-                    name="contact"
-                    minLength={7}
-                    maxLength={20}
-                  />
-                </div>
-                <div className="contact__form-group">
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    required
-                    minLength={5}
-                    maxLength={30}
-                  />
-                </div>
-              </div>
-              <div className="contact__form-group">
-                <label htmlFor="enquiry">Your enquiry:</label>
-                <textarea
-                  className="contact__form--textarea"
-                  id="enquiry"
-                  cols={100}
-                  rows={5}
-                  name="enquiry"
-                  required
-                  minLength={10}
-                  maxLength={300}
-                ></textarea>
-              </div>
-              <div className="container__buttons">
-                <Button type="submit">Submit</Button>
-                <Button type="button" onClick={clearForm}>
-                  Clear
-                </Button>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
         </div>
       </section>
 
