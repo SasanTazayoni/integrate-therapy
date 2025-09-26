@@ -1,6 +1,9 @@
 export default function ContactCard() {
   return (
-    <div className="container--white contact-card__container">
+    <div
+      className="container--white contact-card__container"
+      data-testid="contact-card"
+    >
       <div className="grid grid--1x2">
         <div className="contact__card">
           <div className="contact__card-text">
