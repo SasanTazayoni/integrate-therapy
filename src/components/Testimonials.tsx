@@ -39,6 +39,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
               className={`testimonial__text ${
                 index === currentIndex ? "active" : ""
               }`}
+              data-testid={`testimonial-${index + 1}`}
               data-testimonial={index + 1}
             >
               {testimonial}
