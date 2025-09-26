@@ -45,7 +45,7 @@ export default function Services() {
         <div className="container">
           <h2 className="services__title">How I Can Help</h2>
 
-          <ul className="services__list">
+          <ul className="services__list" data-testid="services-list">
             {services.map((service, i) => (
               <li key={i} className={`list__item delay-${i}`}>
                 {service}
@@ -55,10 +55,10 @@ export default function Services() {
 
           <div className="grid grid--1x2 container__buttons">
             <Link to="/FAQ">
-              <Button>FAQ</Button>
+              <Button data-testid="faq-button">FAQ</Button>
             </Link>
             <Link to="/contact">
-              <Button>Contact</Button>
+              <Button data-testid="contact-button">Contact</Button>
             </Link>
           </div>
         </div>
