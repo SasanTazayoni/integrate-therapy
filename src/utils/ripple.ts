@@ -1,7 +1,5 @@
 export const initializeRippleEffect = (button: HTMLButtonElement): void => {
   function createRipple(e: MouseEvent): void {
-    if (button.disabled) return;
-
     if (e.target === button) {
       const target = e.target as HTMLButtonElement;
 
