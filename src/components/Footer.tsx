@@ -2,7 +2,7 @@ export default function Footer() {
   const footerLinks = ["Home", "About", "Services", "FAQ", "Contact"];
 
   return (
-    <footer className="block--white footer__block">
+    <footer id="site-footer" className="block--white footer__block">
       <div className="footer__nav-block">
         <ul className="list footer__list">
           {footerLinks.map((label) => (
@@ -13,10 +13,10 @@ export default function Footer() {
         </ul>
       </div>
       <div className="footer__logo-block">
-        <img className="footer__logo" src="images/logo.png" alt="" />
+        <img className="footer__logo" src="images/logo.png" alt="comany logo" />
       </div>
       <div className="footer__credits-block">
-        <p>
+        <p data-testid="footer-text">
           &copy; Integrate Therapy 2025. Website designed & created by{" "}
           <a href="https://github.com/SasanTazayoni" target="_blank">
             Sasan Tazayoni
