@@ -13,7 +13,7 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
       </div>
       <div className="container--white">
         <p className="faq">
-          <svg className="icon">
+          <svg className="icon" data-testid="faq-svg">
             <use href="/integrate-therapy/integratesprite.svg#right-arrow" />
           </svg>
           <span className="faq__qa">Answer:</span> {answer}
