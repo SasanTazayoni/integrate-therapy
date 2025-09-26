@@ -12,10 +12,8 @@ export default function Button({ children, ...props }: ButtonProps) {
     }
   }, []);
 
-  const baseClasses = "button";
-
   return (
-    <button ref={buttonRef} className={baseClasses} {...props}>
+    <button ref={buttonRef} className="button" {...props}>
       {children}
     </button>
   );
