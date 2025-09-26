@@ -15,9 +15,10 @@ export default function Navbar() {
       className={`nav collapsible ${
         navExpanded ? "collapsible--expanded" : ""
       }`}
+      data-testid="navbar"
     >
       <div className="nav__brand__group">
-        <NavLink className="nav__brand" to="/">
+        <NavLink className="nav__brand" to="/" data-testid="brand-link">
           <img
             className="nav__logo"
             src="images/logo.png"
@@ -47,6 +48,8 @@ export default function Navbar() {
         onClick={toggleNav}
         aria-expanded={navExpanded}
         aria-controls="mobile-menu"
+        aria-label="Menu"
+        data-testid="mobile-menu-toggle"
       >
         <svg className="icon nav__toggler">
           <use href="/integrate-therapy/integratesprite.svg#menu" />
@@ -59,6 +62,7 @@ export default function Navbar() {
             <NavLink
               to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
               className={({ isActive }) => (isActive ? "active" : "")}
+              data-testid={`mobile-link-${label.toLowerCase()}`}
             >
               <svg className="icon icon--secondary">
                 <use
