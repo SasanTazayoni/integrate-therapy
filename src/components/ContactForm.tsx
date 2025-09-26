@@ -17,6 +17,7 @@ export default function ContactForm() {
         className="contact__form"
         action="https://formspree.io/f/xgergodj"
         method="POST"
+        data-testid="contact-form"
       >
         <h3 className="block__header">Enquiries form</h3>
         <div className="contact__form-row">
