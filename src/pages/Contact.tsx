@@ -1,4 +1,4 @@
-import Navbar from "../components/Navigation";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ContactCard from "../components/ContactCard";
 import ContactForm from "../components/ContactForm";

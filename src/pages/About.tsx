@@ -1,4 +1,4 @@
-import Navbar from "../components/Navigation";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AboutIntro from "../components/AboutIntro";
 import TrainingSection from "../components/TrainingSection";
