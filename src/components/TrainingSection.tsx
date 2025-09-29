@@ -8,25 +8,26 @@ export default function TrainingSection() {
         <h3 className="block__header">My Training</h3>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deleniti
-          vitae adipisci deserunt quibusdam nihil error excepturi natus a
-          dolorem.
+          I am a fully qualified and accredited therapist, committed to
+          providing evidence-based and client-centered care.
         </p>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
-          delectus numquam cupiditate nam esse! Repellat, amet harum placeat
-          eius quae accusantium beatae dolore dolorum ad laudantium iure itaque
-          doloribus provident!
+          My professional training includes <strong>Schema Therapy</strong>,
+          which helps clients identify and change unhelpful patterns developed
+          early in life, and <strong>Psychodynamic Therapy</strong>, focusing on
+          understanding unconscious processes and past experiences to support
+          personal growth.
         </p>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-          ipsam? Tempore aut magni doloremque laboriosam eligendi pariatur esse
-          voluptatibus numquam? Enim nulla doloribus alias omnis odit
-          repellendus eum architecto animi reiciendis! At fugiat dolores ea
-          quibusdam eius minus blanditiis amet! Inventore, voluptatibus omnis
-          sequi id soluta incidunt harum repudiandae facilis!
+          I am also a member of the{" "}
+          <strong>
+            British Association for Counselling and Psychotherapy (MBACP)
+          </strong>
+          , which ensures adherence to professional and ethical standards.
+          Additional continuous professional development includes workshops and
+          seminars to stay updated with best practices in psychotherapy.
         </p>
       </div>
 
