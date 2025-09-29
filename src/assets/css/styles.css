@@ -25,7 +25,6 @@ html {
 
 body {
   color: #000;
-  font-display: optional;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
@@ -62,12 +61,6 @@ textarea:focus {
 
 textarea {
   resize: none;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 
 h1,
