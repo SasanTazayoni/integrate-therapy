@@ -18,14 +18,14 @@ export default function Navbar() {
       data-testid="navbar"
     >
       <div className="nav__brand__group">
-        <NavLink className="nav__brand" to="/" data-testid="brand-link">
+        <div className="nav__brand" aria-label="Integrate Therapy Logo">
           <img
             className="nav__logo"
             src="images/logo.png"
             alt="Integrate Therapy Logo"
           />
-          <h3 className="nav__logo__title">Integrate Therapy</h3>
-        </NavLink>
+          <h2 className="nav__logo__title">Integrate Therapy</h2>
+        </div>
       </div>
 
       <ul className="list nav__list-widescreen">
@@ -36,6 +36,7 @@ export default function Navbar() {
               className={({ isActive }) =>
                 `nav__link${isActive ? " active" : ""}`
               }
+              aria-label={`Go to ${label} page`}
             >
               {label}
             </NavLink>
@@ -48,23 +49,29 @@ export default function Navbar() {
         onClick={toggleNav}
         aria-expanded={navExpanded}
         aria-controls="mobile-menu"
-        aria-label="Menu"
+        aria-label={navExpanded ? "Close main menu" : "Open main menu"}
         data-testid="mobile-menu-toggle"
       >
-        <svg className="icon nav__toggler">
+        <svg className="icon nav__toggler" aria-hidden="true">
           <use href="/integrate-therapy/integratesprite.svg#menu" />
         </svg>
       </button>
 
-      <ul id="mobile-menu" className="list nav__list collapsible__content">
+      <ul
+        id="mobile-menu"
+        className="list nav__list collapsible__content"
+        role="menu"
+      >
         {NAV_LINKS.map((label) => (
-          <li key={label} className="nav__item">
+          <li key={label} className="nav__item" role="none">
             <NavLink
               to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
               className={({ isActive }) => (isActive ? "active" : "")}
+              aria-label={`Go to ${label} page`}
+              role="menuitem"
               data-testid={`mobile-link-${label.toLowerCase()}`}
             >
-              <svg className="icon icon--secondary">
+              <svg className="icon icon--secondary" aria-hidden="true">
                 <use
                   href={`/integrate-therapy/integratesprite.svg#${label.toLowerCase()}`}
                 />
