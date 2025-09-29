@@ -79,16 +79,52 @@ Open Sans is used for body text, while Lora is used for headings. This combinati
 
 All Wireframes were designed for larger screens such as laptops or computers; for medium sized screens such as tablets or large phones; and for small screens down to the smallest phone display. The wireframes were made with desktop and mobile views and can be viewed here:
 
-![Home page desktop](documentation/homedesktop.jpg) / ![Home page mobile](documentation/homemobile.jpg) <br>
+* Home page desktop:
 
-![About page desktop](documentation/aboutdesktop.jpg) / ![About page mobile](documentation/aboutmobile.jpg) <br>
+![Home page desktop wireframe](documentation/homedesktop.jpg) <br>
+
+* Home page mobile:
+
+![Home page mobile wireframe](documentation/homemobile.jpg) <br>
+
+* About page desktop:
+
+![About page desktop wireframe](documentation/aboutdesktop.jpg) <br>
+
+* About page mobile:
+
+![About page mobile wireframe](documentation/aboutmobile.jpg) <br>
+
+* Training page desktop:
  
-![Training page desktop](documentation/trainingdesktop.jpg) / ![Training page mobile](documentation/trainingmobile.jpg) <br>
+![Training page desktop wireframe](documentation/trainingdesktop.jpg) <br>
 
-![Services page desktop](documentation/servicesdesktop.jpg) / ![Services page mobile](documentation/servicesmobile.jpg) <br>
+* Training page mobile:
 
-![FAQ page desktop](documentation/faqdesktop.jpg) / ![FAQ page mobile](documentation/faqmobile.jpg) <br>
+![Training page mobile wireframe](documentation/trainingmobile.jpg) <br>
 
-![Contact page desktop](documentation/contactdesktop.jpg) / ![Contact page mobile](documentation/contactmobile.jpg) <br>
+* Services page desktop:
+
+![Services page desktop wireframe](documentation/servicesdesktop.jpg) <br>
+
+* Services page mobile:
+
+![Services page mobile wireframe](documentation/servicesmobile.jpg) <br>
+
+* FAQ page desktop:
+
+![FAQ page desktop wireframe](documentation/faqdesktop.jpg) <br>
+
+* FAQ page mobile:
+
+![FAQ page mobile wireframe](documentation/faqmobile.jpg) <br>
+
+* Contact page desktop:
+
+![Contact page desktop wireframe](documentation/contactdesktop.jpg) <br>
+
+* Contact page mobile:
+
+![Contact page mobile wireframe](documentation/contactmobile.jpg) <br>
 
 The wireframes do not fully correspond with the end product due to multiple changes made throughout the production phase.
