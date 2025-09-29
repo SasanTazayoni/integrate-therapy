@@ -18,7 +18,7 @@ export default function Home() {
           "However impossible it may feel right now, I know from experience that there is a real chance for meaningful change and growth. Together, we can uncover strategies to help you navigate life's challenges and move toward a more balanced and fulfilling life.",
         ]}
         image="images/sunset.jpg"
-        imageAlt="Sunset"
+        imageAlt="Sunset over calm landscape"
       />
 
       <section className="background__image"></section>
