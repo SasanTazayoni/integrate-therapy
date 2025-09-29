@@ -12,10 +12,10 @@ export default function Hero() {
 
           <div className="grid grid--1x2 container__buttons">
             <Link to="/about">
-              <Button>About</Button>
+              <Button aria-label="Learn more about the therapist">About</Button>
             </Link>
             <Link to="/contact">
-              <Button>Contact</Button>
+              <Button aria-label="Contact the therapist">Contact</Button>
             </Link>
           </div>
         </div>
