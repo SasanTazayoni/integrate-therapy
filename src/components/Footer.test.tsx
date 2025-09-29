@@ -10,7 +10,9 @@ describe("Footer Component", () => {
     links.forEach((label) => {
       const link = screen.getByText(label);
       expect(link).toBeInTheDocument();
-      expect(link).toHaveAttribute("href", `/${label.toLowerCase()}`);
+
+      const expectedHref = label === "Home" ? "/" : `/${label.toLowerCase()}`;
+      expect(link).toHaveAttribute("href", expectedHref);
     });
   });
 
