@@ -12,14 +12,13 @@ export default function InfoCard({
   imageAlt,
 }: InfoCardProps) {
   return (
-    <section className="block block--grey">
+    <section className="block block--grey" aria-labelledby={`info-${title}`}>
       <div className="container">
         <div className="card grid grid--1x2 overflow-hidden">
           <div className="block__text card__text">
             <header className="block__header">
-              <h2>{title}</h2>
+              <h2 id={`info-${title}`}>{title}</h2>
             </header>
-
             {paragraphs.map((text, idx) => (
               <p
                 key={idx}
@@ -29,7 +28,6 @@ export default function InfoCard({
               </p>
             ))}
           </div>
-
           <div className="card__image">
             <img src={image} alt={imageAlt} className="card__img" />
           </div>
