@@ -1624,6 +1624,10 @@ a:hover {
   align-items: center;
 }
 
+.contact__card-header {
+  text-align: center;
+}
+
 .contact__card-text {
   text-align: left;
   max-width: 100%;
