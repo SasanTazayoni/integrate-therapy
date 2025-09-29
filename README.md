@@ -129,9 +129,9 @@ All Wireframes were designed for larger screens such as laptops or computers; fo
 
 The wireframes do not fully correspond with the end product due to multiple changes made throughout the production phase.
 
-### Features
+## Features
 
-#### Current features
+### Current features
 
 * The application is designed using Responsive Design and is fully responsive on all devices.
 
@@ -188,3 +188,35 @@ The wireframes do not fully correspond with the end product due to multiple chan
 ### Future features
 
 * Blog Section – A dedicated blog where the admin can create and publish posts, providing valuable mental health insights, therapy tips, and updates for visitors. This feature will allow the practice to engage with clients more dynamically and share expertise beyond static pages.
+
+## Technologies used
+
+### Languages
+
+* HTML5
+* CSS3
+* TypeScript
+* React
+* Vite
+* Vitest (unit testing)
+
+### Frameworks, libraries and programs used
+
+* [Font Awesome](https://fontawesome.com/) used for icons.
+* [Coolors](https://coolors.co/) used to display colour palette used on the website.
+* [Google Fonts](https://fonts.google.com/) used to import 'Lora' and 'Open sans' fonts.
+* [Google Maps](https://www.google.co.uk/maps) used to import business location to the contact page.
+* [Github](https://github.com/) used to host the repository, manage version control, and collaborate on project development.
+* [Github pages](https://pages.github.com/) used to deploy the website as a live static site directly from the repository.
+* [VSCode](https://code.visualstudio.com/) used as the code editor/IDE to develop the project.
+* [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) used for performance review.
+* [Amiresposive](https://amiresponsive.co.uk/) used to display website on the most common devices.
+* [Photoshop](https://www.adobe.com/uk/products/photoshop/) used to resize photos.
+* [Block-element-modifier naming convention](https://www.geeksforgeeks.org/understanding-the-css-bem-convention/) used for naming CSS classes.
+* [Formspree](https://formspree.io/) used in the enquiries form to provide a backend, enabling efficient routing of email enquiries directly to the business owner.
+* [ChatGPT](https://chat.openai.com/) used to generate placeholder text and to verify code.
+* [Unsplash](https://unsplash.com/) used to obtain pictures.
+* [Pexels](https://www.pexels.com/) used to obtain pictures.
+* [Cloudconvert](https://cloudconvert.com/) used to convert images to webp format.
+* [Favicon.io](https://favicon.io/) used to generate favicon.
+* [React Router](https://reactrouter.com/) used for client-side routing and navigation between pages.
