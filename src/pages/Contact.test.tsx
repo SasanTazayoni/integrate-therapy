@@ -1,21 +1,40 @@
 import { describe, test, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import Contact from "./Contact";
 
 describe("Contact Page", () => {
-  test("renders Navbar and Footer", () => {
+  test("renders Navbar correctly", () => {
     render(
       <MemoryRouter>
         <Contact />
       </MemoryRouter>
     );
 
-    const navbar = screen.getByRole("navigation");
+    const navbar = screen.getByTestId("navbar");
     expect(navbar).toBeInTheDocument();
 
-    const footer = screen.getByRole("contentinfo");
-    expect(footer).toBeInTheDocument();
+    const navLinks = within(navbar).getAllByRole("link", { name: /page/i });
+    expect(navLinks.length).toBe(5);
+  });
+
+  test("renders Footer correctly", () => {
+    render(
+      <MemoryRouter>
+        <Contact />
+      </MemoryRouter>
+    );
+
+    const footerNav = screen.getByLabelText("Footer Navigation");
+    expect(footerNav).toBeInTheDocument();
+
+    const footerLinks = within(footerNav).getAllByRole("link");
+    expect(footerLinks.length).toBe(5);
+    expect(footerLinks[0]).toHaveAttribute("href", "/");
+    expect(footerLinks[1]).toHaveAttribute("href", "/about");
+    expect(footerLinks[2]).toHaveAttribute("href", "/services");
+    expect(footerLinks[3]).toHaveAttribute("href", "/faq");
+    expect(footerLinks[4]).toHaveAttribute("href", "/contact");
   });
 
   test("renders main heading", () => {
@@ -89,7 +108,9 @@ describe("Contact Page", () => {
       </MemoryRouter>
     );
 
-    const iframe = screen.getByTitle("map");
+    const iframe = screen.getByTitle(
+      "Map showing the location of Integrate Therapy, Fulham Palace Road, London"
+    );
     expect(iframe).toBeInTheDocument();
     expect(iframe).toHaveAttribute("src");
   });
