@@ -64,8 +64,7 @@ textarea {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Lora", Arial, Helvetica, sans-serif;
   line-height: 1.1;
   color: #000;
@@ -73,16 +72,11 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
-  margin: 1rem;
-}
-
-h2 {
   font-size: 4rem;
   margin-bottom: 6rem;
 }
 
-h3 {
+h2 {
   font-size: 2.4rem;
   margin-bottom: 3rem;
 }
@@ -97,18 +91,8 @@ p {
   }
 
   h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
     font-size: 3.6rem;
     margin-bottom: 4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 5rem;
   }
 }
 
@@ -118,15 +102,11 @@ p {
   }
 
   h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
     font-size: 3rem;
     margin-bottom: 3rem;
   }
 
-  h3 {
+  h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
@@ -136,14 +116,10 @@ p {
   body {
     font-size: 1.4rem;
   }
-
-  h1 {
-    font-size: 6rem;
-  }
 }
 
 @media screen and (max-width: 324px) {
-  h2 {
+  h1 {
     font-size: 2.4rem;
   }
 }
@@ -991,6 +967,11 @@ a:hover {
   padding: 0 2rem;
 }
 
+.hero__heading {
+  font-size: 7rem;
+  margin: 1rem;
+}
+
 .hero__tagline {
   font-weight: bold;
   letter-spacing: 1px;
@@ -1009,11 +990,25 @@ a:hover {
   color: #000;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1024px) {
+  .hero__heading {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
   .hero__heading {
     font-size: 4rem;
   }
+}
 
+@media screen and (max-width: 375px) {
   .hero__tagline {
     font-size: 1.8rem;
     padding-bottom: 0.5rem;
