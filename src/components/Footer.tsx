@@ -13,7 +13,11 @@ export default function Footer() {
         </ul>
       </div>
       <div className="footer__logo-block">
-        <img className="footer__logo" src="images/logo.png" alt="comany logo" />
+        <img
+          className="footer__logo"
+          src="images/logo.png"
+          alt="company logo"
+        />
       </div>
       <div className="footer__credits-block">
         <p data-testid="footer-text">
