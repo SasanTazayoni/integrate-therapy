@@ -128,3 +128,63 @@ All Wireframes were designed for larger screens such as laptops or computers; fo
 ![Contact page mobile wireframe](documentation/contactmobile.jpg) <br>
 
 The wireframes do not fully correspond with the end product due to multiple changes made throughout the production phase.
+
+### Features
+
+#### Current features
+
+* The application is designed using Responsive Design and is fully responsive on all devices.
+
+* The company logo exists on the navbar of every page:
+
+![Company logo](documentation/logo.png)
+
+* All buttons have a hover effect that produces a ripple-like animation to recolour the button:
+
+![Hover effect](documentation/buttonhovereffect.png) <br>
+
+* The navbar exists on every page. There are menu links on a large screen and a hamburger with a dropdown menu on smaller screens:
+
+![Desktop navbar](documentation/navbardesktop.png) <br>
+![Mobile navbar](documentation/navbarmobile.png) <br>
+![Dropdown menu for mobile view](documentation/dropdownmenu.png) <br>
+
+* The footer exists on every page. The footer menu is aligned horizontally on desktops and vertically on mobiles:
+
+![Desktop footer](documentation/footerdesktop.png) <br>
+![Mobile footer](documentation/footermobile.png) <br>
+
+* The homepage is thoughtfully structured to guide visitors through a calm and welcoming experience. It begins with a Hero Section that introduces the practice, followed by a Welcome Block that offers a brief overview of services. Next, an Empty Section serves as a subtle background element, enhancing the site's aesthetic without overwhelming the content. The page concludes with a Testimonials Section, featuring client feedback to build trust and credibility. Throughout, the design emphasises tranquility and professionalism, with images and layout choices that evoke a sense of peace and approachability:
+
+![Hero](documentation/hero.png) <br>
+![Welcome block](documentation/welcomeblock.png) <br>
+![Child bursting a bubble](documentation/childbackground.png) <br>
+![Testimonials](documentation/testimonials.png) <br>
+
+* The About page is designed to provide visitors with a comprehensive understanding of the therapist's qualifications and personal approach. It begins with an About Me section, offering insights into the therapist's background and therapeutic philosophy. Following this, a Training and Qualifications section details the therapist's professional training, including Schema Therapy, Psychodynamic Therapy, and membership with the British Association for Counselling and Psychotherapy (MBACP). An Empty Section serves as a subtle background element, enhancing the site's aesthetic without overwhelming the content. The page concludes with a Personal Interests section, providing a glimpse into the therapist's personal life and interests, fostering a sense of connection with potential clients:
+
+![About me section](documentation/aboutme.png) <br>
+![Training section](documentation/trainingsection.png) <br>
+![Child reading a book laughing](documentation/childtrainingbackground.png) <br>
+![Personal interests section](documentation/interests.png) <br>
+
+* The Services page provides a clear and concise overview of the therapeutic services offered. It begins with an introductory section that outlines the available services and concludes with a welcoming image:
+
+![Services offered](documentation/services.png) <br>
+![Services background image](documentation/servicesbackground.png) <br>
+
+* The FAQ page provides a structured list of frequently asked questions to help visitors quickly find answers about therapy services, booking, and practical details:
+
+![FAQ sample](documentation/faq.png) <br>
+![FAQ buttons](documentation/faqbuttons.png) <br>
+
+* The Contact page provides all essential information for prospective clients. It begins with the therapist’s contact details, followed by important practical information including fees and the cancellation policy. Next, an enquiries section allows users to submit messages directly through a contact form. The page concludes with an embedded Google Map, displaying the exact location of the therapist’s office for easy navigation. The layout is clean and user-friendly, emphasizing clarity and accessibility while maintaining the website’s calm and professional aesthetic:
+
+![Contact details](documentation/contactdetails.png) <br>
+![Fees & cancellation policy cards](documentation/fees.png) <br>
+![Enquiries form](documentation/enquiries.png) <br>
+![Google maps embed](documentation/googlemaps.png) <br>
+
+### Future features
+
+* Blog Section – A dedicated blog where the admin can create and publish posts, providing valuable mental health insights, therapy tips, and updates for visitors. This feature will allow the practice to engage with clients more dynamically and share expertise beyond static pages.
