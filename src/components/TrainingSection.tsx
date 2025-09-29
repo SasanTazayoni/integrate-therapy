@@ -3,9 +3,11 @@ import Button from "./Button";
 
 export default function TrainingSection() {
   return (
-    <section className="block block--white">
+    <section className="block block--white" aria-labelledby="training-heading">
       <div className="container">
-        <h3 className="block__header">My Training</h3>
+        <h2 id="training-heading" className="block__header">
+          My Training
+        </h2>
 
         <p>
           I am a fully qualified and accredited therapist, committed to
@@ -33,10 +35,10 @@ export default function TrainingSection() {
 
       <div className="grid grid--1x2 container__buttons">
         <Link to="/services">
-          <Button>Services</Button>
+          <Button aria-label="Go to Services page">Services</Button>
         </Link>
         <Link to="/contact">
-          <Button>Contact</Button>
+          <Button aria-label="Go to Contact page">Contact</Button>
         </Link>
       </div>
     </section>
