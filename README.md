@@ -1,6 +1,6 @@
 # Integrate Therapy
 
-![HTML](./tech/html.png) ![CSS](./tech/css.png) ![Typescript](./tech/typescript.png) ![Vite](./tech/vite.png) ![React](./tech/react.png) ![Jest](./tech/jest.png) ![ChatGPT](./tech/chatgpt.png) ![VSCode](./tech/vscode.png) ![render](./tech/render.png)
+![HTML](./tech/html.png) ![CSS](./tech/css.png) ![Typescript](./tech/typescript.png) ![Vite](./tech/vite.png) ![React](./tech/react.png) ![Jest](./tech/jest.png) ![ChatGPT](./tech/chatgpt.png) ![VSCode](./tech/vscode.png)
 
 # Introduction
 
@@ -11,3 +11,7 @@ The site achieves this by presenting clear, structured content tailored to adult
 This project represents the first web application I ever developed. It began as a simple static site built with just HTML and CSS, later incorporating small amounts of JavaScript for interactivity. Over time, the interface and structure were improved, and the project was rebuilt using React and TypeScript. With each stage, I refined the UI, improved performance, and introduced reusable components, transforming the site into a more modern, scalable application.
 
 The result is more than just an informational site — it’s a resource designed with care for accessibility, clarity, and professionalism. It reflects both the values of Integrate Therapy and my own growth as a developer, combining a meaningful real-world application with the opportunity to continually expand and improve my technical skills.
+
+You can view the website [here](https://sasantazayoni.github.io/integrate-therapy/).
+
+![Integrate Therapy website on various devices](documentation/amiresponsive.png)
