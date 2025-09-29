@@ -20,44 +20,18 @@ You can view the website [here](https://sasantazayoni.github.io/integrate-therap
 
 ### User stories
 
-- **As a user, I want to easily see what services are offered (online therapy, face-to-face sessions, specialisms) so I can decide if they fit my needs.**  
-  → The site has a dedicated services section that clearly lists what’s available on the Services page.
-
-- **As a user, I want to find pricing information so I know how much sessions will cost before reaching out.**  
-  → Pricing is displayed transparently on the website so users don not need to guess on the Contact page.
-
-- **As a user, I want a clear call-to-action (e.g. “Book a session”, “Contact me”) so I know what to do next.**  
-  → Prominent buttons and links guide users to take the next step on all pages.
-
-- **As a user, I want to read about the therapy approach and methods so I can feel reassured it aligns with my expectations.**  
-  → The site provides an explanation of the therapeutic style and philosophy in simple language on the About page.
-
-- **As a user, I want to see the location and directions for in-person sessions so I can easily find the office.**  
-  → The contact section includes the clinic address and map integration on the Contact page.
-
-- **As a user, I want a contact form or email link so I can quickly get in touch to ask questions or book.**  
-  → A simple contact form and email links allow direct communication on the Contact page.
-
-- **As a user, I want a phone number so I can call or message directly.**  
-  → The phone number contact are clearly visible on the Contact page.
-
-- **As a user, I want to know if online sessions are available so I can consider remote therapy.**  
-  → The FAQ page highlights that online sessions are offered.
-
-- **As a user, I want the website to be mobile-friendly so I can browse easily on my phone.**  
-  → The site uses responsive design so it works well on all screen sizes.
-
-- **As a user, I want accessible text and navigation (contrast, font sizes, ARIA labels) so the site is usable for everyone.**  
-  → Accessibility best practices (readable fonts, good contrast, semantic HTML) are applied to support all users.
-
-- **As a user, I want to view testimonials so I can build confidence in the practice.**  
-  → A testimonials section shares positive experiences to increase trust on the Home page.
-
-- **As a user, I want an FAQ section so I can quickly find answers to common questions.**  
-  → A dedicated FAQ page addresses common concerns like process, confidentiality, and payment.
-
-- **As a user, I want the site to load quickly.**  
-  → Optimised images and a lightweight static build keep the site fast built with React.
+- **As a user, I want to easily see what services are offered (online therapy, face-to-face sessions, specialisms) so I can decide if they fit my needs.**
+- **As a user, I want to find pricing information so I know how much sessions will cost before reaching out.**
+- **As a user, I want to read about the therapy approach and methods so I can feel reassured it aligns with my expectations.**
+- **As a user, I want to see the location and directions for in-person sessions so I can easily find the office.**
+- **As a user, I want a contact form or email link so I can quickly get in touch to ask questions or book.**
+- **As a user, I want a phone number so I can call or message directly.**
+- **As a user, I want to know if online sessions are available so I can consider remote therapy.**
+- **As a user, I want the website to be mobile-friendly so I can browse easily on my phone.**
+- **As a user, I want accessible text and navigation (contrast, font sizes, ARIA labels) so the site is usable for everyone.**
+- **As a user, I want to view testimonials so I can build confidence in the practice.**
+- **As a user, I want an FAQ section so I can quickly find answers to common questions.**
+- **As a user, I want the site to load quickly.**
 
 ### Design
 
@@ -220,3 +194,79 @@ The wireframes do not fully correspond with the end product due to multiple chan
 * [Cloudconvert](https://cloudconvert.com/) used to convert images to webp format.
 * [Favicon.io](https://favicon.io/) used to generate favicon.
 * [React Router](https://reactrouter.com/) used for client-side routing and navigation between pages.
+
+## Testing
+
+### Validator testing
+
+I used the following websites to check my code for syntax errors:
+
+* [CSS validator](https://jigsaw.w3.org/css-validator/) - to check and validate CSS syntax.
+* [ESLint](https://eslint.org/) – to check for syntax issues and enforce code style in React + TypeScript.
+* [TypeScript Compiler](https://www.typescriptlang.org/) – to validate type safety across the codebase.
+
+### Testing User Stories from (UX) section
+
+* **As a user, I want to easily see what services are offered (online therapy, face-to-face sessions, specialisms) so I can decide if they fit my needs.**  
+  → The site has a dedicated services section that clearly lists what is available on the Services page.
+  → Some questions may be answered about the service on the FAQ page.
+
+* **As a user, I want to find pricing information so I know how much sessions will cost before reaching out.**
+  → Pricing is displayed transparently on the Contact page.
+
+* **As a user, I want to read about the therapy approach and methods so I can feel reassured it aligns with my expectations.**
+  → The site provides an explanation of the therapeutic style and philosophy in simple language on the About page.
+
+* **As a user, I want to see the location and directions for in-person sessions so I can easily find the office.**
+  → The contact section includes the clinic address and map integration on the Contact page.
+
+* **As a user, I want a contact form or email link so I can quickly get in touch to ask questions or book.**
+  → A simple contact form allows direct communication on the Contact page.
+  → There is an email that could be emailed directly for queries also on the Contact page.
+
+* **As a user, I want a phone number so I can call or message directly.**
+  → The phone number contact is clearly visible on the Contact page.
+
+* **As a user, I want to know if online sessions are available so I can consider remote therapy.**
+  → The FAQ page highlights that online sessions are offered.
+
+* **As a user, I want the website to be mobile-friendly so I can browse easily on my phone.**
+  → The site uses responsive design so it works well on all screen sizes.
+
+* **As a user, I want to view testimonials so I can build confidence in the practice.**
+  → A testimonials section shares positive experiences of past clients on the Home page.
+
+* **As a user, I want an FAQ section so I can quickly find answers to common questions.**
+  → A dedicated FAQ page addresses common concerns like process, confidentiality, and payment.
+
+* **As a user, I want the site to load quickly.**
+  → Optimised images and a lightweight React static build ensure fast performance.
+
+### Personal testing
+
+- Samsung Galaxy S9
+  - Samsung Internet
+  - Microsoft Edge
+  - Mozilla Firefox
+  - Google Chrome
+- iPhone 6
+  - Safari
+- iPhone SE
+  - Safari
+  - Google Chrome
+- iPhone 12 Mini
+  - Safari
+- iPhone 14
+  - Safari
+- iPad 11" Pro
+  - Safari
+- Aorus 7
+  - Google Chrome
+  - Mozilla Firefox
+  - Microsoft Edge
+  - Opera
+  - Brave
+
+### Bugs
+
+* There are no known bugs and any that existed were promptly addressed and fixed.
