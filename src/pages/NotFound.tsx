@@ -12,11 +12,15 @@ export default function NotFound() {
             <div className="card card--narrow">
               <div className="block__text card__text text-center">
                 <header className="block__header">
-                  <h3>This page does not exist</h3>
+                  <h2>This page does not exist</h2>
                 </header>
                 <p>
                   It seems the page you are looking for does not exist. Maybe go
-                  back to the <Link to="/">Home page</Link>?
+                  back to the{" "}
+                  <Link to="/" data-testid="notfound-home-link">
+                    Home page
+                  </Link>
+                  ?
                 </p>
               </div>
             </div>
