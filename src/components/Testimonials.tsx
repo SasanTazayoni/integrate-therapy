@@ -24,7 +24,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
     );
 
   return (
-    <section className="block block--grey">
+    <section className="block block--grey" aria-label="Client testimonials">
       <div className="container testimonials__container">
         <h2 className="block__header">Testimonials</h2>
 
@@ -55,19 +55,23 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           <button
             onClick={showPreviousTestimonial}
             className="testimonials__button"
+            aria-label="Show previous testimonial"
           >
             <svg className="icon--left">
               <use href="/integrate-therapy/integratesprite.svg#chevron" />
             </svg>
           </button>
 
-          <div className="testimonials-bullets">
+          <div className="testimonials-bullets" role="tablist">
             {testimonials.map((_, index) => (
               <div
                 key={index}
                 className={`testimonial-bullet ${
                   index === currentIndex ? "active" : ""
                 }`}
+                role="tab"
+                aria-selected={index === currentIndex ? true : false}
+                aria-label={`Testimonial ${index + 1}`}
               />
             ))}
           </div>
@@ -75,6 +79,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           <button
             onClick={showNextTestimonial}
             className="testimonials__button"
+            aria-label="Show next testimonial"
           >
             <svg className="icon--right">
               <use href="/integrate-therapy/integratesprite.svg#chevron" />
