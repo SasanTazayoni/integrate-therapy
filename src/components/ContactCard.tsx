@@ -7,9 +7,10 @@ export default function ContactCard() {
       <div className="grid grid--1x2">
         <div className="contact__card">
           <div className="contact__card-text">
+            <h2 className="contact__card-header">Contact Details</h2>
             <p>Please contact me with the details below:</p>
             <p>
-              <span className="contact__strong">Email:</span>{" "}
+              <strong>Email:</strong>{" "}
               <a
                 href="mailto:info@integratetherapy.co.uk"
                 className="contact__strong"
@@ -18,13 +19,9 @@ export default function ContactCard() {
               </a>
             </p>
             <p>
-              <span className="contact__strong">Mobile:</span> +44 784 604 3703
+              <strong>Mobile:</strong> +44 784 604 3703
             </p>
-            <p>
-              <span className="contact__strong contact__office-hours--heading">
-                Office hours:
-              </span>
-            </p>
+            <h3>Office hours:</h3>
             <ul>
               <li>Tuesday - Wednesday: 9AM - 9PM</li>
               <li>Friday: 9AM - 12PM</li>
@@ -35,7 +32,7 @@ export default function ContactCard() {
           <img
             className="contact__card-image"
             src="./images/contactpic.jpeg"
-            alt="Picture of Simon Burgess"
+            alt="Picture of Simon Burgess, therapist"
           />
         </div>
       </div>
