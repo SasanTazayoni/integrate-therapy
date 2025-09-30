@@ -2,7 +2,7 @@ export default function AboutIntro() {
   return (
     <article className="block block--grey block--top-castrated">
       <div className="container">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <div className="grid grid--1x2-alt">
           <div>
             <p>
