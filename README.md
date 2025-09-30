@@ -341,4 +341,7 @@ Automated tests were implemented for all pages, utilities, and components to ens
 * (Optional) Update npm to the latest version by running ```npm install -g npm@latest```.
 * You are now ready to use npm for installing packages and running scripts in your projects.
 
+## Credits
 
+- Thanks to [Kevin Powell](https://www.youtube.com/@KevinPowell) and [WebDevSimplified](https://www.youtube.com/@WebDevSimplified) from YouTube for best practices in code.
+- Thanks to [Programming with Mosh](https://www.youtube.com/@programmingwithmosh) from YouTube for image optimisation techniques and knowledge of useful web applications.
