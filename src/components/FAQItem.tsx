@@ -6,7 +6,7 @@ type FAQItemProps = {
 export default function FAQItem({ question, answer }: FAQItemProps) {
   return (
     <div className="container--large">
-      <div className="container--grey">
+      <div className="container">
         <dl>
           <dt className="faq" aria-label="Question">
             <span className="faq__qa">Q:</span> {question}
