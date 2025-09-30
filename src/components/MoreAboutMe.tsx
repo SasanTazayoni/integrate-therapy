@@ -4,7 +4,7 @@ export default function MoreAboutMe() {
   return (
     <article className="block block--grey">
       <div className="container">
-        <h3 className="block__header">More About Me</h3>
+        <h2 className="block__header">More About Me</h2>
         <div>
           <p>
             Outside of my work as a therapist, I value keeping a healthy balance
