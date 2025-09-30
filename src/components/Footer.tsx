@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   const footerLinks = ["Home", "About", "Services", "FAQ", "Contact"];
 
@@ -7,25 +9,23 @@ export default function Footer() {
         <ul className="list footer__list">
           {footerLinks.map((label) => (
             <li key={label} className="footer__item">
-              <a
-                href={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+              <Link
+                to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
                 aria-label={`Go to ${label} page`}
               >
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
 
       <div className="footer__logo-block">
-        <a href="/" aria-label="Go to homepage">
-          <img
-            className="footer__logo"
-            src="images/logo.png"
-            alt="Integrate Therapy logo"
-          />
-        </a>
+        <img
+          className="footer__logo"
+          src="images/logo.png"
+          alt="Integrate Therapy logo"
+        />
       </div>
 
       <div className="footer__credits-block">
