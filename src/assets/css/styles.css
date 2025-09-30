@@ -1559,12 +1559,26 @@ a:hover {
 .faq {
   margin: 0 10px;
   display: flex;
-  align-items: center;
   gap: 0.5rem;
   font-size: 2rem;
 }
 
-.faq__qa {
+.faq__list {
+  text-align: left;
+}
+
+dt {
+  display: block;
+  border-bottom: 3px solid rgb(232, 230, 253);
+  padding-bottom: 1rem;
+}
+
+dd {
+  padding-top: 1rem;
+}
+
+.faq__q,
+.faq__a {
   font-weight: 600;
 }
 
@@ -1607,19 +1621,11 @@ a:hover {
   .faq .icon {
     display: none;
   }
-
-  span.faq__qa {
-    min-width: 65px;
-  }
 }
 
 @media screen and (max-width: 324px) {
   .faq {
     font-size: 1.2rem;
-  }
-
-  span.faq__qa {
-    min-width: 60px;
   }
 }
 
