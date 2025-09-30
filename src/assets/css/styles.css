@@ -382,7 +382,6 @@ a:hover {
   color: #fff;
   background: var(--color-primary);
   transition: all 0.6s ease-in-out;
-  margin: 1rem;
 }
 
 .button:hover {
@@ -419,7 +418,6 @@ a:hover {
 
 @media screen and (max-width: 428px) {
   .button {
-    margin: 0.5rem;
     width: 100px;
     height: 40px;
     font-size: 1.2rem;
@@ -509,7 +507,7 @@ a:hover {
 .block--top-castrated {
   padding-top: 12rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .block--top-castrated p,
@@ -588,6 +586,7 @@ a:hover {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
+  gap: 2rem;
 }
 
 .about__image-container {
@@ -636,6 +635,12 @@ a:hover {
 
   .container--grey {
     border-left: 3px solid var(--color-border);
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .container__buttons {
+    gap: 1rem;
   }
 }
 
