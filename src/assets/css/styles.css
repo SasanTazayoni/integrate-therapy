@@ -1739,7 +1739,7 @@ dd {
 }
 
 .contact-map__block {
-  margin: 4rem 0;
+  padding: 4rem 0;
 }
 
 @media screen and (min-width: 361px) and (max-width: 767px) {
