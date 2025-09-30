@@ -266,6 +266,41 @@ I used the following websites to check my code for syntax errors:
   - Microsoft Edge
   - Opera
   - Brave
+ 
+### Lighthouse testing
+
+Lighthouse was a helpful tool for checking where where the website was experiencing the most issues.
+
+* Home page (Desktop / Mobile): <br>
+
+![Home page lighthouse test for desktop](documentation/home-lighthouse-desktop.png)
+![Home page lighthouse test for mobile](documentation/home-lighthouse-mobile.png)
+
+* About page (Desktop / Mobile): <br>
+
+![About page lighthouse test for desktop](documentation/about-lighthouse-desktop.png)
+![About page lighthouse test for mobile](documentation/about-lighthouse-mobile.png)
+
+* Services page (Desktop / Mobile): <br>
+
+![Services page lighthouse test for desktop](documentation/services-lighthouse-desktop.png)
+![Services page lighthouse test for mobile](documentation/services-lighthouse-mobile.png)
+
+* FAQ page (Desktop / Mobile): <br>
+
+![FAQ page lighthouse test for desktop](documentation/faq-lighthouse-desktop.png)
+![FAQ page lighthouse test for mobile](documentation/faq-lighthouse-mobile.png)
+
+* Contact page (Desktop / Mobile): <br>
+
+![Contact page lighthouse test for desktop](documentation/contact-lighthouse-desktop.png)
+![Contact page lighthouse test for mobile](documentation/contact-lighthouse-mobile.png)
+
+### Automated testing
+
+Automated tests were implemented for all pages, utilities, and components to ensure functionality.
+
+![Automated tests](documentation/unittests.png)
 
 ### Bugs
 
