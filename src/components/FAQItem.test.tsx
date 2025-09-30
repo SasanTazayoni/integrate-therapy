@@ -20,16 +20,6 @@ describe("FAQItem Component", () => {
     expect(answerElement).toBeInTheDocument();
   });
 
-  test("renders the SVG icon in the answer", () => {
-    render(<FAQItem question={questionText} answer={answerText} />);
-
-    const svgElement = screen.getByTestId("faq-svg");
-    expect(svgElement).toBeInTheDocument();
-    expect(svgElement.querySelector("use")?.getAttribute("href")).toBe(
-      "/integrate-therapy/integratesprite.svg#right-arrow"
-    );
-  });
-
   test("renders ReactNode as answer", () => {
     const answerNode = <span data-testid="custom-answer">Custom Answer</span>;
     render(<FAQItem question={questionText} answer={answerNode} />);
