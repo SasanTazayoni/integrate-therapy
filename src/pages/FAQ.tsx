@@ -10,18 +10,23 @@ export default function FAQ() {
     <>
       <Navbar />
 
-      <section className="block block--grey block--top-castrated">
-        <h2>Frequently Asked Questions</h2>
+      <section
+        className="block block--grey block--top-castrated"
+        aria-labelledby="faq-title"
+      >
+        <h1 id="faq-title">Frequently Asked Questions</h1>
 
-        {faqData.map((faq, i) => (
-          <FAQItem key={i} question={faq.question} answer={faq.answer} />
-        ))}
+        <div role="list" aria-label="Frequently asked questions list">
+          {faqData.map((faq, i) => (
+            <FAQItem key={i} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
 
         <div className="grid grid--1x2 container__buttons">
-          <Link to="/">
+          <Link to="/" aria-label="Go to Home page">
             <Button>Home</Button>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" aria-label="Go to Contact page">
             <Button>Contact</Button>
           </Link>
         </div>
