@@ -5,18 +5,29 @@ import FAQ from "./FAQ";
 import { faqData } from "../data/faqData";
 
 describe("FAQ Page", () => {
-  test("renders Navbar and Footer", () => {
+  test("renders Navbar correctly", () => {
     render(
       <MemoryRouter>
         <FAQ />
       </MemoryRouter>
     );
 
-    const navbar = screen.getByRole("navigation");
+    const navbar = screen.getByTestId("navbar");
     expect(navbar).toBeInTheDocument();
+  });
 
-    const footer = screen.getByRole("contentinfo");
-    expect(footer).toBeInTheDocument();
+  test("renders Footer correctly", () => {
+    render(
+      <MemoryRouter>
+        <FAQ />
+      </MemoryRouter>
+    );
+
+    const footerNav = screen.getByLabelText("Footer Navigation");
+    expect(footerNav).toBeInTheDocument();
+
+    const footerLinks = footerNav.querySelectorAll("a");
+    expect(footerLinks.length).toBe(5);
   });
 
   test("renders main heading", () => {
