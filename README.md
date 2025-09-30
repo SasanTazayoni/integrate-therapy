@@ -117,9 +117,10 @@ The wireframes do not fully correspond with the end product due to multiple chan
 
 ![Hover effect](documentation/buttonhovereffect.png) <br>
 
-* The navbar exists on every page. There are menu links on a large screen and a hamburger with a dropdown menu on smaller screens:
+* The navbar exists on every page and active links gain a subtle border with darkened text. There are menu links on a large screen and a hamburger with a dropdown menu on smaller screens:
 
 ![Desktop navbar](documentation/navbardesktop.png) <br>
+![Active link compared with inactive ones on navbar](documentation/activepage.png) <br>
 ![Mobile navbar](documentation/navbarmobile.png) <br>
 ![Dropdown menu for mobile view](documentation/dropdownmenu.png) <br>
 
