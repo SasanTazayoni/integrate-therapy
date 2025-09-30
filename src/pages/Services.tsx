@@ -41,11 +41,20 @@ export default function Services() {
     <>
       <Navbar />
 
-      <section className="block block--grey block--top">
+      <section
+        className="block block--grey block--top"
+        aria-labelledby="services-title"
+      >
         <div className="container">
-          <h2 className="services__title">How I Can Help</h2>
+          <h1 id="services-title" className="services__title">
+            How I Can Help
+          </h1>
 
-          <ul className="services__list" data-testid="services-list">
+          <ul
+            className="services__list"
+            data-testid="services-list"
+            aria-label="List of services I provide"
+          >
             {services.map((service, i) => (
               <li key={i} className={`list__item delay-${i}`}>
                 {service}
@@ -54,10 +63,10 @@ export default function Services() {
           </ul>
 
           <div className="grid grid--1x2 container__buttons">
-            <Link to="/FAQ">
+            <Link to="/FAQ" aria-label="Go to frequently asked questions page">
               <Button data-testid="faq-button">FAQ</Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" aria-label="Go to contact page">
               <Button data-testid="contact-button">Contact</Button>
             </Link>
           </div>
