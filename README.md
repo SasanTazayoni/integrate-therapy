@@ -306,3 +306,39 @@ Automated tests were implemented for all pages, utilities, and components to ens
 ### Bugs
 
 * There are no known bugs and any that existed were promptly addressed and fixed.
+
+## Deployment
+
+* Open your terminal or command prompt.
+* Navigate to your Vite React project directory.
+* Install the gh-pages package by running ```npm install gh-pages --save-dev``` (You should have NPM installed - see below if you do not).
+* Open the package.json file in your project.
+* Add a "homepage" field at the top level with your GitHub Pages URL, e.g.: ```"homepage": "https://<username>.github.io/<repository-name>"```.
+* In the scripts section of package.json, add the following two scripts:
+  * "predeploy": "npm run build",
+  * "deploy": "gh-pages -d dist"
+* Save the package.json file.
+* Run the deploy script in your terminal: ```npm run deploy```.
+* GitHub Pages will build your Vite app and push it to the gh-pages branch automatically.
+* Log into GitHub.
+* Locate the repository.
+* Click on the 'Settings' option along the top options bar.
+* Locate the 'Pages' option in the left sidebar and click on it.
+* Under the 'Branch' section, select gh-pages from the dropdown menu.
+* Click the save button.
+* GitHub Pages will begin hosting your website, which usually takes a few minutes.
+* The live website URL will now appear in a green bar under the section header, and you can refer back to it at any time.
+
+### Installing NPM
+
+* Go to the [Node.js official website](https://nodejs.org/en).
+* Download the LTS (Long Term Support) version for your operating system (Windows, macOS, or Linux).
+* Run the installer and follow the on-screen instructions.
+* Ensure the option “Add to PATH” is selected during installation.
+* Open a terminal (Command Prompt, PowerShell, or Terminal).
+* Check Node.js installation by running ```node -v``` – this should print the Node.js version.
+* Check npm installation by running ```npm -v``` – this should print the npm version.
+* (Optional) Update npm to the latest version by running ```npm install -g npm@latest```.
+* You are now ready to use npm for installing packages and running scripts in your projects.
+
+
