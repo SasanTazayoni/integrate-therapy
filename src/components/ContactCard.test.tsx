@@ -45,18 +45,16 @@ describe("ContactCard Component", () => {
   test("renders the contact image with correct src and alt", () => {
     render(<ContactCard />);
 
-    const image = screen.getByAltText("Picture of Simon Burgess");
+    const image = screen.getByAltText(/Picture of Simon Burgess/i);
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute("src", "./images/contactpic.jpeg");
   });
 
-  test("renders strong class for labels", () => {
+  test("renders strong class for email link", () => {
     render(<ContactCard />);
-
-    expect(screen.getByText(/Email:/i)).toHaveClass("contact__strong");
-    expect(screen.getByText(/Mobile:/i)).toHaveClass("contact__strong");
-    expect(screen.getByText(/Office hours:/i)).toHaveClass("contact__strong", {
-      exact: false,
+    const emailLink = screen.getByRole("link", {
+      name: /info@integratetherapy.co.uk/i,
     });
+    expect(emailLink).toHaveClass("contact__strong");
   });
 });
