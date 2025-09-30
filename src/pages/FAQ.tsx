@@ -16,7 +16,7 @@ export default function FAQ() {
       >
         <h1 id="faq-title">Frequently Asked Questions</h1>
 
-        <div role="list" aria-label="Frequently asked questions list">
+        <div className="faq__list">
           {faqData.map((faq, i) => (
             <FAQItem key={i} question={faq.question} answer={faq.answer} />
           ))}
