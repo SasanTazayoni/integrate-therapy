@@ -189,7 +189,7 @@ The wireframes do not fully correspond with the end product due to multiple chan
 * [Photoshop](https://www.adobe.com/uk/products/photoshop/) used to resize photos.
 * [Block-element-modifier naming convention](https://www.geeksforgeeks.org/understanding-the-css-bem-convention/) used for naming CSS classes.
 * [Formspree](https://formspree.io/) used in the enquiries form to provide a backend, enabling efficient routing of email enquiries directly to the business owner.
-* [ChatGPT](https://chat.openai.com/) used to generate placeholder text and to verify code.
+* [ChatGPT](https://chat.openai.com/) used to verify code.
 * [Unsplash](https://unsplash.com/) used to obtain pictures.
 * [Pexels](https://www.pexels.com/) used to obtain pictures.
 * [Cloudconvert](https://cloudconvert.com/) used to convert images to webp format.
