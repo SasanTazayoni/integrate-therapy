@@ -753,7 +753,7 @@ a:hover {
 
 /* Home Page */
 
-/* Navigations Bars */
+/* Navigation Bar */
 
 .nav {
   background: #fff;
@@ -764,7 +764,7 @@ a:hover {
   position: fixed;
   width: 100%;
   z-index: 1;
-  box-shadow: 0 0 2rem #dcdcdc, 0 0 2rem #dcdcdc;
+  box-shadow: 0 0 1rem #dcdcdc, 0 0 1rem #dcdcdc;
 }
 
 .nav__btn {
