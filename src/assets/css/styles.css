@@ -1479,6 +1479,14 @@ a.button:hover {
   fill: var(--color-link);
 }
 
+@media screen and (max-width: 428px) {
+  .footer__legal-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .footer__item {
     font-size: 1.5rem;
