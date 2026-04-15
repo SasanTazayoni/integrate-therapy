@@ -8,10 +8,10 @@ export default function FAQItem({ question, answer }: FAQItemProps) {
     <div className="container--large">
       <div className="container--white">
         <dl>
-          <dt className="faq" aria-label="Question">
+          <dt className="faq">
             <span className="faq__q">Q:</span> {question}
           </dt>
-          <dd className="faq" aria-label="Answer">
+          <dd className="faq">
             <span className="faq__a">A:</span> {answer}
           </dd>
         </dl>

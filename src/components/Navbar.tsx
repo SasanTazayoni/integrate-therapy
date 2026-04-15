@@ -18,7 +18,7 @@ export default function Navbar() {
       data-testid="navbar"
     >
       <div className="nav__brand__group">
-        <div className="nav__brand" aria-label="Integrate Therapy Logo">
+        <div className="nav__brand">
           <img
             className="nav__logo"
             src="images/logo.png"
