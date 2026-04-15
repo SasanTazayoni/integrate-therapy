@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
+import LinkButton from "../components/LinkButton";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
 
 const services = [
   "Anxiety and Panic Disorders",
@@ -63,12 +62,8 @@ export default function Services() {
           </ul>
 
           <div className="grid grid--1x2 container__buttons">
-            <Link to="/FAQ" aria-label="Go to frequently asked questions page">
-              <Button data-testid="faq-button">FAQ</Button>
-            </Link>
-            <Link to="/contact" aria-label="Go to contact page">
-              <Button data-testid="contact-button">Contact</Button>
-            </Link>
+            <LinkButton to="/FAQ" aria-label="Go to frequently asked questions page" data-testid="faq-button">FAQ</LinkButton>
+            <LinkButton to="/contact" aria-label="Go to contact page" data-testid="contact-button">Contact</LinkButton>
           </div>
         </div>
       </section>

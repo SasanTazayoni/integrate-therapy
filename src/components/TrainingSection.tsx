@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Button from "./Button";
+import LinkButton from "./LinkButton";
 
 export default function TrainingSection() {
   return (
@@ -34,12 +33,8 @@ export default function TrainingSection() {
       </div>
 
       <div className="grid grid--1x2 container__buttons">
-        <Link to="/services">
-          <Button aria-label="Go to Services page">Services</Button>
-        </Link>
-        <Link to="/contact">
-          <Button aria-label="Go to Contact page">Contact</Button>
-        </Link>
+        <LinkButton to="/services" aria-label="Go to Services page">Services</LinkButton>
+        <LinkButton to="/contact" aria-label="Go to Contact page">Contact</LinkButton>
       </div>
     </section>
   );

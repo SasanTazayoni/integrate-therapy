@@ -1,7 +1,7 @@
-export const initializeRippleEffect = (button: HTMLButtonElement): void => {
+export const initializeRippleEffect = (button: HTMLElement): void => {
   function createRipple(e: MouseEvent): void {
     if (e.target === button) {
-      const target = e.target as HTMLButtonElement;
+      const target = e.target as HTMLElement;
 
       const rect = target.getBoundingClientRect();
       const x = e.clientX - rect.left;

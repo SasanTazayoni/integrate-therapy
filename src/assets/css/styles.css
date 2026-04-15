@@ -372,6 +372,12 @@ a:focus-visible {
 
 /* Buttons */
 
+a.button,
+a.button:visited,
+a.button:hover {
+  color: #fff;
+}
+
 .button {
   position: relative;
   overflow: hidden;
@@ -393,6 +399,7 @@ a:focus-visible {
 
 .button:hover {
   background: var(--color-secondary);
+  color: #fff;
 }
 
 .button:focus-visible {

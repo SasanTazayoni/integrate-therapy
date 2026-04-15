@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import LinkButton from "./LinkButton";
 
 export default function Hero() {
   return (
@@ -11,12 +10,8 @@ export default function Hero() {
           <p className="hero__tagline">Psychotherapist based in London, UK</p>
 
           <div className="grid grid--1x2 container__buttons">
-            <Link to="/about">
-              <Button aria-label="Learn more about the therapist">About</Button>
-            </Link>
-            <Link to="/contact">
-              <Button aria-label="Contact the therapist">Contact</Button>
-            </Link>
+            <LinkButton to="/about" aria-label="Learn more about the therapist">About</LinkButton>
+            <LinkButton to="/contact" aria-label="Contact the therapist">Contact</LinkButton>
           </div>
         </div>
       </header>

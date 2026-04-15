@@ -1,7 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
-import { Link } from "react-router-dom";
+import LinkButton from "../components/LinkButton";
 import FAQItem from "../components/FAQItem";
 import { faqData } from "../data/faqData";
 
@@ -23,12 +22,8 @@ export default function FAQ() {
         </div>
 
         <div className="grid grid--1x2 container__buttons">
-          <Link to="/" aria-label="Go to Home page">
-            <Button>Home</Button>
-          </Link>
-          <Link to="/contact" aria-label="Go to Contact page">
-            <Button>Contact</Button>
-          </Link>
+          <LinkButton to="/" aria-label="Go to Home page">Home</LinkButton>
+          <LinkButton to="/contact" aria-label="Go to Contact page">Contact</LinkButton>
         </div>
       </section>
 
