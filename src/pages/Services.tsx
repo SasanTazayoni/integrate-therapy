@@ -55,7 +55,7 @@ export default function Services() {
               aria-label="List of services I provide"
             >
               {services.map((service, i) => (
-                <li key={i} className={`list__item delay-${i}`}>
+                <li key={service} className={`list__item delay-${i}`}>
                   {service}
                 </li>
               ))}

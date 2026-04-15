@@ -30,9 +30,9 @@ export default function MoreAboutMe() {
         </div>
 
         <div className="hobbies__container">
-          {hobbies.map((hobby, i) => (
+          {hobbies.map((hobby) => (
             <img
-              key={i}
+              key={hobby.src}
               src={hobby.src}
               className="hobby__image"
               alt={hobby.alt}

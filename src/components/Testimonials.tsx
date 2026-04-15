@@ -43,7 +43,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
 
           {testimonials.map((testimonial, index) => (
             <p
-              key={index}
+              key={testimonial}
               className={`testimonial__text ${
                 index === currentIndex ? "active" : ""
               }`}

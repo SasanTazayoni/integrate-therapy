@@ -21,7 +21,7 @@ export default function InfoCard({
             </header>
             {paragraphs.map((text, idx) => (
               <p
-                key={idx}
+                key={text}
                 className={idx > 0 ? "card__text-paragraph" : undefined}
               >
                 {text}
