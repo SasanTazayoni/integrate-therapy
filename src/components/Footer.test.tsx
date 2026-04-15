@@ -40,16 +40,13 @@ describe("Footer Component", () => {
       </MemoryRouter>
     );
 
-    const creditText = screen.getByText(/Integrate Therapy 2025/i);
+    const creditText = screen.getByText(/Integrate Therapy 2025. All rights reserved/i);
     expect(creditText).toBeInTheDocument();
 
-    const sasanlink = screen.getByRole("link", { name: "Sasan Tazayoni" });
-    expect(sasanlink).toHaveAttribute(
+    const githubLink = screen.getByRole("link", { name: /view source on github/i });
+    expect(githubLink).toHaveAttribute(
       "href",
-      "https://github.com/SasanTazayoni"
+      "https://github.com/SasanTazayoni/integrate-therapy"
     );
-
-    const sabalink = screen.getByRole("link", { name: "Saba Tazayoni" });
-    expect(sabalink).toHaveAttribute("href", "https://github.com/stazay");
   });
 });
