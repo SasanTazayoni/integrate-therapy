@@ -55,7 +55,8 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
   border-color: var(--color-secondary);
-  outline: 0;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
   transition: all 0.3s;
 }
 
@@ -154,6 +155,12 @@ a:link {
 
 a:hover {
   color: var(--color-link);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /* Icons */
@@ -386,6 +393,11 @@ a:hover {
 
 .button:hover {
   background: var(--color-secondary);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .testimonials__button {
@@ -683,10 +695,17 @@ a:hover {
   background-color: #fff;
 }
 
+.collapsible__icon:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .collapsible__content {
   max-height: 0vh;
   overflow: hidden;
   opacity: 0;
+  visibility: hidden;
   transition: all 0.5s;
 }
 
@@ -694,6 +713,7 @@ a:hover {
   display: block;
   max-height: 100vh;
   opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
@@ -890,7 +910,8 @@ a:hover {
   }
 
   .nav__toggler,
-  .nav__list {
+  .nav__list,
+  .collapsible__icon {
     display: none;
   }
 
@@ -917,6 +938,12 @@ a:hover {
 
   .nav__list-widescreen .nav__link:not(.active):hover {
     filter: drop-shadow(0 0 0.5px rgb(17, 70, 245));
+  }
+
+  .nav__list-widescreen .nav__link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 5px;
   }
 }
 
@@ -1310,6 +1337,12 @@ a:hover {
 
 .footer__item > a:hover {
   color: var(--color-link);
+}
+
+.footer__item > a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .footer__logo-block {

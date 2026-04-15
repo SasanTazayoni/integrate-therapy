@@ -61,6 +61,7 @@ export default function Navbar() {
         id="mobile-menu"
         className="list nav__list collapsible__content"
         role="menu"
+
       >
         {NAV_LINKS.map((label) => (
           <li key={label} className="nav__item" role="none">
