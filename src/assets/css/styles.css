@@ -391,6 +391,7 @@ a.button,
 a.button:visited,
 a.button:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .button {
