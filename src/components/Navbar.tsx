@@ -72,11 +72,6 @@ export default function Navbar() {
               role="menuitem"
               data-testid={`mobile-link-${label.toLowerCase()}`}
             >
-              <svg className="icon icon--secondary" aria-hidden="true">
-                <use
-                  href={`/integrate-therapy/integratesprite.svg#${label.toLowerCase()}`}
-                />
-              </svg>
               {label}
             </NavLink>
           </li>

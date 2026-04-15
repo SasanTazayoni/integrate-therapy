@@ -830,7 +830,7 @@ a:focus-visible {
 .nav__item {
   border-bottom: 1px solid #daeffc;
   padding: 1rem 2rem;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .nav__item > a {
