@@ -11,6 +11,13 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       reporter: ["text"],
+      exclude: [
+        "src/App.tsx",
+        "src/main.tsx",
+        "src/vite-env.d.ts",
+        "eslint.config.js",
+        "vite.config.ts",
+      ],
     },
   },
 });
