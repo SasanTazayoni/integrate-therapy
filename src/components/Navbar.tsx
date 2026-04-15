@@ -1,7 +1,6 @@
 import { useState, useCallback } from "react";
 import { NavLink } from "react-router-dom";
-
-const NAV_LINKS = ["Home", "About", "Services", "FAQ", "Contact"];
+import { NAV_LINKS, getNavPath } from "../data/navLinks";
 
 export default function Navbar() {
   const [navExpanded, setNavExpanded] = useState(false);
@@ -32,7 +31,7 @@ export default function Navbar() {
         {NAV_LINKS.map((label) => (
           <li key={label}>
             <NavLink
-              to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+              to={getNavPath(label)}
               className={({ isActive }) =>
                 `nav__link${isActive ? " active" : ""}`
               }
@@ -66,7 +65,7 @@ export default function Navbar() {
         {NAV_LINKS.map((label) => (
           <li key={label} className="nav__item" role="none">
             <NavLink
-              to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+              to={getNavPath(label)}
               className={({ isActive }) => (isActive ? "active" : "")}
               aria-label={`Go to ${label} page`}
               role="menuitem"

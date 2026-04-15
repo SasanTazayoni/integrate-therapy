@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
+import { NAV_LINKS, getNavPath } from "../data/navLinks";
 
 export default function Footer() {
-  const footerLinks = ["Home", "About", "Services", "FAQ", "Contact"];
 
   return (
     <footer id="site-footer" className="block--white footer__block">
       <nav aria-label="Footer Navigation" className="footer__nav-block">
         <ul className="list footer__list">
-          {footerLinks.map((label) => (
+          {NAV_LINKS.map((label) => (
             <li key={label} className="footer__item">
               <Link
-                to={label === "Home" ? "/" : `/${label.toLowerCase()}`}
+                to={getNavPath(label)}
                 aria-label={`Go to ${label} page`}
               >
                 {label}
