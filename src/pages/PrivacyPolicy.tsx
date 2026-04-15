@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
                 Under UK data protection law, we must have a "lawful basis" for collecting and using your personal
                 information. There is a list of possible lawful bases in the UK GDPR. You can find out more about
                 lawful bases on the{" "}
-                <a href="https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/lawful-bases/" target="_blank" rel="noopener noreferrer">
+                <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/" target="_blank" rel="noopener noreferrer">
                   ICO's website
                 </a>.
               </p>
