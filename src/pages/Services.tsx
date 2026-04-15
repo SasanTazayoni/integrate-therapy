@@ -62,7 +62,7 @@ export default function Services() {
             </ul>
 
             <div className="grid grid--1x2 container__buttons">
-              <LinkButton to="/FAQ" aria-label="Go to frequently asked questions page" data-testid="faq-button">FAQ</LinkButton>
+              <LinkButton to="/faq" aria-label="Go to frequently asked questions page" data-testid="faq-button">FAQ</LinkButton>
               <LinkButton to="/contact" aria-label="Go to contact page" data-testid="contact-button">Contact</LinkButton>
             </div>
           </div>

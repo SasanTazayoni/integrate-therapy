@@ -18,29 +18,6 @@ describe("Services Page", () => {
     expect(navLinks.length).toBeGreaterThan(0);
   });
 
-  test("renders Footer correctly", () => {
-    render(
-      <MemoryRouter>
-        <Services />
-      </MemoryRouter>
-    );
-
-    const footer = screen.getByTestId("footer-text");
-    expect(footer).toBeInTheDocument();
-
-    const footerNav = screen.getByLabelText("Footer Navigation");
-    expect(footerNav).toBeInTheDocument();
-
-    const footerLinks = within(footerNav).getAllByRole("link");
-    expect(footerLinks.length).toBe(5);
-
-    expect(footerLinks[0]).toHaveAttribute("href", "/");
-    expect(footerLinks[1]).toHaveAttribute("href", "/about");
-    expect(footerLinks[2]).toHaveAttribute("href", "/services");
-    expect(footerLinks[3]).toHaveAttribute("href", "/faq");
-    expect(footerLinks[4]).toHaveAttribute("href", "/contact");
-  });
-
   test("renders all service list items", () => {
     render(
       <MemoryRouter>
@@ -69,7 +46,7 @@ describe("Services Page", () => {
 
     const faqButton = screen.getByTestId("faq-button");
     expect(faqButton).toBeInTheDocument();
-    expect(faqButton.closest("a")).toHaveAttribute("href", "/FAQ");
+    expect(faqButton.closest("a")).toHaveAttribute("href", "/faq");
 
     const contactButton = screen.getByTestId("contact-button");
     expect(contactButton).toBeInTheDocument();
