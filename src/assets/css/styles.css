@@ -169,6 +169,7 @@ a:link {
 
 a:hover {
   color: var(--color-link);
+  text-decoration: underline;
 }
 
 a:focus-visible {
@@ -870,6 +871,7 @@ a.button:hover {
 
 .nav__item > a:hover {
   color: var(--color-link);
+  text-decoration: underline;
 }
 
 .nav__toggler {
@@ -959,6 +961,7 @@ a.button:hover {
 
   .nav__list-widescreen .nav__link:not(.active):hover {
     filter: drop-shadow(0 0 0.5px rgb(17, 70, 245));
+    text-decoration: underline;
   }
 
   .nav__list-widescreen .nav__link:focus-visible {
@@ -1365,6 +1368,7 @@ a.button:hover {
 
 .footer__item > a:hover {
   color: var(--color-link);
+  text-decoration: underline;
 }
 
 .footer__item > a:focus-visible {

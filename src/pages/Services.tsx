@@ -39,37 +39,37 @@ export default function Services() {
   return (
     <>
       <Navbar />
+      <main>
+        <section
+          className="block block--grey block--top"
+          aria-labelledby="services-title"
+        >
+          <div className="container">
+            <h1 id="services-title" className="services__title">
+              How I Can Help
+            </h1>
 
-      <section
-        className="block block--grey block--top"
-        aria-labelledby="services-title"
-      >
-        <div className="container">
-          <h1 id="services-title" className="services__title">
-            How I Can Help
-          </h1>
+            <ul
+              className="services__list"
+              data-testid="services-list"
+              aria-label="List of services I provide"
+            >
+              {services.map((service, i) => (
+                <li key={i} className={`list__item delay-${i}`}>
+                  {service}
+                </li>
+              ))}
+            </ul>
 
-          <ul
-            className="services__list"
-            data-testid="services-list"
-            aria-label="List of services I provide"
-          >
-            {services.map((service, i) => (
-              <li key={i} className={`list__item delay-${i}`}>
-                {service}
-              </li>
-            ))}
-          </ul>
-
-          <div className="grid grid--1x2 container__buttons">
-            <LinkButton to="/FAQ" aria-label="Go to frequently asked questions page" data-testid="faq-button">FAQ</LinkButton>
-            <LinkButton to="/contact" aria-label="Go to contact page" data-testid="contact-button">Contact</LinkButton>
+            <div className="grid grid--1x2 container__buttons">
+              <LinkButton to="/FAQ" aria-label="Go to frequently asked questions page" data-testid="faq-button">FAQ</LinkButton>
+              <LinkButton to="/contact" aria-label="Go to contact page" data-testid="contact-button">Contact</LinkButton>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="services__image"></section>
-
+        <div className="services__image" aria-hidden="true"></div>
+      </main>
       <Footer />
     </>
   );

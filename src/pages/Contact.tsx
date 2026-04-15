@@ -8,6 +8,7 @@ export default function Contact() {
     <>
       <Navbar />
 
+      <main>
       <section
         className="block block--grey block--top-castrated"
         aria-labelledby="contact-intro"
@@ -81,6 +82,7 @@ export default function Contact() {
         </div>
       </section>
 
+      </main>
       <Footer />
     </>
   );

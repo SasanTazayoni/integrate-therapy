@@ -8,10 +8,12 @@ export default function About() {
   return (
     <>
       <Navbar />
-      <AboutIntro />
-      <TrainingSection />
-      <section className="training__image"></section>
-      <MoreAboutMe />
+      <main>
+        <AboutIntro />
+        <TrainingSection />
+        <div className="training__image" aria-hidden="true"></div>
+        <MoreAboutMe />
+      </main>
       <Footer />
     </>
   );
