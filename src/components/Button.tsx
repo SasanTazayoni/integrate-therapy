@@ -8,7 +8,7 @@ export default function Button({ children, ...props }: ButtonProps) {
 
   useEffect(() => {
     if (buttonRef.current) {
-      initializeRippleEffect(buttonRef.current);
+      return initializeRippleEffect(buttonRef.current);
     }
   }, []);
 

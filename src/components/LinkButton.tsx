@@ -9,7 +9,7 @@ export default function LinkButton({ children, ...props }: LinkButtonProps) {
 
   useEffect(() => {
     if (linkRef.current) {
-      initializeRippleEffect(linkRef.current);
+      return initializeRippleEffect(linkRef.current);
     }
   }, []);
 

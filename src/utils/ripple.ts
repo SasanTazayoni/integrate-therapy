@@ -1,22 +1,36 @@
-export const initializeRippleEffect = (button: HTMLElement): void => {
-  function createRipple(e: MouseEvent): void {
-    if (e.target === button) {
-      const target = e.target as HTMLElement;
+export const initializeRippleEffect = (button: HTMLElement): (() => void) => {
+  function spawnRipple(x: number, y: number): void {
+    const rect = button.getBoundingClientRect();
+    const ripple = document.createElement("span");
+    ripple.style.left = `${x - rect.left}px`;
+    ripple.style.top = `${y - rect.top}px`;
+    button.appendChild(ripple);
+    setTimeout(() => ripple.remove(), 600);
+  }
 
-      const rect = target.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+  function onMouseDown(e: MouseEvent): void {
+    spawnRipple(e.clientX, e.clientY);
+  }
 
-      const ripples = document.createElement("span") as HTMLSpanElement;
-      ripples.style.left = `${x}px`;
-      ripples.style.top = `${y}px`;
-      button.appendChild(ripples);
+  function onTouchStart(e: TouchEvent): void {
+    const touch = e.touches[0];
+    spawnRipple(touch.clientX, touch.clientY);
+  }
 
-      setTimeout(() => {
-        ripples.remove();
-      }, 600);
+  function onKeyDown(e: KeyboardEvent): void {
+    if (e.key === "Enter" || e.key === " ") {
+      const rect = button.getBoundingClientRect();
+      spawnRipple(rect.left + rect.width / 2, rect.top + rect.height / 2);
     }
   }
 
-  button.addEventListener("mouseover", createRipple);
+  button.addEventListener("mousedown", onMouseDown);
+  button.addEventListener("touchstart", onTouchStart);
+  button.addEventListener("keydown", onKeyDown);
+
+  return () => {
+    button.removeEventListener("mousedown", onMouseDown);
+    button.removeEventListener("touchstart", onTouchStart);
+    button.removeEventListener("keydown", onKeyDown);
+  };
 };
