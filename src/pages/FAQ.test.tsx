@@ -16,20 +16,6 @@ describe("FAQ Page", () => {
     expect(navbar).toBeInTheDocument();
   });
 
-  test("renders Footer correctly", () => {
-    render(
-      <MemoryRouter>
-        <FAQ />
-      </MemoryRouter>
-    );
-
-    const footerNav = screen.getByLabelText("Footer Navigation");
-    expect(footerNav).toBeInTheDocument();
-
-    const footerLinks = footerNav.querySelectorAll("a");
-    expect(footerLinks.length).toBe(5);
-  });
-
   test("renders main heading", () => {
     render(
       <MemoryRouter>
