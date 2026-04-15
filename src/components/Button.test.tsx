@@ -30,7 +30,7 @@ describe("Button component", () => {
   test("calls initializeRippleEffect on mount", () => {
     const rippleSpy = vi
       .spyOn(rippleUtils, "initializeRippleEffect")
-      .mockImplementation(() => {});
+      .mockImplementation(() => () => {});
     render(<Button>Click Me</Button>);
     expect(rippleSpy).toHaveBeenCalledTimes(1);
     rippleSpy.mockRestore();

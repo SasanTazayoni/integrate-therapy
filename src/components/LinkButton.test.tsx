@@ -31,7 +31,7 @@ describe("LinkButton component", () => {
   test("calls initializeRippleEffect on mount", () => {
     const rippleSpy = vi
       .spyOn(rippleUtils, "initializeRippleEffect")
-      .mockImplementation(() => {});
+      .mockImplementation(() => () => {});
 
     render(
       <MemoryRouter>
