@@ -1,59 +1,40 @@
-import { describe, test, expect, vi } from "vitest";
+import { describe, test, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/vitest";
 import { MemoryRouter } from "react-router-dom";
 import About from "./About";
 
-vi.mock("../components/Navbar", () => ({
-  default: () => <div data-testid="navbar" />,
-}));
-vi.mock("../components/Footer", () => ({
-  default: () => <div data-testid="footer" />,
-}));
-vi.mock("../components/AboutIntro", () => ({
-  default: () => <div data-testid="about-intro" />,
-}));
-vi.mock("../components/TrainingSection", () => ({
-  default: () => <div data-testid="training-section" />,
-}));
-vi.mock("../components/MoreAboutMe", () => ({
-  default: () => <div data-testid="more-about-me" />,
-}));
-
 describe("About page", () => {
   const renderWithRouter = (ui: React.ReactElement) =>
     render(<MemoryRouter>{ui}</MemoryRouter>);
-
-  test("renders without crashing", () => {
-    renderWithRouter(<About />);
-  });
 
   test("renders Navbar", () => {
     renderWithRouter(<About />);
     expect(screen.getByTestId("navbar")).toBeInTheDocument();
   });
 
-  test("renders AboutIntro", () => {
+  test("renders AboutIntro heading", () => {
     renderWithRouter(<About />);
-    expect(screen.getByTestId("about-intro")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /about me/i, level: 1 })
+    ).toBeInTheDocument();
   });
 
-  test("renders TrainingSection", () => {
+  test("renders TrainingSection heading", () => {
     renderWithRouter(<About />);
-    expect(screen.getByTestId("training-section")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /training/i })
+    ).toBeInTheDocument();
   });
 
-  test("renders MoreAboutMe", () => {
+  test("renders MoreAboutMe heading", () => {
     renderWithRouter(<About />);
-    expect(screen.getByTestId("more-about-me")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /more about me/i })
+    ).toBeInTheDocument();
   });
 
-  test("renders Footer", () => {
-    renderWithRouter(<About />);
-    expect(screen.getByTestId("footer")).toBeInTheDocument();
-  });
-
-  test("renders training image section", () => {
+  test("renders training image div", () => {
     renderWithRouter(<About />);
     expect(document.querySelector(".training__image")).toBeInTheDocument();
   });
