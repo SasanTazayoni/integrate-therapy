@@ -8,7 +8,7 @@ describe("TrainingSection component", () => {
     render(
       <MemoryRouter>
         <TrainingSection />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
   });
 
@@ -19,13 +19,13 @@ describe("TrainingSection component", () => {
 
   test("renders all paragraphs", () => {
     const paragraphs = screen.getAllByText(
-      /I am a fully qualified|My professional training|I am also a member/i
+      /I am a fully qualified|My professional training|I am also a member/i,
     );
     expect(paragraphs.length).toBe(3);
   });
 
   test("renders Services button with correct text and aria-label", () => {
-    const servicesButton = screen.getByRole("button", {
+    const servicesButton = screen.getByRole("link", {
       name: /go to services page/i,
     });
     expect(servicesButton).toBeInTheDocument();
@@ -33,7 +33,7 @@ describe("TrainingSection component", () => {
   });
 
   test("renders Contact button with correct text and aria-label", () => {
-    const contactButton = screen.getByRole("button", {
+    const contactButton = screen.getByRole("link", {
       name: /go to contact page/i,
     });
     expect(contactButton).toBeInTheDocument();

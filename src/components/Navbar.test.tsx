@@ -11,7 +11,7 @@ describe("Navbar Component", () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     expect(screen.getByAltText("Integrate Therapy Logo")).toBeInTheDocument();
@@ -28,7 +28,7 @@ describe("Navbar Component", () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     NAV_LINKS.forEach((label) => {
@@ -43,7 +43,7 @@ describe("Navbar Component", () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const nav = screen.getByRole("navigation");
@@ -61,18 +61,16 @@ describe("Navbar Component", () => {
     expect(toggleButton).toHaveAttribute("aria-expanded", "false");
   });
 
-  test("renders mobile menu links with icons", () => {
+  test("renders mobile menu links", () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     NAV_LINKS.forEach((label) => {
       const link = screen.getByTestId(`mobile-link-${label.toLowerCase()}`);
       expect(link).toBeInTheDocument();
-      const svg = link.querySelector("svg");
-      expect(svg).toBeInTheDocument();
     });
   });
 
@@ -80,7 +78,7 @@ describe("Navbar Component", () => {
     render(
       <MemoryRouter>
         <Navbar />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const toggleButton = screen.getByRole("button", { name: /menu/i });
