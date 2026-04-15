@@ -1342,6 +1342,16 @@ a.button:hover {
   }
 }
 
+/* Privacy Policy */
+
+.privacy__block {
+  text-align: left;
+}
+
+.privacy__block .container {
+  max-width: 800px;
+}
+
 /* Footer */
 
 .footer__nav-block {
@@ -1392,6 +1402,13 @@ a.button:hover {
   width: 70px;
 }
 
+.footer__bottom {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .footer__credits-block {
   align-items: center;
   display: flex;
@@ -1399,7 +1416,7 @@ a.button:hover {
   justify-content: center;
   align-content: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 0.5rem 2rem 2rem;
   width: 100%;
 }
 
@@ -1407,6 +1424,26 @@ a.button:hover {
   font-size: 1.4rem;
   margin-bottom: 0;
   text-align: center;
+}
+
+.footer__legal-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer__privacy-link,
+.footer__privacy-link:link,
+.footer__privacy-link:visited {
+  color: #aaa;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer__privacy-link:hover {
+  color: #555;
+  text-decoration: underline;
 }
 
 @keyframes github-pulse {
