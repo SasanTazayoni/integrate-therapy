@@ -27,6 +27,9 @@ export default function PrivacyPolicy() {
                 <li>Name, address and contact details</li>
                 <li>Gender</li>
                 <li>Date of birth</li>
+              </ul>
+              <p>We also collect the following special category information to provide patient care, services and other goods. This information is subject to additional protection due to its sensitive nature:</p>
+              <ul>
                 <li>Health information (including medical conditions, allergies, medical requirements and medical history)</li>
               </ul>
             </section>
