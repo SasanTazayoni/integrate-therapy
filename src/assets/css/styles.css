@@ -423,32 +423,31 @@ a.button:hover {
   outline-offset: 2px;
 }
 
-.testimonials__button {
-  border: none;
-  background: transparent;
-}
-
-/* Ripple effect */
-.button span {
+.button > span {
   position: absolute;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
   background: rgba(0, 0, 0, 0.5);
-  animation: ripple 0.6s linear;
+  width: 300px;
+  height: 300px;
+  transform: translateX(-50%) translateY(-50%) scale(0);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: ripple 0.6s linear forwards;
 }
 
 @keyframes ripple {
-  from {
-    width: 0;
-    height: 0;
-    opacity: 0.5;
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    opacity: 0.7;
   }
-  to {
-    width: 300px;
-    height: 300px;
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(1);
     opacity: 0;
   }
+}
+
+.testimonials__button {
+  border: none;
+  background: transparent;
 }
 
 @media screen and (max-width: 428px) {
@@ -807,7 +806,9 @@ a.button:hover {
   position: fixed;
   width: 100%;
   z-index: 1;
-  box-shadow: 0 0 1rem #dcdcdc, 0 0 1rem #dcdcdc;
+  box-shadow:
+    0 0 1rem #dcdcdc,
+    0 0 1rem #dcdcdc;
 }
 
 .nav__btn {
@@ -881,7 +882,9 @@ a.button:hover {
   fill: var(--color-primary);
   height: 40px;
   opacity: 0.6;
-  transition: box-shadow 0.3s, opacity 0.3s;
+  transition:
+    box-shadow 0.3s,
+    opacity 0.3s;
   width: 40px;
 }
 
@@ -1448,13 +1451,19 @@ a.button:hover {
 
 @keyframes github-pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(8, 164, 255, 0.6), 0 0 0 0 rgba(50, 90, 255, 0.4);
+    box-shadow:
+      0 0 0 0 rgba(8, 164, 255, 0.6),
+      0 0 0 0 rgba(50, 90, 255, 0.4);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(8, 164, 255, 0), 0 0 0 16px rgba(50, 90, 255, 0);
+    box-shadow:
+      0 0 0 8px rgba(8, 164, 255, 0),
+      0 0 0 16px rgba(50, 90, 255, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(8, 164, 255, 0), 0 0 0 0 rgba(50, 90, 255, 0);
+    box-shadow:
+      0 0 0 0 rgba(8, 164, 255, 0),
+      0 0 0 0 rgba(50, 90, 255, 0);
   }
 }
 

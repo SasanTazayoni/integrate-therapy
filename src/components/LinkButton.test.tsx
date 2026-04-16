@@ -1,8 +1,7 @@
-import { describe, test, expect, vi } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { describe, test, expect, vi, afterEach } from "vitest";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import LinkButton from "./LinkButton";
-import * as rippleUtils from "../utils/ripple";
 
 describe("LinkButton component", () => {
   test("renders a link with the button class and correct href", () => {
@@ -28,18 +27,38 @@ describe("LinkButton component", () => {
     expect(screen.getByText("FAQ")).toBeInTheDocument();
   });
 
-  test("calls initializeRippleEffect on mount", () => {
-    const rippleSpy = vi
-      .spyOn(rippleUtils, "initializeRippleEffect")
-      .mockImplementation(() => () => {});
-
+  test("appends a ripple span on mouseenter", () => {
     render(
       <MemoryRouter>
         <LinkButton to="/contact">Contact</LinkButton>
       </MemoryRouter>
     );
+    const link = screen.getByRole("link", { name: /contact/i });
 
-    expect(rippleSpy).toHaveBeenCalledTimes(1);
-    rippleSpy.mockRestore();
+    fireEvent(link, new MouseEvent("mouseenter", { bubbles: false, clientX: 10, clientY: 20 }));
+
+    const ripple = link.querySelector("span");
+    expect(ripple).toBeInTheDocument();
+    expect(ripple).toHaveStyle({ left: "10px", top: "20px" });
+  });
+
+  test("removes the ripple span after 600ms", () => {
+    vi.useFakeTimers();
+    render(
+      <MemoryRouter>
+        <LinkButton to="/contact">Contact</LinkButton>
+      </MemoryRouter>
+    );
+    const link = screen.getByRole("link", { name: /contact/i });
+
+    fireEvent(link, new MouseEvent("mouseenter", { bubbles: false }));
+    expect(link.querySelector("span")).toBeInTheDocument();
+
+    vi.advanceTimersByTime(600);
+    expect(link.querySelector("span")).not.toBeInTheDocument();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
   });
 });

@@ -1,7 +1,6 @@
-import { describe, test, expect, vi } from "vitest";
+import { describe, test, expect, vi, afterEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import Button from "./Button";
-import * as rippleUtils from "../utils/ripple";
 
 describe("Button component", () => {
   test("renders the button with children and default class", () => {
@@ -27,12 +26,30 @@ describe("Button component", () => {
     expect(button).toBeDisabled();
   });
 
-  test("calls initializeRippleEffect on mount", () => {
-    const rippleSpy = vi
-      .spyOn(rippleUtils, "initializeRippleEffect")
-      .mockImplementation(() => () => {});
+  test("appends a ripple span on mouseenter", () => {
     render(<Button>Click Me</Button>);
-    expect(rippleSpy).toHaveBeenCalledTimes(1);
-    rippleSpy.mockRestore();
+    const button = screen.getByRole("button", { name: /click me/i });
+
+    fireEvent(button, new MouseEvent("mouseenter", { bubbles: false, clientX: 10, clientY: 20 }));
+
+    const ripple = button.querySelector("span");
+    expect(ripple).toBeInTheDocument();
+    expect(ripple).toHaveStyle({ left: "10px", top: "20px" });
+  });
+
+  test("removes the ripple span after 600ms", () => {
+    vi.useFakeTimers();
+    render(<Button>Click Me</Button>);
+    const button = screen.getByRole("button", { name: /click me/i });
+
+    fireEvent(button, new MouseEvent("mouseenter", { bubbles: false }));
+    expect(button.querySelector("span")).toBeInTheDocument();
+
+    vi.advanceTimersByTime(600);
+    expect(button.querySelector("span")).not.toBeInTheDocument();
+  });
+
+  afterEach(() => {
+    vi.useRealTimers();
   });
 });
