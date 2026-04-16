@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
           aria-labelledby="privacy-title"
         >
           <div className="container">
-            <h1 id="privacy-title">Integrate Therapy Customer Privacy Notice</h1>
+            <h1 id="privacy-title">Privacy Policy</h1>
             <p>This privacy notice tells you what to expect us to do with your personal information.</p>
 
             <section aria-labelledby="contact-details">
@@ -78,6 +78,12 @@ export default function PrivacyPolicy() {
               <ul>
                 <li>Directly from you</li>
               </ul>
+            </section>
+
+            <section aria-labelledby="who-we-share">
+              <h2 id="who-we-share">Who we share information with</h2>
+              <h3>Data processors</h3>
+              <p><strong>Formspree</strong> — This data processor does the following activities for us: They receive and store customer enquiry submissions made through our website contact form.</p>
             </section>
 
             <section aria-labelledby="how-long">

@@ -1355,6 +1355,10 @@ a.button:hover {
   max-width: 800px;
 }
 
+.privacy__block h1 {
+  text-align: center;
+}
+
 /* Footer */
 
 .footer__nav-block {

@@ -23,7 +23,7 @@ describe("PrivacyPolicy Page", () => {
     );
 
     const heading = screen.getByRole("heading", {
-      name: /integrate therapy customer privacy notice/i,
+      name: /privacy policy/i,
     });
     expect(heading).toBeInTheDocument();
   });
