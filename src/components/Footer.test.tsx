@@ -8,7 +8,7 @@ describe("Footer Component", () => {
     render(
       <MemoryRouter>
         <Footer />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const links = ["Home", "About", "Services", "FAQ", "Contact"];
@@ -25,7 +25,7 @@ describe("Footer Component", () => {
     render(
       <MemoryRouter>
         <Footer />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     const logo = screen.getByRole("img", { name: /integrate therapy logo/i });
@@ -37,16 +37,12 @@ describe("Footer Component", () => {
     render(
       <MemoryRouter>
         <Footer />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
-    const creditText = screen.getByText(/Integrate Therapy 2025. All rights reserved/i);
+    const creditText = screen.getByText(
+      /Integrate Therapy 2025. All rights reserved/i,
+    );
     expect(creditText).toBeInTheDocument();
-
-    const githubLink = screen.getByRole("link", { name: /view source on github/i });
-    expect(githubLink).toHaveAttribute(
-      "href",
-      "https://github.com/SasanTazayoni/integrate-therapy"
-    );
   });
 });

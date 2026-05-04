@@ -1437,45 +1437,6 @@ a.button:hover {
   text-decoration: underline;
 }
 
-@keyframes github-pulse {
-  0% {
-    box-shadow:
-      0 0 0 0 rgba(8, 164, 255, 0.6),
-      0 0 0 0 rgba(50, 90, 255, 0.4);
-  }
-  70% {
-    box-shadow:
-      0 0 0 8px rgba(8, 164, 255, 0),
-      0 0 0 16px rgba(50, 90, 255, 0);
-  }
-  100% {
-    box-shadow:
-      0 0 0 0 rgba(8, 164, 255, 0),
-      0 0 0 0 rgba(50, 90, 255, 0);
-  }
-}
-
-.footer__github-link {
-  border-radius: 50%;
-  display: inline-flex;
-  padding: 4px;
-}
-
-.footer__github-link:hover {
-  animation: github-pulse 0.6s ease-out forwards;
-}
-
-.footer__github-icon {
-  fill: var(--color-secondary);
-  height: 20px;
-  transition: fill 0.5s ease;
-  width: 20px;
-}
-
-.footer__github-link:hover .footer__github-icon {
-  fill: var(--color-link);
-}
-
 @media screen and (max-width: 428px) {
   .footer__legal-links {
     flex-direction: column;
