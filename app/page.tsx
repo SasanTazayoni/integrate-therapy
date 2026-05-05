@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { SITE_URL } from '@/lib/siteConfig'
 import Hero from '@/components/Hero'
 import InfoCard from '@/components/InfoCard'
@@ -35,7 +36,9 @@ export default function Home() {
         imageWidth={400}
         imageHeight={400}
       />
-      <div className="background__image" aria-hidden="true"></div>
+      <div className="background__image" aria-hidden="true">
+        <Image src="/images/childlarge.webp" alt="" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+      </div>
       <Testimonials testimonials={testimonialsData} />
     </main>
   )

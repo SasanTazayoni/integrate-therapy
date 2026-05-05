@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { SITE_URL } from '@/lib/siteConfig'
 import AboutIntro from '@/components/AboutIntro'
 import TrainingSection from '@/components/TrainingSection'
@@ -24,7 +25,9 @@ export default function About() {
     <main>
       <AboutIntro />
       <TrainingSection />
-      <div className="training__image" aria-hidden="true"></div>
+      <div className="training__image" aria-hidden="true">
+        <Image src="/images/trainingxlarge.webp" alt="" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+      </div>
       <MoreAboutMe />
     </main>
   )

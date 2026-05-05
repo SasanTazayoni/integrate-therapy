@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { SITE_URL } from '@/lib/siteConfig'
 import LinkButton from '@/components/LinkButton'
 
@@ -81,7 +82,9 @@ export default function Services() {
         </div>
       </section>
 
-      <div className="services__image" aria-hidden="true"></div>
+      <div className="services__image" aria-hidden="true">
+        <Image src="/images/servicesxlarge.jpg" alt="" fill style={{ objectFit: 'cover' }} sizes="100vw" />
+      </div>
     </main>
   )
 }
