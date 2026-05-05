@@ -63,15 +63,13 @@ export default function Navbar() {
       <ul
         id="mobile-menu"
         className="list nav__list collapsible__content"
-        role="menu"
       >
         {NAV_LINKS.map((label) => (
-          <li key={label} className="nav__item" role="none">
+          <li key={label} className="nav__item">
             <Link
               href={getNavPath(label)}
               className={pathname === getNavPath(label) ? 'active' : ''}
               aria-label={`Go to ${label} page`}
-              role="menuitem"
               data-testid={`mobile-link-${label.toLowerCase()}`}
             >
               {label}
