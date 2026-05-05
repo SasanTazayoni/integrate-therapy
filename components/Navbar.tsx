@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NAV_LINKS, getNavPath } from '../data/navLinks'
@@ -20,10 +21,13 @@ export default function Navbar() {
     >
       <div className="nav__brand__group">
         <div className="nav__brand">
-          <img
+          <Image
             className="nav__logo"
-            src="images/logo.png"
+            src="/images/logo.png"
             alt="Integrate Therapy Logo"
+            width={103}
+            height={103}
+            priority
           />
           <h2 className="nav__logo__title">Integrate Therapy</h2>
         </div>

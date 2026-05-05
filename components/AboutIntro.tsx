@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function AboutIntro() {
   return (
     <article className="block block--grey block--top-castrated">
@@ -35,10 +37,13 @@ export default function AboutIntro() {
             </p>
           </div>
           <div className="about__image-container">
-            <img
+            <Image
               className="about__image"
-              src="images/aboutpic.jpg"
-              alt="A picture of Simon Burgess"
+              src="/images/aboutpic.jpg"
+              alt="Simon Burgess, psychotherapist at Integrate Therapy"
+              width={427}
+              height={529}
+              priority
             />
           </div>
         </div>

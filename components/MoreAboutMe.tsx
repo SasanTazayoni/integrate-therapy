@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { hobbies } from "../data/hobbies";
 
 export default function MoreAboutMe() {
@@ -31,11 +32,13 @@ export default function MoreAboutMe() {
 
         <div className="hobbies__container">
           {hobbies.map((hobby) => (
-            <img
+            <Image
               key={hobby.src}
               src={hobby.src}
               className="hobby__image"
               alt={hobby.alt}
+              width={200}
+              height={200}
             />
           ))}
         </div>

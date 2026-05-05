@@ -1,8 +1,12 @@
+import Image from 'next/image'
+
 type InfoCardProps = {
   title: string;
   paragraphs: string[];
   image: string;
   imageAlt: string;
+  imageWidth: number;
+  imageHeight: number;
 };
 
 export default function InfoCard({
@@ -10,6 +14,8 @@ export default function InfoCard({
   paragraphs,
   image,
   imageAlt,
+  imageWidth,
+  imageHeight,
 }: InfoCardProps) {
   return (
     <section className="block block--grey" aria-labelledby={`info-${title}`}>
@@ -29,7 +35,7 @@ export default function InfoCard({
             ))}
           </div>
           <div className="card__image">
-            <img src={image} alt={imageAlt} className="card__img" />
+            <Image src={image} alt={imageAlt} className="card__img" width={imageWidth} height={imageHeight} />
           </div>
         </div>
       </div>

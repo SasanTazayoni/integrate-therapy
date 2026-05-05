@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { NAV_LINKS, getNavPath } from '../data/navLinks'
 
@@ -17,10 +18,12 @@ export default function Footer() {
       </nav>
 
       <div className="footer__logo-block">
-        <img
+        <Image
           className="footer__logo"
-          src="images/logo.png"
+          src="/images/logo.png"
           alt="Integrate Therapy logo"
+          width={103}
+          height={103}
         />
       </div>
 

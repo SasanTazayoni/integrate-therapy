@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function ContactCard() {
   return (
     <div
@@ -29,10 +31,12 @@ export default function ContactCard() {
           </div>
         </div>
         <div>
-          <img
+          <Image
             className="contact__card-image"
-            src="./images/contactpic.jpeg"
+            src="/images/contactpic.jpeg"
             alt="Picture of Simon Burgess, therapist"
+            width={427}
+            height={529}
           />
         </div>
       </div>
