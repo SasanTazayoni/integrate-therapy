@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 import ContactCard from '@/components/ContactCard'
 import ContactForm from '@/components/ContactForm'
 
@@ -7,13 +8,13 @@ export const metadata: Metadata = {
   description:
     'Get in touch with Integrate Therapy. Book a session with Simon Burgess at 77 Fulham Palace Road, London or online. Individual sessions: £85 (50 minutes).',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/contact',
+    canonical: `${SITE_URL}/contact`,
   },
   openGraph: {
     title: 'Contact | Integrate Therapy',
     description:
       'Get in touch with Integrate Therapy. Book a session with Simon Burgess at 77 Fulham Palace Road, London or online. Individual sessions: £85 (50 minutes).',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/contact',
+    url: `${SITE_URL}/contact`,
   },
 }
 

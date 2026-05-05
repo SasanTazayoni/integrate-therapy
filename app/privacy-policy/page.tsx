@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
   description:
     'Integrate Therapy privacy policy — how we collect, use and protect your personal data in line with UK GDPR requirements.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/privacy-policy',
+    canonical: `${SITE_URL}/privacy-policy`,
   },
   openGraph: {
     title: 'Privacy Policy | Integrate Therapy',
     description:
       'Integrate Therapy privacy policy — how we collect, use and protect your personal data in line with UK GDPR requirements.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/privacy-policy',
+    url: `${SITE_URL}/privacy-policy`,
   },
 }
 

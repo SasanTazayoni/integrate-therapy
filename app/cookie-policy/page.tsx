@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
   description:
     'Integrate Therapy cookie policy — this website does not use cookies or tracking technologies of any kind.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/cookie-policy',
+    canonical: `${SITE_URL}/cookie-policy`,
   },
   openGraph: {
     title: 'Cookie Policy | Integrate Therapy',
     description:
       'Integrate Therapy cookie policy — this website does not use cookies or tracking technologies of any kind.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/cookie-policy',
+    url: `${SITE_URL}/cookie-policy`,
   },
 }
 

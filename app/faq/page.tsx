@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 import LinkButton from '@/components/LinkButton'
 import FAQItem from '@/components/FAQItem'
 import { faqData } from '@/data/faqData'
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     'Answers to common questions about integrative psychotherapy sessions with Simon Burgess, including fees, session formats and what to expect.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/faq',
+    canonical: `${SITE_URL}/faq`,
   },
   openGraph: {
     title: 'Frequently Asked Questions | Integrate Therapy',
     description:
       'Answers to common questions about integrative psychotherapy sessions with Simon Burgess, including fees, session formats and what to expect.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/faq',
+    url: `${SITE_URL}/faq`,
   },
 }
 

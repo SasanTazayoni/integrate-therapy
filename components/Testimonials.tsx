@@ -40,7 +40,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
 
         <div className="testimonials__content">
           <svg className="icon icon--black testimonials__icon-left" aria-hidden="true">
-            <use href="/integrate-therapy/integratesprite.svg#left-quote" />
+            <use href="/integratesprite.svg#left-quote" />
           </svg>
 
           {testimonials.map((testimonial, index) => (
@@ -57,7 +57,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
           ))}
 
           <svg className="icon icon--black testimonials__icon-right" aria-hidden="true">
-            <use href="/integrate-therapy/integratesprite.svg#right-quote" />
+            <use href="/integratesprite.svg#right-quote" />
           </svg>
         </div>
 
@@ -68,7 +68,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             aria-label="Show previous testimonial"
           >
             <svg className="icon--left" aria-hidden="true">
-              <use href="/integrate-therapy/integratesprite.svg#chevron" />
+              <use href="/integratesprite.svg#chevron" />
             </svg>
           </button>
 
@@ -92,7 +92,7 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
             aria-label="Show next testimonial"
           >
             <svg className="icon--right" aria-hidden="true">
-              <use href="/integrate-therapy/integratesprite.svg#chevron" />
+              <use href="/integratesprite.svg#chevron" />
             </svg>
           </button>
         </div>

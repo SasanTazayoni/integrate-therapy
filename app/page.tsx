@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 import Hero from '@/components/Hero'
 import InfoCard from '@/components/InfoCard'
 import Testimonials from '@/components/Testimonials'
@@ -9,13 +10,13 @@ export const metadata: Metadata = {
   description:
     'Integrative psychotherapy for adults in Hammersmith, West London and online. Tailored sessions combining multiple therapy models to support your personal growth and mental wellbeing.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/',
+    canonical: `${SITE_URL}/`,
   },
   openGraph: {
     title: 'Integrate Therapy | Psychotherapy in Hammersmith',
     description:
       'Integrative psychotherapy for adults in Hammersmith, West London and online. Tailored sessions combining multiple therapy models to support your personal growth and mental wellbeing.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/',
+    url: `${SITE_URL}/`,
   },
 }
 

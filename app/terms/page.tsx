@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
   description:
     'Terms and conditions for psychotherapy services provided by Simon Burgess trading as Integrate Therapy, including fees, cancellation policy and confidentiality.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/terms',
+    canonical: `${SITE_URL}/terms`,
   },
   openGraph: {
     title: 'Terms & Conditions | Integrate Therapy',
     description:
       'Terms and conditions for psychotherapy services provided by Simon Burgess trading as Integrate Therapy, including fees, cancellation policy and confidentiality.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/terms',
+    url: `${SITE_URL}/terms`,
   },
 }
 

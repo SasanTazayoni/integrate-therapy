@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 import AboutIntro from '@/components/AboutIntro'
 import TrainingSection from '@/components/TrainingSection'
 import MoreAboutMe from '@/components/MoreAboutMe'
@@ -8,13 +9,13 @@ export const metadata: Metadata = {
   description:
     'Meet Simon Burgess, an integrative psychotherapist with over ten years of experience helping adults in Hammersmith, West London and online.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/about',
+    canonical: `${SITE_URL}/about`,
   },
   openGraph: {
     title: 'About Simon Burgess | Integrate Therapy',
     description:
       'Meet Simon Burgess, an integrative psychotherapist with over ten years of experience helping adults in Hammersmith, West London and online.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/about',
+    url: `${SITE_URL}/about`,
   },
 }
 

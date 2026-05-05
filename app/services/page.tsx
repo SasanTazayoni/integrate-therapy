@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SITE_URL } from '@/lib/siteConfig'
 import LinkButton from '@/components/LinkButton'
 
 const services = [
@@ -39,13 +40,13 @@ export const metadata: Metadata = {
   description:
     'Explore the range of issues Simon Burgess can help with, including anxiety, depression, trauma, relationship difficulties, stress, grief and more.',
   alternates: {
-    canonical: 'https://SasanTazayoni.github.io/integrate-therapy/services',
+    canonical: `${SITE_URL}/services`,
   },
   openGraph: {
     title: 'How I Can Help | Integrate Therapy',
     description:
       'Explore the range of issues Simon Burgess can help with, including anxiety, depression, trauma, relationship difficulties, stress, grief and more.',
-    url: 'https://SasanTazayoni.github.io/integrate-therapy/services',
+    url: `${SITE_URL}/services`,
   },
 }
 

@@ -56,7 +56,7 @@ export default function Navbar() {
         data-testid="mobile-menu-toggle"
       >
         <svg className="icon nav__toggler" aria-hidden="true">
-          <use href="/integrate-therapy/integratesprite.svg#menu" />
+          <use href="/integratesprite.svg#menu" />
         </svg>
       </button>
 
