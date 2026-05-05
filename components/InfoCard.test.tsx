@@ -12,6 +12,8 @@ describe("InfoCard component", () => {
     ],
     image: "/test-image.jpg",
     imageAlt: "Test Image Alt",
+    imageWidth: 400,
+    imageHeight: 300,
   };
 
   test("renders the title", () => {

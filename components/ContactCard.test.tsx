@@ -47,7 +47,7 @@ describe("ContactCard Component", () => {
 
     const image = screen.getByAltText(/Picture of Simon Burgess/i);
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute("src", "./images/contactpic.jpeg");
+    expect(image).toHaveAttribute("src", "/images/contactpic.jpeg");
   });
 
   test("renders strong class for email link", () => {

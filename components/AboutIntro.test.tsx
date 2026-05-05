@@ -19,9 +19,9 @@ describe("AboutIntro Component", () => {
 
   test("renders the image with correct alt text", () => {
     render(<AboutIntro />);
-    const image = screen.getByAltText(/A picture of Simon Burgess/i);
+    const image = screen.getByAltText(/Simon Burgess, psychotherapist/i);
     expect(image).toBeInTheDocument();
-    expect(image).toHaveAttribute("src", "images/aboutpic.jpg");
+    expect(image).toHaveAttribute("src", "/images/aboutpic.jpg");
   });
 
   test("renders the container and image container divs", () => {

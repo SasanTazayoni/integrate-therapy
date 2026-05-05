@@ -1,18 +1,17 @@
-import { describe, test, expect } from "vitest";
+import { describe, test, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { MemoryRouter } from "react-router-dom";
 import Navbar from "./Navbar";
+
+vi.mock("next/navigation", () => ({
+  usePathname: () => "/",
+}));
 
 const NAV_LINKS = ["Home", "About", "Services", "FAQ", "Contact"];
 
 describe("Navbar Component", () => {
   test("renders without crashing", () => {
-    render(
-      <MemoryRouter>
-        <Navbar />
-      </MemoryRouter>,
-    );
+    render(<Navbar />);
 
     expect(screen.getByAltText("Integrate Therapy Logo")).toBeInTheDocument();
     expect(screen.getByText("Integrate Therapy")).toBeInTheDocument();
@@ -25,11 +24,7 @@ describe("Navbar Component", () => {
   });
 
   test("has correct paths for each NavLink", () => {
-    render(
-      <MemoryRouter>
-        <Navbar />
-      </MemoryRouter>,
-    );
+    render(<Navbar />);
 
     NAV_LINKS.forEach((label) => {
       const link = screen.getAllByText(label)[0].closest("a");
@@ -40,11 +35,7 @@ describe("Navbar Component", () => {
 
   test("toggles mobile menu when hamburger button is clicked", async () => {
     const user = userEvent.setup();
-    render(
-      <MemoryRouter>
-        <Navbar />
-      </MemoryRouter>,
-    );
+    render(<Navbar />);
 
     const nav = screen.getByRole("navigation");
     const toggleButton = screen.getByRole("button", { name: /menu/i });
@@ -62,11 +53,7 @@ describe("Navbar Component", () => {
   });
 
   test("renders mobile menu links", () => {
-    render(
-      <MemoryRouter>
-        <Navbar />
-      </MemoryRouter>,
-    );
+    render(<Navbar />);
 
     NAV_LINKS.forEach((label) => {
       const link = screen.getByTestId(`mobile-link-${label.toLowerCase()}`);
@@ -75,11 +62,7 @@ describe("Navbar Component", () => {
   });
 
   test("hamburger button has correct accessibility attributes", () => {
-    render(
-      <MemoryRouter>
-        <Navbar />
-      </MemoryRouter>,
-    );
+    render(<Navbar />);
 
     const toggleButton = screen.getByRole("button", { name: /menu/i });
     expect(toggleButton).toHaveAttribute("aria-controls", "mobile-menu");

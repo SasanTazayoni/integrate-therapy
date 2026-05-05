@@ -1,15 +1,10 @@
 import { describe, test, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
 import Footer from "./Footer";
 
 describe("Footer Component", () => {
   test("renders all footer links with correct destinations", () => {
-    render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>,
-    );
+    render(<Footer />);
 
     const links = ["Home", "About", "Services", "FAQ", "Contact"];
     links.forEach((label) => {
@@ -22,11 +17,7 @@ describe("Footer Component", () => {
   });
 
   test("renders footer logo", () => {
-    render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>,
-    );
+    render(<Footer />);
 
     const logo = screen.getByRole("img", { name: /integrate therapy logo/i });
     expect(logo).toBeInTheDocument();
@@ -34,11 +25,7 @@ describe("Footer Component", () => {
   });
 
   test("renders footer credits with correct text and links", () => {
-    render(
-      <MemoryRouter>
-        <Footer />
-      </MemoryRouter>,
-    );
+    render(<Footer />);
 
     const creditText = screen.getByText(
       /Integrate Therapy 2025. All rights reserved/i,

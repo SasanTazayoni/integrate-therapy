@@ -1,15 +1,10 @@
 import { describe, test, expect, vi, afterEach } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
 import LinkButton from "./LinkButton";
 
 describe("LinkButton component", () => {
   test("renders a link with the button class and correct href", () => {
-    render(
-      <MemoryRouter>
-        <LinkButton to="/contact">Contact</LinkButton>
-      </MemoryRouter>
-    );
+    render(<LinkButton href="/contact">Contact</LinkButton>);
 
     const link = screen.getByRole("link", { name: /contact/i });
     expect(link).toBeInTheDocument();
@@ -18,21 +13,13 @@ describe("LinkButton component", () => {
   });
 
   test("renders children correctly", () => {
-    render(
-      <MemoryRouter>
-        <LinkButton to="/faq">FAQ</LinkButton>
-      </MemoryRouter>
-    );
+    render(<LinkButton href="/faq">FAQ</LinkButton>);
 
     expect(screen.getByText("FAQ")).toBeInTheDocument();
   });
 
   test("appends a ripple span on mouseenter", () => {
-    render(
-      <MemoryRouter>
-        <LinkButton to="/contact">Contact</LinkButton>
-      </MemoryRouter>
-    );
+    render(<LinkButton href="/contact">Contact</LinkButton>);
     const link = screen.getByRole("link", { name: /contact/i });
 
     fireEvent(link, new MouseEvent("mouseenter", { bubbles: false, clientX: 10, clientY: 20 }));
@@ -44,11 +31,7 @@ describe("LinkButton component", () => {
 
   test("removes the ripple span after 600ms", () => {
     vi.useFakeTimers();
-    render(
-      <MemoryRouter>
-        <LinkButton to="/contact">Contact</LinkButton>
-      </MemoryRouter>
-    );
+    render(<LinkButton href="/contact">Contact</LinkButton>);
     const link = screen.getByRole("link", { name: /contact/i });
 
     fireEvent(link, new MouseEvent("mouseenter", { bubbles: false }));

@@ -1,15 +1,10 @@
 import { describe, test, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
 import TrainingSection from "./TrainingSection";
 
 describe("TrainingSection component", () => {
   beforeEach(() => {
-    render(
-      <MemoryRouter>
-        <TrainingSection />
-      </MemoryRouter>,
-    );
+    render(<TrainingSection />);
   });
 
   test("renders the section with the correct heading", () => {
