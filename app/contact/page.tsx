@@ -18,9 +18,52 @@ export const metadata: Metadata = {
   },
 }
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Integrate Therapy',
+  description: 'Integrative psychotherapy for adults in Hammersmith, West London and online.',
+  url: SITE_URL,
+  telephone: '+447846043703',
+  email: 'info@integratetherapy.co.uk',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '77 Fulham Palace Road',
+    addressLocality: 'London',
+    postalCode: 'W6 8JA',
+    addressCountry: 'GB',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 51.48962547953231,
+    longitude: -0.22501694831186675,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Tuesday', 'Wednesday'],
+      opens: '09:00',
+      closes: '21:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Friday'],
+      opens: '09:00',
+      closes: '12:00',
+    },
+  ],
+  priceRange: '££',
+  currenciesAccepted: 'GBP',
+  paymentAccepted: 'Bank transfer, card',
+}
+
 export default function Contact() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       <section
         className="block block--grey block--top-castrated"
         aria-labelledby="contact-intro"
