@@ -1,6 +1,6 @@
 # Integrate Therapy
 
-![HTML](./tech/html.png) ![CSS](./tech/css.png) ![Typescript](./tech/typescript.png) ![Vite](./tech/vite.png) ![React](./tech/react.png) ![Jest](./tech/jest.png) ![ChatGPT](./tech/chatgpt.png) ![VSCode](./tech/vscode.png)
+![HTML](./tech/html.png) ![CSS](./tech/css.png) ![Typescript](./tech/typescript.png) ![React](./tech/react.png) ![Jest](./tech/jest.png) ![Claude](./tech/claude.png) ![VSCode](./tech/vscode.png) ![Vercel](./tech/vercel.png) ![NextJS](./tech/next.png)
 
 ## Introduction
 
@@ -299,7 +299,15 @@ Lighthouse was a helpful tool for checking where where the website was experienc
 
 ### Automated testing
 
-Automated tests were implemented for all pages, utilities, and components to ensure functionality.
+Automated tests were implemented for all components using [Vitest](https://vitest.dev/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
+
+To run the tests:
+
+```bash
+npm test              # watch mode
+npm run test:run      # single run
+npm run test:coverage # single run with coverage report
+```
 
 ![Automated tests](documentation/unittests.png)
 
