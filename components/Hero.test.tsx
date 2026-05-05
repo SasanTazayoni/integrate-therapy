@@ -6,13 +6,10 @@ describe("Hero Component", () => {
   test("renders hero headings and taglines", () => {
     render(<Hero />);
 
-    const heading = screen.getByRole("heading", { name: /Simon Burgess/i });
+    const heading = screen.getByRole("heading", { name: /Integrate Therapy/i });
     expect(heading).toBeInTheDocument();
 
-    expect(screen.getByText(/\(MBACP\)/i)).toBeInTheDocument();
-    expect(
-      screen.getByText(/Psychotherapist based in London, UK/i)
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Simon Burgess \(MBACP\)/i)).toBeInTheDocument();
   });
 
   test("renders About and Contact buttons with correct links", () => {

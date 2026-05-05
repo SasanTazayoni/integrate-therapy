@@ -1059,7 +1059,7 @@ a.button:hover {
 }
 
 .hero__heading {
-  font-size: 7rem;
+  font-size: 5rem;
   margin: 1rem;
 }
 
@@ -1083,19 +1083,19 @@ a.button:hover {
 
 @media screen and (max-width: 1024px) {
   .hero__heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero__heading {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 428px) {
   .hero__heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
