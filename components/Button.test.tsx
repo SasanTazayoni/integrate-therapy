@@ -30,7 +30,7 @@ describe("Button component", () => {
     render(<Button>Click Me</Button>);
     const button = screen.getByRole("button", { name: /click me/i });
 
-    fireEvent(button, new MouseEvent("mouseenter", { bubbles: false, clientX: 10, clientY: 20 }));
+    fireEvent.mouseEnter(button, { clientX: 10, clientY: 20 });
 
     const ripple = button.querySelector("span");
     expect(ripple).toBeInTheDocument();
@@ -42,7 +42,7 @@ describe("Button component", () => {
     render(<Button>Click Me</Button>);
     const button = screen.getByRole("button", { name: /click me/i });
 
-    fireEvent(button, new MouseEvent("mouseenter", { bubbles: false }));
+    fireEvent.mouseEnter(button);
     expect(button.querySelector("span")).toBeInTheDocument();
 
     vi.advanceTimersByTime(600);

@@ -22,7 +22,7 @@ describe("LinkButton component", () => {
     render(<LinkButton href="/contact">Contact</LinkButton>);
     const link = screen.getByRole("link", { name: /contact/i });
 
-    fireEvent(link, new MouseEvent("mouseenter", { bubbles: false, clientX: 10, clientY: 20 }));
+    fireEvent.mouseEnter(link, { clientX: 10, clientY: 20 });
 
     const ripple = link.querySelector("span");
     expect(ripple).toBeInTheDocument();
@@ -34,7 +34,7 @@ describe("LinkButton component", () => {
     render(<LinkButton href="/contact">Contact</LinkButton>);
     const link = screen.getByRole("link", { name: /contact/i });
 
-    fireEvent(link, new MouseEvent("mouseenter", { bubbles: false }));
+    fireEvent.mouseEnter(link);
     expect(link.querySelector("span")).toBeInTheDocument();
 
     vi.advanceTimersByTime(600);
