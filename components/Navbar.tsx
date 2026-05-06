@@ -14,6 +14,27 @@ export default function Navbar() {
     setNavExpanded((prev) => !prev)
   }, [])
 
+  function renderNavLinks(mobile: boolean) {
+    return NAV_LINKS.map((label) => {
+      const active = pathname === getNavPath(label)
+      return (
+        <li key={label} className={mobile ? 'nav__item' : undefined}>
+          <Link
+            href={getNavPath(label)}
+            className={mobile ? (active ? 'active' : '') : `nav__link${active ? ' active' : ''}`}
+            aria-label={`Go to ${label} page`}
+            {...(mobile && {
+              'data-testid': `mobile-link-${label.toLowerCase()}`,
+              onClick: () => setNavExpanded(false),
+            })}
+          >
+            {label}
+          </Link>
+        </li>
+      )
+    })
+  }
+
   return (
     <nav
       className={`nav collapsible ${navExpanded ? 'collapsible--expanded' : ''}`}
@@ -34,17 +55,7 @@ export default function Navbar() {
       </div>
 
       <ul className="list nav__list-widescreen">
-        {NAV_LINKS.map((label) => (
-          <li key={label}>
-            <Link
-              href={getNavPath(label)}
-              className={`nav__link${pathname === getNavPath(label) ? ' active' : ''}`}
-              aria-label={`Go to ${label} page`}
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
+        {renderNavLinks(false)}
       </ul>
 
       <button
@@ -64,19 +75,7 @@ export default function Navbar() {
         id="mobile-menu"
         className="list nav__list collapsible__content"
       >
-        {NAV_LINKS.map((label) => (
-          <li key={label} className="nav__item">
-            <Link
-              href={getNavPath(label)}
-              className={pathname === getNavPath(label) ? 'active' : ''}
-              aria-label={`Go to ${label} page`}
-              data-testid={`mobile-link-${label.toLowerCase()}`}
-              onClick={() => setNavExpanded(false)}
-            >
-              {label}
-            </Link>
-          </li>
-        ))}
+        {renderNavLinks(true)}
       </ul>
     </nav>
   )
