@@ -1,3 +1,4 @@
+import { useId } from 'react'
 import Image from 'next/image'
 
 type InfoCardProps = {
@@ -17,13 +18,15 @@ export default function InfoCard({
   imageWidth,
   imageHeight,
 }: InfoCardProps) {
+  const headingId = useId()
+
   return (
-    <section className="block block--grey" aria-labelledby={`info-${title}`}>
+    <section className="block block--grey" aria-labelledby={headingId}>
       <div className="container">
         <div className="card grid grid--1x2 overflow-hidden">
           <div className="block__text card__text">
             <header className="block__header">
-              <h2 id={`info-${title}`}>{title}</h2>
+              <h2 id={headingId}>{title}</h2>
             </header>
             {paragraphs.map((text, idx) => (
               <p
