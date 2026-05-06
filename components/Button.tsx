@@ -10,6 +10,8 @@ export default function Button({ children, ...props }: ButtonProps) {
   useEffect(() => {
     const button = buttonRef.current;
 
+    let timeoutId: ReturnType<typeof setTimeout>;
+
     function createRipple(e: MouseEvent): void {
       const rect = button!.getBoundingClientRect();
       const x = e.clientX - rect.left;
@@ -18,11 +20,14 @@ export default function Button({ children, ...props }: ButtonProps) {
       ripple.style.left = `${x}px`;
       ripple.style.top = `${y}px`;
       button!.appendChild(ripple);
-      setTimeout(() => ripple.remove(), 600);
+      timeoutId = setTimeout(() => ripple.remove(), 600);
     }
 
     button?.addEventListener("mouseenter", createRipple);
-    return () => button?.removeEventListener("mouseenter", createRipple);
+    return () => {
+      button?.removeEventListener("mouseenter", createRipple);
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   return (

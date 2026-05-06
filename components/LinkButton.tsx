@@ -12,6 +12,8 @@ export default function LinkButton({ children, ...props }: LinkButtonProps) {
   useEffect(() => {
     const link = linkRef.current
 
+    let timeoutId: ReturnType<typeof setTimeout>
+
     function createRipple(e: MouseEvent): void {
       const rect = link!.getBoundingClientRect()
       const x = e.clientX - rect.left
@@ -20,11 +22,14 @@ export default function LinkButton({ children, ...props }: LinkButtonProps) {
       ripple.style.left = `${x}px`
       ripple.style.top = `${y}px`
       link!.appendChild(ripple)
-      setTimeout(() => ripple.remove(), 600)
+      timeoutId = setTimeout(() => ripple.remove(), 600)
     }
 
     link?.addEventListener('mouseenter', createRipple)
-    return () => link?.removeEventListener('mouseenter', createRipple)
+    return () => {
+      link?.removeEventListener('mouseenter', createRipple)
+      clearTimeout(timeoutId)
+    }
   }, [])
 
   return (
