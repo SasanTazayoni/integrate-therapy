@@ -32,7 +32,9 @@ export default function ContactForm() {
               required
               minLength={1}
               maxLength={30}
+              aria-describedby="fullname-hint"
             />
+            <span id="fullname-hint" className="form__hint">Required. Maximum 30 characters.</span>
           </div>
           <div className="contact__form-group">
             <label htmlFor="contactnumber">Contact number:</label>
@@ -42,7 +44,9 @@ export default function ContactForm() {
               name="contact"
               minLength={7}
               maxLength={20}
+              aria-describedby="contactnumber-hint"
             />
+            <span id="contactnumber-hint" className="form__hint">Optional. 7–20 digits.</span>
           </div>
           <div className="contact__form-group">
             <label htmlFor="email">Email:</label>
@@ -53,7 +57,9 @@ export default function ContactForm() {
               required
               minLength={5}
               maxLength={30}
+              aria-describedby="email-hint"
             />
+            <span id="email-hint" className="form__hint">Required. Enter a valid email address.</span>
           </div>
         </div>
         <div className="contact__form-group">
@@ -67,7 +73,9 @@ export default function ContactForm() {
             required
             minLength={10}
             maxLength={300}
+            aria-describedby="enquiry-hint"
           ></textarea>
+          <span id="enquiry-hint" className="form__hint">Required. Between 10 and 300 characters.</span>
         </div>
         <div className="container__buttons">
           <Button type="submit">Submit</Button>

@@ -1779,6 +1779,13 @@ dd {
   flex-direction: column;
 }
 
+.form__hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #666);
+  margin-top: 0.25rem;
+}
+
 .contact__form--textarea {
   height: 30vh;
   width: 100%;
