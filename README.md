@@ -317,25 +317,23 @@ npm run test:coverage # single run with coverage report
 
 ## Deployment
 
-- Open your terminal or command prompt.
-- Navigate to your Vite React project directory.
-- Install the gh-pages package by running `npm install gh-pages --save-dev` (You should have NPM installed - see below if you do not).
-- Open the package.json file in your project.
-- Add a "homepage" field at the top level with your GitHub Pages URL, e.g.: `"homepage": "https://<username>.github.io/<repository-name>"`.
-- In the scripts section of package.json, add the following two scripts:
-  - "predeploy": "npm run build",
-  - "deploy": "gh-pages -d dist"
-- Save the package.json file.
-- Run the deploy script in your terminal: `npm run deploy`.
-- GitHub Pages will build your Vite app and push it to the gh-pages branch automatically.
-- Log into GitHub.
-- Locate the repository.
-- Click on the 'Settings' option along the top options bar.
-- Locate the 'Pages' option in the left sidebar and click on it.
-- Under the 'Branch' section, select gh-pages from the dropdown menu.
-- Click the save button.
-- GitHub Pages will begin hosting your website, which usually takes a few minutes.
-- The live website URL will now appear in a green bar under the section header, and you can refer back to it at any time.
+The project is deployed on [Vercel](https://vercel.com/). Vercel detects Next.js automatically and requires no manual configuration.
+
+### Running locally
+
+```bash
+npm install       # install dependencies
+npm run dev       # start development server at http://localhost:3000
+npm run build     # production build
+npm run start     # serve production build locally
+```
+
+### Deploying to Vercel
+
+- Push the repository to GitHub.
+- Log in to [Vercel](https://vercel.com/) and click **Add New Project**.
+- Import the GitHub repository — Vercel detects Next.js and sets the build command automatically.
+- Click **Deploy**. Vercel builds and publishes the site; subsequent pushes to `main` trigger automatic redeployments.
 
 ### Installing NPM
 
