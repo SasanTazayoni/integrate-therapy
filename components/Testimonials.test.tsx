@@ -112,4 +112,34 @@ describe("Testimonials Component", () => {
 
     expect(screen.getByTestId("testimonial-2")).toHaveClass("active");
   });
+
+  test("renders without crashing with empty testimonials array", () => {
+    render(<Testimonials testimonials={[]} />);
+    expect(screen.getByRole("heading", { name: /testimonials/i })).toBeInTheDocument();
+    expect(screen.queryByTestId("testimonial-1")).not.toBeInTheDocument();
+  });
+
+  test("clears interval on unmount", () => {
+    vi.useFakeTimers();
+    const clearIntervalSpy = vi.spyOn(globalThis, "clearInterval");
+    const { unmount } = render(<Testimonials testimonials={sampleTestimonials} />);
+    unmount();
+    expect(clearIntervalSpy).toHaveBeenCalled();
+    clearIntervalSpy.mockRestore();
+    vi.useRealTimers();
+  });
+
+  test("aria-live region contains current testimonial text", () => {
+    render(<Testimonials testimonials={sampleTestimonials} />);
+    const liveRegion = document.querySelector("[aria-live='polite']");
+    expect(liveRegion).toBeInTheDocument();
+    expect(liveRegion).toHaveTextContent(sampleTestimonials[0]);
+  });
+
+  test("aria-live region updates on navigation", () => {
+    render(<Testimonials testimonials={sampleTestimonials} />);
+    fireEvent.click(screen.getByRole("button", { name: /show next testimonial/i }));
+    const liveRegion = document.querySelector("[aria-live='polite']");
+    expect(liveRegion).toHaveTextContent(sampleTestimonials[1]);
+  });
 });
