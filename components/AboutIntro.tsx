@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function AboutIntro() {
   return (
-    <article className="block block--grey block--top-castrated">
+    <article className="block block--grey block--top-condensed">
       <div className="container">
         <h1>About Me</h1>
         <div className="grid grid--1x2-alt">

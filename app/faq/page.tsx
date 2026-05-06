@@ -41,7 +41,7 @@ export default function FAQ() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <section
-        className="block block--grey block--top-castrated"
+        className="block block--grey block--top-condensed"
         aria-labelledby="faq-title"
       >
         <h1 id="faq-title">Frequently Asked Questions</h1>

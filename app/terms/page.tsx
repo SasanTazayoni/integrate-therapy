@@ -21,7 +21,7 @@ export default function Terms() {
   return (
     <main>
       <section
-        className="block block--grey block--top-castrated privacy__block"
+        className="block block--grey block--top-condensed privacy__block"
         aria-labelledby="terms-title"
       >
         <div className="container">

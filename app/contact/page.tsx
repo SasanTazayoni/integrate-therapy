@@ -66,7 +66,7 @@ export default function Contact() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <section
-        className="block block--grey block--top-castrated"
+        className="block block--grey block--top-condensed"
         aria-labelledby="contact-intro"
       >
         <h1 id="contact-intro">Contact Me</h1>

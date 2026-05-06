@@ -552,13 +552,13 @@ a.button:hover {
   text-align: center;
 }
 
-.block--top-castrated {
+.block--top-condensed {
   padding-top: 12rem;
   text-align: center;
   padding-bottom: 4rem;
 }
 
-.block--top-castrated p,
+.block--top-condensed p,
 .block--top p {
   text-align: left;
 }
@@ -597,7 +597,7 @@ a.button:hover {
 }
 
 @media screen and (max-width: 360px) {
-  .block--top-castrated {
+  .block--top-condensed {
     padding-top: 8rem;
   }
 }
