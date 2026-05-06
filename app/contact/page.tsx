@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { SITE_URL } from '@/lib/siteConfig'
+import { SITE_URL, CONTACT_EMAIL, CONTACT_PHONE } from '@/lib/siteConfig'
 import ContactCard from '@/components/ContactCard'
 import ContactForm from '@/components/ContactForm'
 
@@ -24,8 +24,8 @@ const localBusinessSchema = {
   name: 'Integrate Therapy',
   description: 'Integrative psychotherapy for adults in Hammersmith, West London and online.',
   url: SITE_URL,
-  telephone: '+447846043703',
-  email: 'info@integratetherapy.co.uk',
+  telephone: CONTACT_PHONE,
+  email: CONTACT_EMAIL,
   address: {
     '@type': 'PostalAddress',
     streetAddress: '77 Fulham Palace Road',

@@ -57,4 +57,10 @@ describe("ContactCard Component", () => {
     });
     expect(emailLink).toHaveClass("contact__strong");
   });
+
+  test("renders phone as a tel link with international number", () => {
+    render(<ContactCard />);
+    const phoneLink = screen.getByRole("link", { name: /\+44 7846 043703/i });
+    expect(phoneLink).toHaveAttribute("href", "tel:+447846043703");
+  });
 });

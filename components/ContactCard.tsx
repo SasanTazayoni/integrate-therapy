@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_DISPLAY } from '@/lib/siteConfig'
 
 export default function ContactCard() {
   return (
@@ -13,15 +14,15 @@ export default function ContactCard() {
             <p>Please contact me with the details below:</p>
             <p>
               <strong>Email:</strong>{" "}
-              <a
-                href="mailto:info@integratetherapy.co.uk"
-                className="contact__strong"
-              >
-                info@integratetherapy.co.uk
+              <a href={`mailto:${CONTACT_EMAIL}`} className="contact__strong">
+                {CONTACT_EMAIL}
               </a>
             </p>
             <p>
-              <strong>Mobile:</strong> +44 784 604 3703
+              <strong>Mobile:</strong>{" "}
+              <a href={`tel:${CONTACT_PHONE}`} className="contact__strong">
+                {CONTACT_PHONE_DISPLAY}
+              </a>
             </p>
             <h3>Office hours:</h3>
             <ul>

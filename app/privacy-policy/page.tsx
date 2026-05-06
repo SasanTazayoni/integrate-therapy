@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { SITE_URL } from '@/lib/siteConfig'
+import { SITE_URL, CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from '@/lib/siteConfig'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -29,8 +29,8 @@ export default function PrivacyPolicy() {
 
           <section aria-labelledby="contact-details">
             <h2 id="contact-details">Contact details</h2>
-            <p><strong>Telephone:</strong> 07846043703</p>
-            <p><strong>Email:</strong> info@integratetherapy.co.uk</p>
+            <p><strong>Telephone:</strong> {CONTACT_PHONE_DISPLAY}</p>
+            <p><strong>Email:</strong> {CONTACT_EMAIL}</p>
           </section>
 
           <section aria-labelledby="what-we-collect">
