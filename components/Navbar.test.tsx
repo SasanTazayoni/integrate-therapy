@@ -1,11 +1,17 @@
-import { describe, test, expect, vi } from "vitest";
+import { describe, test, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Navbar from "./Navbar";
 
+let mockPathname = "/";
+
 vi.mock("next/navigation", () => ({
-  usePathname: () => "/",
+  usePathname: () => mockPathname,
 }));
+
+beforeEach(() => {
+  mockPathname = "/";
+});
 
 const NAV_LINKS = ["Home", "About", "Services", "FAQ", "Contact"];
 
@@ -67,5 +73,42 @@ describe("Navbar Component", () => {
     const toggleButton = screen.getByRole("button", { name: /menu/i });
     expect(toggleButton).toHaveAttribute("aria-controls", "mobile-menu");
     expect(toggleButton).toHaveAttribute("aria-expanded", "false");
+  });
+
+  test("applies active class to link matching current pathname", () => {
+    mockPathname = "/about";
+    render(<Navbar />);
+
+    const mobileAboutLink = screen.getByTestId("mobile-link-about");
+    expect(mobileAboutLink).toHaveClass("active");
+
+    const mobileHomeLink = screen.getByTestId("mobile-link-home");
+    expect(mobileHomeLink).not.toHaveClass("active");
+  });
+
+  test("closes mobile menu when a link is clicked", async () => {
+    const user = userEvent.setup();
+    render(<Navbar />);
+
+    const nav = screen.getByRole("navigation");
+    const toggleButton = screen.getByRole("button", { name: /menu/i });
+
+    await user.click(toggleButton);
+    expect(nav.className).toContain("collapsible--expanded");
+
+    await user.click(screen.getByTestId("mobile-link-home"));
+    expect(nav.className).not.toContain("collapsible--expanded");
+  });
+
+  test("toggle button opens menu on Enter key", async () => {
+    const user = userEvent.setup();
+    render(<Navbar />);
+
+    const nav = screen.getByRole("navigation");
+    const toggleButton = screen.getByRole("button", { name: /menu/i });
+
+    toggleButton.focus();
+    await user.keyboard("{Enter}");
+    expect(nav.className).toContain("collapsible--expanded");
   });
 });

@@ -71,6 +71,7 @@ export default function Navbar() {
               className={pathname === getNavPath(label) ? 'active' : ''}
               aria-label={`Go to ${label} page`}
               data-testid={`mobile-link-${label.toLowerCase()}`}
+              onClick={() => setNavExpanded(false)}
             >
               {label}
             </Link>
