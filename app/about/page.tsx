@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     description:
       'Meet Simon Burgess, an integrative psychotherapist with over ten years of experience helping adults in Hammersmith, West London and online.',
     url: `${SITE_URL}/about`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

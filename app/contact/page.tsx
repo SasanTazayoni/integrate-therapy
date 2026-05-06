@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     description:
       'Get in touch with Integrate Therapy. Book a session with Simon Burgess at 77 Fulham Palace Road, London or online. Individual sessions: £85 (50 minutes).',
     url: `${SITE_URL}/contact`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

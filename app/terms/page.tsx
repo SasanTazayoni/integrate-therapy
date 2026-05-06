@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       'Terms and conditions for psychotherapy services provided by Simon Burgess trading as Integrate Therapy, including fees, cancellation policy and confidentiality.',
     url: `${SITE_URL}/terms`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       'Answers to common questions about integrative psychotherapy sessions with Simon Burgess, including fees, session formats and what to expect.',
     url: `${SITE_URL}/faq`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       'Integrate Therapy privacy policy — how we collect, use and protect your personal data in line with UK GDPR requirements.',
     url: `${SITE_URL}/privacy-policy`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

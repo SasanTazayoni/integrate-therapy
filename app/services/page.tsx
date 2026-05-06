@@ -48,6 +48,7 @@ export const metadata: Metadata = {
     description:
       'Explore the range of issues Simon Burgess can help with, including anxiety, depression, trauma, relationship difficulties, stress, grief and more.',
     url: `${SITE_URL}/services`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 

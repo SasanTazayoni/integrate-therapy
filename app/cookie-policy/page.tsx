@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       'Integrate Therapy cookie policy — this website does not use cookies or tracking technologies of any kind.',
     url: `${SITE_URL}/cookie-policy`,
+    images: [{ url: `${SITE_URL}/images/hero.jpg` }],
   },
 }
 
