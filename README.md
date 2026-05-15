@@ -12,7 +12,7 @@ This project represents the first web application I ever developed. It began as 
 
 The result is more than just an informational site — it’s a resource designed with care for accessibility, clarity, and professionalism. It reflects both the values of Integrate Therapy and my own growth as a developer, combining a meaningful real-world application with the opportunity to continually expand and improve my technical skills.
 
-You can view the website [here](https://integrate-therapy-london.vercel.app/).
+You can view the website [here](https://integrate-therapy.vercel.app/).
 
 ![Integrate Therapy website on various devices](documentation/amiresponsive.png)
 
